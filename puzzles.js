@@ -253,5 +253,218 @@ const PUZZLES=[
     "30": "Held on to"
    }
   }
+ },
+ {
+  "id": "puzzler-mini-01",
+  "title": "Casting Call",
+  "author": "Puzzler",
+  "date": "2026-10-13",
+  "grid": [
+   "#CAST",
+   "ROGUE",
+   "EARNS",
+   "SCENT",
+   "THEY#"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "notes": "Mon-level mini by Puzzler.",
+   "size": "5x5",
+   "wordCount": 10
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Everyone in the play, collectively",
+    "5": "Han Solo type, charmingly",
+    "6": "Brings home, as a paycheck",
+    "7": "What a bloodhound follows",
+    "8": "\"___ said it couldn't be done!\""
+   },
+   "down": {
+    "1": "Economy class, or the one with the whistle?",
+    "2": "Nod along, say",
+    "3": "Like a forecast with a big yellow circle",
+    "4": "Pop quiz, for one",
+    "5": "Recovery day for sore legs"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "CAST",
+    "5": "ROGUE",
+    "6": "EARNS",
+    "7": "SCENT",
+    "8": "THEY"
+   },
+   "down": {
+    "1": "COACH",
+    "2": "AGREE",
+    "3": "SUNNY",
+    "4": "TEST",
+    "5": "REST"
+   }
+  },
+  "addedDate": "2026-10-12",
+  "clues": {
+   "across": {
+    "1": "Everyone in the play, collectively",
+    "5": "Han Solo type, charmingly",
+    "6": "Brings home, as a paycheck",
+    "7": "What a bloodhound follows",
+    "8": "\"___ said it couldn't be done!\""
+   },
+   "down": {
+    "1": "Economy class, or the one with the whistle?",
+    "2": "Nod along, say",
+    "3": "Like a forecast with a big yellow circle",
+    "4": "Pop quiz, for one",
+    "5": "Recovery day for sore legs"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-02",
+  "title": "Slow Mail",
+  "author": "Puzzler",
+  "date": "2026-10-14",
+  "grid": [
+   "CAMP#",
+   "AREAS",
+   "RETRO",
+   "SNAIL",
+   "#ALSO"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "notes": "Mon-Tue mini by Puzzler.",
+   "size": "5x5",
+   "wordCount": 10
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Summer getaway with bunk beds",
+    "5": "Square footage figures",
+    "7": "Like vinyl records and flip phones, now",
+    "8": "Kind of mail that's no speed demon?",
+    "9": "On top of that"
+   },
+   "down": {
+    "1": "Pixar film starring Lightning McQueen",
+    "2": "Stop on a concert tour",
+    "3": "Genre for headbangers",
+    "4": "City of Light",
+    "6": "Going it alone"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "CAMP",
+    "5": "AREAS",
+    "7": "RETRO",
+    "8": "SNAIL",
+    "9": "ALSO"
+   },
+   "down": {
+    "1": "CARS",
+    "2": "ARENA",
+    "3": "METAL",
+    "4": "PARIS",
+    "6": "SOLO"
+   }
+  },
+  "addedDate": "2026-10-12",
+  "clues": {
+   "across": {
+    "1": "Summer getaway with bunk beds",
+    "5": "Square footage figures",
+    "7": "Like vinyl records and flip phones, now",
+    "8": "Kind of mail that's no speed demon?",
+    "9": "On top of that"
+   },
+   "down": {
+    "1": "Pixar film starring Lightning McQueen",
+    "2": "Stop on a concert tour",
+    "3": "Genre for headbangers",
+    "4": "City of Light",
+    "6": "Going it alone"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-03",
+  "title": "Civic Duty",
+  "author": "Puzzler",
+  "date": "2026-10-15",
+  "grid": [
+   "#HAD#",
+   "SOLAR",
+   "UNITE",
+   "EDGED",
+   "#AND#"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "notes": "Tue-level mini by Puzzler.",
+   "size": "5x5",
+   "wordCount": 10
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Owned at one time",
+    "4": "Like panels on a green roof",
+    "6": "Come together",
+    "7": "Beat by a nose",
+    "8": "Word an ampersand stands for"
+   },
+   "down": {
+    "1": "Civic leader?",
+    "2": "Line up just so",
+    "3": "So last season",
+    "4": "Take to court",
+    "5": "Color of a stop sign"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "HAD",
+    "4": "SOLAR",
+    "6": "UNITE",
+    "7": "EDGED",
+    "8": "AND"
+   },
+   "down": {
+    "1": "HONDA",
+    "2": "ALIGN",
+    "3": "DATED",
+    "4": "SUE",
+    "5": "RED"
+   }
+  },
+  "addedDate": "2026-10-12",
+  "clues": {
+   "across": {
+    "1": "Owned at one time",
+    "4": "Like panels on a green roof",
+    "6": "Come together",
+    "7": "Beat by a nose",
+    "8": "Word an ampersand stands for"
+   },
+   "down": {
+    "1": "Civic leader?",
+    "2": "Line up just so",
+    "3": "So last season",
+    "4": "Take to court",
+    "5": "Color of a stop sign"
+   }
+  }
  }
 ];
