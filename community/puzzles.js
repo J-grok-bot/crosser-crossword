@@ -207,13 +207,13 @@ const COMMUNITY_PUZZLES=[
   "clues": {
    "across": {
     "3": "India's Silicon Valley, sister city of Minsk under a Cold War friendship programme",
-    "4": "A weaving tradition where threads are resist-dyed before the loom. Telangana's Pochampally version is UNESCO recognised",
+    "5": "A weaving tradition where threads are resist-dyed before the loom. Telangana's Pochampally version is UNESCO recognised",
     "6": "Mixed vegetables in coconut and yoghurt, finished with curry leaves and the name of a beloved Kerala rock band"
    },
    "down": {
     "1": "One of the world's oldest living languages, spoken from Chennai to Colombo to Kuala Lumpur",
     "2": "A fermented rice and lentil crepe cooked paper-thin and crisp. South India's most travelled culinary export",
-    "5": "The fictional boy from Pondicherry adrift at sea with a Bengal tiger named Richard Parker"
+    "4": "The fictional boy from Pondicherry adrift at sea with a Bengal tiger named Richard Parker"
    }
   }
  }
