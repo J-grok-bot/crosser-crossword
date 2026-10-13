@@ -23,7 +23,9 @@ function buildModel(p){
 let M=null,S=null,cur=0,dir='across',pencil=false,timerH=null,paused=false;
 const $=id=>document.getElementById(id);
 const store={get:k=>{try{return JSON.parse(localStorage.getItem('xw:'+k))}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem('xw:'+k,JSON.stringify(v))}catch(e){}}};
-function allPuzzles(){return PUZZLES.concat(store.get('imported')||[]);}
+const COMM=(typeof COMMUNITY_PUZZLES!=='undefined')?COMMUNITY_PUZZLES:[];let tab='orig';
+function allPuzzles(){return PUZZLES.concat(COMM,store.get('imported')||[]);}
+function tabPuzzles(){return tab==='comm'?COMM:PUZZLES.concat(store.get('imported')||[]);}
 function save(){if(M)store.set('p:'+M.p.id,S);}
 function fresh(){return {fill:M.cells.map(()=>''),pen:M.cells.map(()=>false),rev:M.cells.map(()=>false),wrong:M.cells.map(()=>false),time:0,done:false,auto:false};}
 // ---------- archive ----------
@@ -31,7 +33,7 @@ function showArchive(){
   stopTimer();M=null;$('game').classList.add('hidden');$('archive').classList.remove('hidden');$('tools').style.visibility='hidden';$('puzTitle').textContent='';
   history.replaceState(null,'',location.pathname);
   const list=$('list');list.innerHTML='';
-  for(const p of allPuzzles()){
+  for(const p of tabPuzzles()){
     const st=store.get('p:'+p.id), n=p.grid.length, w=p.grid[0].length;
     const d=document.createElement('div');d.className='pcard';
     const mini=document.createElement('div');mini.className='mini';mini.style.gridTemplateColumns=`repeat(${w},1fr)`;
@@ -41,7 +43,8 @@ function showArchive(){
     const status=st&&st.done?`<span class="st done">Solved · ${fmt(st.time)}</span>`:st&&filled?`<span class="st">${Math.round(100*filled/tot)}% · ${fmt(st.time)}</span>`:`<span class="st">Not started</span>`;
     d.innerHTML=`<div class="kind">${kind} · ${w}×${n}</div><div class="t"></div><div class="st by"></div>`;
     d.querySelector('.t').textContent=p.title;d.querySelector('.by').textContent=(p.author?'By '+p.author:'')+(p.source?' · '+p.source:'');
-    d.prepend(mini);d.insertAdjacentHTML('beforeend',status);
+    d.prepend(mini);
+    if(p.license){const l=document.createElement('div');l.className='lic';l.innerHTML='License: <a target="_blank" rel="noopener"></a> · <a target="_blank" rel="noopener">source</a>';const [la,sa]=l.querySelectorAll('a');la.textContent=p.license;la.href=p.licenseUrl;sa.href=p.sourceUrl;l.onclick=e=>e.stopPropagation();d.appendChild(l);}d.insertAdjacentHTML('beforeend',status);
     d.onclick=()=>openPuzzle(p.id);
     const rt=getRatings()[p.id];const rl=document.createElement('a');rl.className='rlink';rl.textContent=rt?'★'.repeat(rt.stars)+' · edit rating':'Rate';rl.onclick=e=>{e.stopPropagation();openRate(p);};d.appendChild(rl);list.appendChild(d);
   }
@@ -53,7 +56,7 @@ function openPuzzle(id){
   M=buildModel(p);S=store.get('p:'+id);if(!S||S.fill.length!==M.cells.length)S=fresh();
   history.replaceState(null,'','#'+encodeURIComponent(id));
   $('archive').classList.add('hidden');$('game').classList.remove('hidden');$('tools').style.visibility='visible';
-  $('puzTitle').textContent=p.title+(p.author?'  ·  by '+p.author:'');
+  $('puzTitle').textContent=p.title+(p.author?'  ·  by '+p.author:'');const pl=$('puzLic');if(p.license){pl.textContent=p.license+' · source';pl.href=p.sourceUrl;}else{pl.textContent='';pl.removeAttribute('href');}
   const g=$('grid');g.innerHTML='';g.style.gridTemplateColumns=`repeat(${M.w},1fr)`;
   g.className='grid'+(M.w<=7?' small':M.w>=13?' big':'');
   M.cells.forEach((c,i)=>{const d=document.createElement('div');d.className='cell'+(c.blk?' blk':'');
@@ -175,4 +178,7 @@ function updCount(){const n=Object.keys(getRatings()).length;$('rCount').textCon
 $('exportBtn').onclick=()=>{const data={schema:'crosser-ratings/1',exportedAt:new Date().toISOString(),ratings:Object.values(getRatings()),puzzles:allPuzzles().map(p=>Object.assign({id:p.id},puzzleMeta(p)))};
   const b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ratings.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
 buildKbd();updCount();
+function setTab(t){tab=t;$('tabOrig').classList.toggle('on',t==='orig');$('tabComm').classList.toggle('on',t==='comm');
+  $('tabSub').textContent=t==='comm'?'Puzzles by other constructors, shared under licenses that allow redistribution. Credits and licenses are shown on each card.':'Original puzzles made for Crosser. Your progress is saved on this device.';showArchive();}
+$('tabOrig').onclick=()=>setTab('orig');$('tabComm').onclick=()=>setTab('comm');
 const h=decodeURIComponent(location.hash.slice(1));if(h&&allPuzzles().some(p=>p.id===h))openPuzzle(h);else showArchive();

@@ -2,14 +2,14 @@
 """Validate puzzle sources (puzzles_src.json) and emit ../puzzles.js.
 Checks: square grid, 180° rotational symmetry, no entries < 3 letters, every white cell checked
 (in both an across and a down entry), connectivity, unique entries, every entry has a clue,
-no unused clues, and every answer appears in a word list (ENABLE or Spread the Wordlist score>=50) unless listed in 'phrases'."""
+no unused clues, and every answer appears in a word list (ENABLE or Crossword Nexus Collaborative Word List score>=50) unless listed in 'phrases'."""
 import json,sys,os
 here=os.path.dirname(os.path.abspath(__file__))
 src=json.load(open(os.path.join(here,'puzzles_src.json')))
 words=set()
 wl=os.path.join(here,'enable1.txt')
 if os.path.exists(wl): words={w.strip().upper() for w in open(wl)}
-sw=os.path.join(here,'stwl50.txt')
+sw=os.path.join(here,'cwl50.txt')
 if os.path.exists(sw): words|={w.strip().upper() for w in open(sw)}
 def entries(g):
     n=len(g);W=lambda r,c:0<=r<n and 0<=c<n and g[r][c]!='#'

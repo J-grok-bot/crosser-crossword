@@ -16,7 +16,7 @@
 </head><body>
 <header class="top">
   <button id="homeBtn" class="brand" title="Puzzle archive"><img src="icons/icon-192.png" alt="">Crosser</button>
-  <div id="puzTitle" class="ptitle"></div>
+  <div id="puzTitle" class="ptitle"></div><a id="puzLic" class="plic" target="_blank" rel="noopener"></a>
   <div class="tools" id="tools">
     <span id="timer" class="timer">0:00</span>
     <button id="pauseBtn" title="Pause">❚❚</button>
@@ -32,7 +32,8 @@
 
 <main id="archive" class="archive">
   <h1>Puzzles</h1>
-  <p class="sub">Original puzzles. Your progress is saved on this device.</p>
+  <div class="tabs"><button id="tabOrig" class="on">Originals</button><button id="tabComm">Community</button></div>
+  <p class="sub" id="tabSub">Original puzzles made for Crosser. Your progress is saved on this device.</p>
   <div id="list" class="list"></div>
   <div class="import"><h2>Your ratings</h2><p>Ratings help tune future puzzles. <button id="exportBtn" class="pill">Export ratings.json</button> <span id="rCount"></span></p></div>
   <div class="import">
@@ -68,6 +69,7 @@
 </div></div>
 <input id="hiddenInput" autocomplete="off" autocapitalize="characters" class="hiddenin">
 <script src="puzzles.js"></script>
+<script src="community/puzzles.js"></script>
 <script src="puz.js"></script>
 <script src="app.js"></script>
 </body></html>
