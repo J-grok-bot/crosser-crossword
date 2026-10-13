@@ -7,6 +7,11 @@ All puzzles in `puzzles.js` / `tools/puzzles_src.json` are original to Crosser (
 | Puzzle | Constructor | Source | License | Changes |
 |---|---|---|---|---|
 | JP Quick #1 | James Penn (JP) | https://github.com/jamesp/crosswords/blob/main/crosswords/jp-puzzle3.json | CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) | Converted format; added clue enumerations |
+| The Mostly-Modular Crossword | xoxomodular | https://github.com/xoxomodular/themostlymodularcrosswordpuzzle | CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/) | None (original .puz) |
+| Cross Culture: South India | Aakanksha B | https://github.com/aakpaak/crossculturepuzzle | CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/) | Converted format |
+
+Original source files are kept in `community/src/`; `community/manifest.json` records credits and licenses and
+`node tools/build_community.js` regenerates `community/puzzles.js`. Only add puzzles whose license explicitly permits redistribution.
 
 ## Word lists used for construction and validation
 - Crossword Nexus Collaborative Word List — https://github.com/Crossword-Nexus/collaborative-word-list — MIT License,

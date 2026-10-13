@@ -1,0 +1,71 @@
+{
+  "week": 1,
+  "illustrationSrc": "illustrationSrc.png",
+  "edition": "Edition I",
+  "culture": "South India",
+  "blurb": "This week's puzzle explores South India, spanning Tamil Nadu, Kerala, Karnataka, Andhra Pradesh, and Telangana. You might encounter classical dance, ancient languages, beloved films, and textile traditions that have travelled far beyond the subcontinent.",
+  "grid": [
+    ["#", "#", "#", "#", "T", "#", "D", "#", "#"],
+    ["B", "A", "N", "G", "A", "L", "O", "R", "E"],
+    ["#", "#", "#", "#", "M", "#", "S", "#", "#"],
+    ["#", "#", "P", "#", "I", "K", "A", "T", "#"],
+    ["A", "V", "I", "A", "L", "#", "#", "#", "#"]
+  ],
+  "numbers": [
+    [0, 0, 0, 0, 1, 0, 2, 0, 0],
+    [3, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 5, 0, 4, 0, 0, 0, 0],
+    [6, 0, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "clues": {
+    "across": [
+      {
+        "num": 3,
+        "clue": "India's Silicon Valley, sister city of Minsk under a Cold War friendship programme",
+        "row": 1,
+        "col": 0
+      },
+      {
+        "num": 4,
+        "clue": "A weaving tradition where threads are resist-dyed before the loom. Telangana's Pochampally version is UNESCO recognised",
+        "row": 3,
+        "col": 4
+      },
+      {
+        "num": 6,
+        "clue": "Mixed vegetables in coconut and yoghurt, finished with curry leaves and the name of a beloved Kerala rock band",
+        "row": 4,
+        "col": 0
+      }
+    ],
+    "down": [
+      {
+        "num": 1,
+        "clue": "One of the world's oldest living languages, spoken from Chennai to Colombo to Kuala Lumpur",
+        "row": 0,
+        "col": 4
+      },
+      {
+        "num": 2,
+        "clue": "A fermented rice and lentil crepe cooked paper-thin and crisp. South India's most travelled culinary export",
+        "row": 0,
+        "col": 6
+      },
+      {
+        "num": 5,
+        "clue": "The fictional boy from Pondicherry adrift at sea with a Bengal tiger named Richard Parker",
+        "row": 3,
+        "col": 2
+      }
+    ]
+  },
+  "explanations": {
+    "BANGALORE": "India's Silicon Valley shares an unlikely twin with Minsk, capital of Belarus, paired under a Soviet-era friendship programme that connected cities across Cold War divides.",
+    "TAMIL": "One of the world's oldest living languages with a literary tradition over 2,000 years old. Spoken from Chennai to Colombo to Kuala Lumpur.",
+    "DOSA": "A fermented rice and lentil crepe cooked until crisp, served with coconut chutney and sambar. Street food, breakfast staple, and culinary export found now from London to New York.",
+    "IKAT": "A weaving tradition where threads are resist-dyed before touching the loom. Telangana's Pochampally ikat is UNESCO recognised.",
+    "PI": "The fictional boy from Pondicherry who spent 227 days adrift with a Bengal tiger named Richard Parker.",
+    "AVIAL": "Mixed vegetables in coconut and yoghurt, finished with curry leaves. Also a beloved Kerala rock band who named themselves after the dish."
+  }
+}
