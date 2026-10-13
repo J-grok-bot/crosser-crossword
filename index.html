@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>Crosser</title>
+<meta name="theme-color" content="#1f3b57">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Crosser">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="top">
+  <button id="homeBtn" class="brand" title="Puzzle archive"><img src="icons/icon-192.png" alt="">Crosser</button>
+  <div id="puzTitle" class="ptitle"></div>
+  <div class="tools" id="tools">
+    <span id="timer" class="timer">0:00</span>
+    <button id="pauseBtn" title="Pause">❚❚</button>
+    <button id="pencilBtn" title="Pencil mode">✎</button>
+    <div class="menu"><button>Check ▾</button><div class="dd">
+      <a data-act="check-cell">Square</a><a data-act="check-word">Word</a><a data-act="check-puzzle">Puzzle</a><a data-act="autocheck">Autocheck</a></div></div>
+    <div class="menu"><button>Reveal ▾</button><div class="dd">
+      <a data-act="reveal-cell">Square</a><a data-act="reveal-word">Word</a><a data-act="reveal-puzzle">Puzzle</a></div></div>
+    <div class="menu"><button>Clear ▾</button><div class="dd">
+      <a data-act="clear-incomplete">Incomplete</a><a data-act="clear-word">Word</a><a data-act="clear-puzzle">Puzzle</a><a data-act="clear-all">Puzzle &amp; Timer</a></div></div>
+  </div>
+</header>
+
+<main id="archive" class="archive">
+  <h1>Puzzles</h1>
+  <p class="sub">Original puzzles. Your progress is saved on this device.</p>
+  <div id="list" class="list"></div>
+  <div class="import"><h2>Your ratings</h2><p>Ratings help tune future puzzles. <button id="exportBtn" class="pill">Export ratings.json</button> <span id="rCount"></span></p></div>
+  <div class="import">
+    <h2>Load your own</h2>
+    <p>Open an Across Lite <code>.puz</code> or <code>.ipuz</code> file you have the rights to use.</p>
+    <label class="filebtn">Choose file…<input type="file" id="fileIn" accept=".puz,.ipuz,.json"></label>
+    <span id="importMsg"></span>
+  </div>
+</main>
+
+<main id="game" class="game hidden">
+  <section class="left">
+    <div id="cluebar" class="cluebar"><span id="cbNum"></span><span id="cbText"></span></div>
+    <div id="gridWrap" class="gridwrap"><div id="grid" class="grid"></div>
+      <div id="pauseOverlay" class="pause hidden"><div>Paused<br><button id="resumeBtn">Resume</button></div></div>
+    </div>
+  </section>
+  <section class="right">
+    <div class="cluecol"><h3>Across</h3><ol id="acrossList"></ol></div>
+    <div class="cluecol"><h3>Down</h3><ol id="downList"></ol></div>
+  </section>
+  <div id="kbd" class="kbd"></div>
+</main>
+
+<div id="rmodal" class="modal hidden"><div class="card"><h2 id="rTitle">Rate this puzzle</h2><div id="rateBox2" class="rate"></div>
+  <div class="mbtns"><button id="rCancel">Close</button></div></div></div>
+<div id="modal" class="modal hidden"><div class="card">
+  <div class="badge">★</div>
+  <h2 id="mTitle">Congratulations!</h2>
+  <p id="mText"></p>
+  <div id="rateBox" class="rate"></div>
+  <div class="mbtns"><button id="mClose">Admire puzzle</button><button id="mArchive" class="primary">More puzzles</button></div>
+</div></div>
+<input id="hiddenInput" autocomplete="off" autocapitalize="characters" class="hiddenin">
+<script src="puzzles.js"></script>
+<script src="puz.js"></script>
+<script src="app.js"></script>
+</body></html>
