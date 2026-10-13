@@ -1,31 +1,235 @@
 [
-{"id":"mini-01","title":"Core Curriculum","author":"Crosser","date":"2026-10-05","grid":["#SUCH","APPLE","NASAL","TREND","SETS#"],
- "meta":{"difficulty":"easy","themeType":"themeless","clueStyle":"mixed"},
- "clues":{"SUCH":"\"___ a shame!\"","APPLE":"Core curriculum subject?","NASAL":"Like a voice during cold season","TREND":"Something a hashtag might start","SETS":"Tennis match units",
- "ANTS":"Uninvited picnic guests","SPARE":"Ten pins in two tries","UPSET":"Underdog's triumph","CLANS":"Big families with tartans","HELD":"Kept a grip on"}},
-{"id":"mini-02","title":"Hold, Please","author":"Crosser","date":"2026-10-06","grid":["#WHEN","PHONE","RELAX","ERECT","PEST#"],
- "meta":{"difficulty":"easy","themeType":"themeless","clueStyle":"mixed"},
- "clues":{"WHEN":"\"Say ___!\" (pouring request)","PHONE":"It goes on silent at the movies","RELAX":"Advice for someone wound up","ERECT":"Put up, as a monument","PEST":"Little brother, at times",
- "PREP":"Chop the veggies, say","WHERE":"Question for a lost-and-found","HOLES":"There are usually 18 on a course","ENACT":"Make into law","NEXT":"Cashier's call"}},
-{"id":"mini-03","title":"Encore!","author":"Crosser","date":"2026-10-07","grid":["#THEM","BRAVO","EATER","SCENE","TEST#"],
- "meta":{"difficulty":"easy","themeType":"themeless","clueStyle":"mixed"},
- "clues":{"THEM":"Us vs. ___","BRAVO":"Shout from the opera house balcony","EATER":"Picky ___","SCENE":"Make a ___ (cause a fuss)","TEST":"Something you might cram for",
- "BEST":"Top of the class","TRACE":"Copy using tissue paper","HATES":"Can't stand","EVENT":"Calendar entry","MORE":"Oliver Twist's famous request"}},
-{"id":"mini-04","title":"Black and White","author":"Crosser","date":"2026-10-08","grid":["#ARE#","AVANT","PANDA","TIGER","#LED#"],
- "meta":{"difficulty":"easy","themeType":"themeless","clueStyle":"straight"},
- "clues":{"ARE":"\"You ___ here\" (mall map phrase)","AVANT":"___-garde","PANDA":"Bamboo-munching bear","TIGER":"Cat with stripes","LED":"Was out in front",
- "APT":"Fitting","AVAIL":"To no ___ (fruitlessly)","RANGE":"Home on the ___","ENDED":"Wrapped up","TAR":"Road goo"}},
-{"id":"mini-05","title":"Low Tide","author":"Crosser","date":"2026-10-09","grid":["#HIS#","TIDAL","ARENA","READY","#SLY#"],
- "meta":{"difficulty":"easy","themeType":"themeless","clueStyle":"wordplay-heavy"},
- "clues":{"HIS":"Towel monogram that pairs with \"Hers\"","TIDAL":"Like waves the moon controls","ARENA":"Where a band might play to 20,000","READY":"First word before \"set, go!\"","SLY":"Like a fox",
- "TAR":"Old salt","HIRES":"Brings on board","IDEAL":"Picture-perfect","SANDY":"Like a beach towel by sunset","LAY":"___ of the land"}},
-{"id":"midi-01","title":"Give Me a Break","author":"Crosser","date":"2026-10-10","grid":["ERRS#SCARF#","PEEN#HOMER#","IDEA#EMOJIS","COFFEEBREAK","###URN##CRY","#VISA#OATS#","AIM##ARE###","SPRINGBREAK","HEELER#ISLE","#RAISE#ATOP","#SLATE#LEET"],
- "phrases":["COFFEEBREAK","SPRINGBREAK","IMREAL","EMOJIS","LEET","SNAFUS","HEELER"],
- "meta":{"difficulty":"easy","themeType":"phrase-pair (___ BREAK)","clueStyle":"mixed"},
- "clues":{"ERRS":"Goofs up","SCARF":"Wolf down, or wrap up?","PEEN":"Rounded end of a hammer's head","HOMER":"Four-bagger","IDEA":"Light-bulb moment","EMOJIS":"Tiny faces in texts",
- "COFFEEBREAK":"Midmorning pause for a cup of joe","URN":"Big brewer at a banquet","CRY":"Shed a tear","VISA":"Passport stamp, perhaps","OATS":"Porridge grains","AIM":"Goal","ARE":"Exist, plurally",
- "SPRINGBREAK":"Week off that sends students to the beach","HEELER":"Australian cattle dog","ISLE":"Bit of land in the sea","RAISE":"Up the ante","ATOP":"Perched on","SLATE":"List of candidates","LEET":"Hacker-speak, written 1337",
- "EPIC":"Larger-than-life tale","ASH":"Cigar remnant","REDO":"Second take","VIPERS":"Venomous snakes","REEF":"Coral formation","IMREAL":"\"This is no hologram!\"","SNAFUS":"Messy mix-ups","ILIA":"Hip bones",
- "ERA":"Jazz Age, e.g.","NEST":"Empty ___ (parent whose kids moved out)","SHEEN":"Glossy shine","AGREE":"See eye to eye","COMB":"Hair-taming tool","ORB":"Crystal ball, e.g.","AMOR":"Love, in Lisbon",
- "AERIAL":"Like a bird's-eye view","REJECT":"Turn down","ESTE":"East, in Spanish","FRIARS":"Brothers in robes","ALOE":"Sunburn soother","SKY":"Blue expanse","KEPT":"Held on to"}}
+ {
+  "id": "mini-01",
+  "title": "Core Curriculum",
+  "author": "Crosser",
+  "date": "2026-10-05",
+  "grid": [
+   "#SUCH",
+   "APPLE",
+   "NASAL",
+   "TREND",
+   "SETS#"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed"
+  },
+  "clues": {
+   "SUCH": "\"___ a shame!\"",
+   "APPLE": "Core curriculum subject?",
+   "NASAL": "Like a voice during cold season",
+   "TREND": "Something a hashtag might start",
+   "SETS": "Tennis match units",
+   "ANTS": "Uninvited picnic guests",
+   "SPARE": "Ten pins in two tries",
+   "UPSET": "Underdog's triumph",
+   "CLANS": "Big families with tartans",
+   "HELD": "Kept a grip on"
+  },
+  "addedDate": "2026-10-12"
+ },
+ {
+  "id": "mini-02",
+  "title": "Hold, Please",
+  "author": "Crosser",
+  "date": "2026-10-06",
+  "grid": [
+   "#WHEN",
+   "PHONE",
+   "RELAX",
+   "ERECT",
+   "PEST#"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed"
+  },
+  "clues": {
+   "WHEN": "\"Say ___!\" (pouring request)",
+   "PHONE": "It goes on silent at the movies",
+   "RELAX": "Advice for someone wound up",
+   "ERECT": "Put up, as a monument",
+   "PEST": "Little brother, at times",
+   "PREP": "Chop the veggies, say",
+   "WHERE": "Question for a lost-and-found",
+   "HOLES": "There are usually 18 on a course",
+   "ENACT": "Make into law",
+   "NEXT": "Cashier's call"
+  },
+  "addedDate": "2026-10-12"
+ },
+ {
+  "id": "mini-03",
+  "title": "Encore!",
+  "author": "Crosser",
+  "date": "2026-10-07",
+  "grid": [
+   "#THEM",
+   "BRAVO",
+   "EATER",
+   "SCENE",
+   "TEST#"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed"
+  },
+  "clues": {
+   "THEM": "Us vs. ___",
+   "BRAVO": "Shout from the opera house balcony",
+   "EATER": "Picky ___",
+   "SCENE": "Make a ___ (cause a fuss)",
+   "TEST": "Something you might cram for",
+   "BEST": "Top of the class",
+   "TRACE": "Copy using tissue paper",
+   "HATES": "Can't stand",
+   "EVENT": "Calendar entry",
+   "MORE": "Oliver Twist's famous request"
+  },
+  "addedDate": "2026-10-12"
+ },
+ {
+  "id": "mini-04",
+  "title": "Black and White",
+  "author": "Crosser",
+  "date": "2026-10-08",
+  "grid": [
+   "#ARE#",
+   "AVANT",
+   "PANDA",
+   "TIGER",
+   "#LED#"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "straight"
+  },
+  "clues": {
+   "ARE": "\"You ___ here\" (mall map phrase)",
+   "AVANT": "___-garde",
+   "PANDA": "Bamboo-munching bear",
+   "TIGER": "Cat with stripes",
+   "LED": "Was out in front",
+   "APT": "Fitting",
+   "AVAIL": "To no ___ (fruitlessly)",
+   "RANGE": "Home on the ___",
+   "ENDED": "Wrapped up",
+   "TAR": "Road goo"
+  },
+  "addedDate": "2026-10-12"
+ },
+ {
+  "id": "mini-05",
+  "title": "Low Tide",
+  "author": "Crosser",
+  "date": "2026-10-09",
+  "grid": [
+   "#HIS#",
+   "TIDAL",
+   "ARENA",
+   "READY",
+   "#SLY#"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "wordplay-heavy"
+  },
+  "clues": {
+   "HIS": "Towel monogram that pairs with \"Hers\"",
+   "TIDAL": "Like waves the moon controls",
+   "ARENA": "Where a band might play to 20,000",
+   "READY": "First word before \"set, go!\"",
+   "SLY": "Like a fox",
+   "TAR": "Old salt",
+   "HIRES": "Brings on board",
+   "IDEAL": "Picture-perfect",
+   "SANDY": "Like a beach towel by sunset",
+   "LAY": "___ of the land"
+  },
+  "addedDate": "2026-10-12"
+ },
+ {
+  "id": "midi-01",
+  "title": "Give Me a Break",
+  "author": "Crosser",
+  "date": "2026-10-10",
+  "grid": [
+   "ERRS#SCARF#",
+   "PEEN#HOMER#",
+   "IDEA#EMOJIS",
+   "COFFEEBREAK",
+   "###URN##CRY",
+   "#VISA#OATS#",
+   "AIM##ARE###",
+   "SPRINGBREAK",
+   "HEELER#ISLE",
+   "#RAISE#ATOP",
+   "#SLATE#LEET"
+  ],
+  "phrases": [
+   "COFFEEBREAK",
+   "SPRINGBREAK",
+   "IMREAL",
+   "EMOJIS",
+   "LEET",
+   "SNAFUS",
+   "HEELER"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "phrase-pair (___ BREAK)",
+   "clueStyle": "mixed"
+  },
+  "clues": {
+   "ERRS": "Goofs up",
+   "SCARF": "Wolf down, or wrap up?",
+   "PEEN": "Rounded end of a hammer's head",
+   "HOMER": "Four-bagger",
+   "IDEA": "Light-bulb moment",
+   "EMOJIS": "Tiny faces in texts",
+   "COFFEEBREAK": "Midmorning pause for a cup of joe",
+   "URN": "Big brewer at a banquet",
+   "CRY": "Shed a tear",
+   "VISA": "Passport stamp, perhaps",
+   "OATS": "Porridge grains",
+   "AIM": "Goal",
+   "ARE": "Exist, plurally",
+   "SPRINGBREAK": "Week off that sends students to the beach",
+   "HEELER": "Australian cattle dog",
+   "ISLE": "Bit of land in the sea",
+   "RAISE": "Up the ante",
+   "ATOP": "Perched on",
+   "SLATE": "List of candidates",
+   "LEET": "Hacker-speak, written 1337",
+   "EPIC": "Larger-than-life tale",
+   "ASH": "Cigar remnant",
+   "REDO": "Second take",
+   "VIPERS": "Venomous snakes",
+   "REEF": "Coral formation",
+   "IMREAL": "\"This is no hologram!\"",
+   "SNAFUS": "Messy mix-ups",
+   "ILIA": "Hip bones",
+   "ERA": "Jazz Age, e.g.",
+   "NEST": "Empty ___ (parent whose kids moved out)",
+   "SHEEN": "Glossy shine",
+   "AGREE": "See eye to eye",
+   "COMB": "Hair-taming tool",
+   "ORB": "Crystal ball, e.g.",
+   "AMOR": "Love, in Lisbon",
+   "AERIAL": "Like a bird's-eye view",
+   "REJECT": "Turn down",
+   "ESTE": "East, in Spanish",
+   "FRIARS": "Brothers in robes",
+   "ALOE": "Sunburn soother",
+   "SKY": "Blue expanse",
+   "KEPT": "Held on to"
+  },
+  "addedDate": "2026-10-12"
+ }
 ]

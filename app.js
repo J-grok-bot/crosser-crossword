@@ -25,7 +25,7 @@ const $=id=>document.getElementById(id);
 const store={get:k=>{try{return JSON.parse(localStorage.getItem('xw:'+k))}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem('xw:'+k,JSON.stringify(v))}catch(e){}}};
 const COMM=(typeof COMMUNITY_PUZZLES!=='undefined')?COMMUNITY_PUZZLES:[];let tab='orig';
 function allPuzzles(){return PUZZLES.concat(COMM,store.get('imported')||[]);}
-function tabPuzzles(){const L=tab==='comm'?COMM.slice():PUZZLES.concat(store.get('imported')||[]);return L.map((p,i)=>[p,i]).sort((x,y)=>String(y[0].date||y[0].addedAt||'').localeCompare(String(x[0].date||x[0].addedAt||''))||y[1]-x[1]).map(x=>x[0]);}
+function tabPuzzles(){const L=tab==='comm'?COMM.slice():PUZZLES.concat(store.get('imported')||[]);return L.map((p,i)=>[p,i]).sort((x,y)=>String(y[0].addedDate||'').localeCompare(String(x[0].addedDate||''))||y[1]-x[1]).map(x=>x[0]);}
 function save(){if(M)store.set('p:'+M.p.id,S);}
 function fresh(){return {fill:M.cells.map(()=>''),pen:M.cells.map(()=>false),rev:M.cells.map(()=>false),wrong:M.cells.map(()=>false),time:0,done:false,auto:false};}
 // ---------- archive ----------
@@ -42,13 +42,14 @@ function showArchive(){
     const kind=n<=7?'Mini':n<=11?'Midi':'Daily';
     const status=st&&st.done?`<span class="st done">Solved · ${fmt(st.time)}</span>`:st&&filled?`<span class="st">${Math.round(100*filled/tot)}% · ${fmt(st.time)}</span>`:`<span class="st">Not started</span>`;
     d.innerHTML=`<div class="kind">${kind} · ${w}×${n}</div><div class="t"></div><div class="st by"></div>`;
-    d.querySelector('.t').textContent=p.title;d.querySelector('.by').textContent=(p.author?'By '+p.author:'')+(p.source?' · '+p.source:'');
+    d.querySelector('.t').textContent=p.title;d.querySelector('.by').textContent=(p.author?'By '+p.author:'')+(p.source?' · '+p.source:'');const ad=document.createElement('div');ad.className='st added';ad.textContent=fmtDate(p.addedDate);d.querySelector('.by').after(ad);
     d.prepend(mini);
     if(p.license){const l=document.createElement('div');l.className='lic';l.innerHTML='License: <a target="_blank" rel="noopener"></a> · <a target="_blank" rel="noopener">source</a>';const [la,sa]=l.querySelectorAll('a');la.textContent=p.license;la.href=p.licenseUrl;sa.href=p.sourceUrl;l.onclick=e=>e.stopPropagation();d.appendChild(l);}d.insertAdjacentHTML('beforeend',status);
     d.onclick=()=>openPuzzle(p.id);
     const rt=getRatings()[p.id];const rl=document.createElement('a');rl.className='rlink';rl.textContent=rt?'★'.repeat(rt.stars)+' · edit rating':'Rate';rl.onclick=e=>{e.stopPropagation();openRate(p);};d.appendChild(rl);list.appendChild(d);
   }
 }
+function fmtDate(d){if(!d)return '';const [y,m,dd]=d.split('-').map(Number);return 'Added '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][m-1]+' '+dd+', '+y;}
 function fmt(s){s=s|0;const h=s/3600|0,m=(s%3600)/60|0,x=s%60;return (h?h+':'+String(m).padStart(2,'0'):m)+':'+String(x).padStart(2,'0');}
 // ---------- game ----------
 function openPuzzle(id){
@@ -56,7 +57,7 @@ function openPuzzle(id){
   M=buildModel(p);S=store.get('p:'+id);if(!S||S.fill.length!==M.cells.length)S=fresh();
   history.replaceState(null,'','#'+encodeURIComponent(id));
   $('archive').classList.add('hidden');$('game').classList.remove('hidden');$('tools').style.visibility='visible';
-  $('puzTitle').textContent=p.title+(p.author?'  ·  by '+p.author:'');const pl=$('puzLic');if(p.license){pl.textContent=p.license+' · source';pl.href=p.sourceUrl;}else{pl.textContent='';pl.removeAttribute('href');}
+  $('puzTitle').textContent=p.title+(p.author?'  ·  by '+p.author:'')+(p.addedDate?'  ·  '+fmtDate(p.addedDate):'');const pl=$('puzLic');if(p.license){pl.textContent=p.license+' · source';pl.href=p.sourceUrl;}else{pl.textContent='';pl.removeAttribute('href');}
   const g=$('grid');g.innerHTML='';g.style.gridTemplateColumns=`repeat(${M.w},1fr)`;
   g.className='grid'+(M.w<=7?' small':M.w>=13?' big':'');
   M.cells.forEach((c,i)=>{const d=document.createElement('div');d.className='cell'+(c.blk?' blk':'');

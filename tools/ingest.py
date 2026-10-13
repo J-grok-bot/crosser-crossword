@@ -23,7 +23,7 @@ for f in sorted(glob.glob(os.path.join(d,'*.json'))):
         if any(body(e)==body(p) for e in src):continue  # already shipped (append-only, no duplicates)
         base=p['id'];k=2
         while p['id'] in ids:p['id']=f"{base}-{k}";k+=1  # never overwrite: give a fresh unique id
-        p.setdefault('date',datetime.date.today().isoformat())
+        p.pop('addedDate',None);p['addedDate']=datetime.datetime.now(__import__('zoneinfo').ZoneInfo('America/New_York')).date().isoformat()
         ids[p['id']]=len(src);src.append(p)
         changed=True;report['accepted'].append({'file':f,'id':p['id'],'words':nw,'blocks':nb})
 json.dump(report,open(os.path.join(d,'_ingest_report.json'),'w'),indent=1)

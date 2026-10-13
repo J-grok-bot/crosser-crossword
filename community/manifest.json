@@ -15,7 +15,7 @@
    "themeType": "themeless (British quick)",
    "clueStyle": "straight"
   },
-  "addedAt": "2026-10-12"
+  "addedDate": "2026-10-12"
  },
  {
   "id": "community-mostly-modular",
@@ -33,7 +33,7 @@
    "themeType": "topical (modular synths)",
    "clueStyle": "mixed"
   },
-  "addedAt": "2026-10-12"
+  "addedDate": "2026-10-12"
  },
  {
   "id": "community-crossculture-1",
@@ -51,6 +51,6 @@
    "themeType": "topical (culture)",
    "clueStyle": "straight"
   },
-  "addedAt": "2026-10-12"
+  "addedDate": "2026-10-12"
  }
 ]

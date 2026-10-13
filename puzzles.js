@@ -18,6 +18,7 @@ const PUZZLES=[
    "clueStyle": "mixed",
    "wordCount": 10
   },
+  "addedDate": "2026-10-12",
   "clues": {
    "across": {
     "1": "\"___ a shame!\"",
@@ -53,6 +54,7 @@ const PUZZLES=[
    "clueStyle": "mixed",
    "wordCount": 10
   },
+  "addedDate": "2026-10-12",
   "clues": {
    "across": {
     "1": "\"Say ___!\" (pouring request)",
@@ -88,6 +90,7 @@ const PUZZLES=[
    "clueStyle": "mixed",
    "wordCount": 10
   },
+  "addedDate": "2026-10-12",
   "clues": {
    "across": {
     "1": "Us vs. ___",
@@ -123,6 +126,7 @@ const PUZZLES=[
    "clueStyle": "straight",
    "wordCount": 10
   },
+  "addedDate": "2026-10-12",
   "clues": {
    "across": {
     "1": "\"You ___ here\" (mall map phrase)",
@@ -158,6 +162,7 @@ const PUZZLES=[
    "clueStyle": "wordplay-heavy",
    "wordCount": 10
   },
+  "addedDate": "2026-10-12",
   "clues": {
    "across": {
     "1": "Towel monogram that pairs with \"Hers\"",
@@ -199,6 +204,7 @@ const PUZZLES=[
    "clueStyle": "mixed",
    "wordCount": 42
   },
+  "addedDate": "2026-10-12",
   "clues": {
    "across": {
     "1": "Goofs up",
