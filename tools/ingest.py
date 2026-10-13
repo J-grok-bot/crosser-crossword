@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Ingest puzzles from /workspace/puzzler-out/*.json (one puzzle object or a list, in puzzles_src format).
-Each puzzle is validated with build.check(); passing ones are added/updated in puzzles_src.json,
+APPEND-ONLY: existing puzzles are never modified or removed; id collisions get a new unique id.
+Each puzzle is validated with build.check(); passing ones are appended in puzzles_src.json,
 puzzles.js is rebuilt, and (with --push) the change is committed and pushed.
 Results are written to /workspace/puzzler-out/_ingest_report.json.
 Usage: python3 tools/ingest.py [--dir DIR] [--push] [--dry-run]"""
@@ -18,10 +19,12 @@ for f in sorted(glob.glob(os.path.join(d,'*.json'))):
         p.setdefault('author','Crosser');p.setdefault('meta',{})
         E,q,nw,nb=build.check(json.loads(json.dumps(p)))
         if E:report['rejected'].append({'file':f,'id':p.get('id'),'errors':E});continue
-        if p['id'] in ids:
-            if src[ids[p['id']]]==p:continue
-            src[ids[p['id']]]=p
-        else:ids[p['id']]=len(src);src.append(p)
+        body=lambda x:json.dumps({k:x.get(k) for k in ('grid','clues')},sort_keys=True)
+        if any(body(e)==body(p) for e in src):continue  # already shipped (append-only, no duplicates)
+        base=p['id'];k=2
+        while p['id'] in ids:p['id']=f"{base}-{k}";k+=1  # never overwrite: give a fresh unique id
+        p.setdefault('date',datetime.date.today().isoformat())
+        ids[p['id']]=len(src);src.append(p)
         changed=True;report['accepted'].append({'file':f,'id':p['id'],'words':nw,'blocks':nb})
 json.dump(report,open(os.path.join(d,'_ingest_report.json'),'w'),indent=1)
 print(json.dumps(report,indent=1))

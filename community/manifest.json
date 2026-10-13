@@ -1,5 +1,56 @@
 [
- {"id":"community-jp-quick-1","file":"jp-puzzle3.json","format":"jamesp","title":"JP Quick #1","author":"James Penn (JP)","source":"github.com/jamesp/crosswords","sourceUrl":"https://github.com/jamesp/crosswords/blob/main/crosswords/jp-puzzle3.json","license":"CC BY 4.0","licenseUrl":"https://creativecommons.org/licenses/by/4.0/","notes":"Converted format; clue enumerations added.","meta":{"difficulty":"easy","themeType":"themeless (British quick)","clueStyle":"straight"}},
- {"id":"community-mostly-modular","file":"PUZ-TheMostlyModularCrossword.puz","format":"puz","title":"The Mostly-Modular Crossword","author":"xoxomodular","source":"github.com/xoxomodular/themostlymodularcrosswordpuzzle","sourceUrl":"https://github.com/xoxomodular/themostlymodularcrosswordpuzzle","license":"CC0 1.0 (public domain dedication)","licenseUrl":"https://creativecommons.org/publicdomain/zero/1.0/","notes":"Eurorack-synth themed; specialist knowledge helps. Unmodified .puz.","meta":{"difficulty":"hard","themeType":"topical (modular synths)","clueStyle":"mixed"}},
- {"id":"community-crossculture-1","file":"crossculture-week1.json","format":"crossculture","title":"Cross Culture: South India","author":"Aakanksha B","source":"github.com/aakpaak/crossculturepuzzle","sourceUrl":"https://github.com/aakpaak/crossculturepuzzle","license":"CC0 1.0 (public domain dedication)","licenseUrl":"https://creativecommons.org/publicdomain/zero/1.0/","notes":"Converted format.","meta":{"difficulty":"easy","themeType":"topical (culture)","clueStyle":"straight"}}
+ {
+  "id": "community-jp-quick-1",
+  "file": "jp-puzzle3.json",
+  "format": "jamesp",
+  "title": "JP Quick #1",
+  "author": "James Penn (JP)",
+  "source": "github.com/jamesp/crosswords",
+  "sourceUrl": "https://github.com/jamesp/crosswords/blob/main/crosswords/jp-puzzle3.json",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "notes": "Converted format; clue enumerations added.",
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless (British quick)",
+   "clueStyle": "straight"
+  },
+  "addedAt": "2026-10-12"
+ },
+ {
+  "id": "community-mostly-modular",
+  "file": "PUZ-TheMostlyModularCrossword.puz",
+  "format": "puz",
+  "title": "The Mostly-Modular Crossword",
+  "author": "xoxomodular",
+  "source": "github.com/xoxomodular/themostlymodularcrosswordpuzzle",
+  "sourceUrl": "https://github.com/xoxomodular/themostlymodularcrosswordpuzzle",
+  "license": "CC0 1.0 (public domain dedication)",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "notes": "Eurorack-synth themed; specialist knowledge helps. Unmodified .puz.",
+  "meta": {
+   "difficulty": "hard",
+   "themeType": "topical (modular synths)",
+   "clueStyle": "mixed"
+  },
+  "addedAt": "2026-10-12"
+ },
+ {
+  "id": "community-crossculture-1",
+  "file": "crossculture-week1.json",
+  "format": "crossculture",
+  "title": "Cross Culture: South India",
+  "author": "Aakanksha B",
+  "source": "github.com/aakpaak/crossculturepuzzle",
+  "sourceUrl": "https://github.com/aakpaak/crossculturepuzzle",
+  "license": "CC0 1.0 (public domain dedication)",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "notes": "Converted format.",
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "topical (culture)",
+   "clueStyle": "straight"
+  },
+  "addedAt": "2026-10-12"
+ }
 ]

@@ -25,7 +25,7 @@ const $=id=>document.getElementById(id);
 const store={get:k=>{try{return JSON.parse(localStorage.getItem('xw:'+k))}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem('xw:'+k,JSON.stringify(v))}catch(e){}}};
 const COMM=(typeof COMMUNITY_PUZZLES!=='undefined')?COMMUNITY_PUZZLES:[];let tab='orig';
 function allPuzzles(){return PUZZLES.concat(COMM,store.get('imported')||[]);}
-function tabPuzzles(){return tab==='comm'?COMM:PUZZLES.concat(store.get('imported')||[]);}
+function tabPuzzles(){const L=tab==='comm'?COMM.slice():PUZZLES.concat(store.get('imported')||[]);return L.map((p,i)=>[p,i]).sort((x,y)=>String(y[0].date||y[0].addedAt||'').localeCompare(String(x[0].date||x[0].addedAt||''))||y[1]-x[1]).map(x=>x[0]);}
 function save(){if(M)store.set('p:'+M.p.id,S);}
 function fresh(){return {fill:M.cells.map(()=>''),pen:M.cells.map(()=>false),rev:M.cells.map(()=>false),wrong:M.cells.map(()=>false),time:0,done:false,auto:false};}
 // ---------- archive ----------

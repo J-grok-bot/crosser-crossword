@@ -9,6 +9,7 @@ const COMMUNITY_PUZZLES=[
   "sourceUrl": "https://github.com/jamesp/crosswords/blob/main/crosswords/jp-puzzle3.json",
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "addedAt": "2026-10-12",
   "notes": "Converted format; clue enumerations added.",
   "meta": {
    "difficulty": "easy",
@@ -72,6 +73,7 @@ const COMMUNITY_PUZZLES=[
   "sourceUrl": "https://github.com/xoxomodular/themostlymodularcrosswordpuzzle",
   "license": "CC0 1.0 (public domain dedication)",
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "addedAt": "2026-10-12",
   "notes": "Eurorack-synth themed; specialist knowledge helps. Unmodified .puz.",
   "meta": {
    "difficulty": "hard",
@@ -191,6 +193,7 @@ const COMMUNITY_PUZZLES=[
   "sourceUrl": "https://github.com/aakpaak/crossculturepuzzle",
   "license": "CC0 1.0 (public domain dedication)",
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "addedAt": "2026-10-12",
   "notes": "Converted format.",
   "meta": {
    "difficulty": "easy",
