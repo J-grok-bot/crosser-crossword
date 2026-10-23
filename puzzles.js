@@ -735,5 +735,76 @@ const PUZZLES=[
     "5": "House with letters over the door"
    }
   }
+ },
+ {
+  "id": "puzzler-mini-05",
+  "title": "Yoga Class",
+  "author": "Puzzler",
+  "date": "2026-10-24",
+  "grid": [
+   "ARTS#",
+   "ROACH",
+   "COBRA",
+   "STOUT",
+   "#SOME"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "notes": "Mon-level mini by Puzzler. Title nods to the COBRA pose. Real words only; no abbreviations.",
+   "size": "5x5",
+   "wordCount": 10
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Fine ___ (museum wing)",
+    "5": "Kitchen scuttler that bolts when the lights flick on",
+    "7": "Pose that's far less dangerous than it sounds?",
+    "8": "Dark pint with a creamy head",
+    "9": "\"___ Like It Hot\" (Marilyn Monroe film)"
+   },
+   "down": {
+    "1": "Character journeys, to a TV writer",
+    "2": "Family-tree research subject",
+    "3": "Off-limits",
+    "4": "Rugby huddle with a lot of shoving",
+    "6": "Love's opposite"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "ARTS",
+    "5": "ROACH",
+    "7": "COBRA",
+    "8": "STOUT",
+    "9": "SOME"
+   },
+   "down": {
+    "1": "ARCS",
+    "2": "ROOTS",
+    "3": "TABOO",
+    "4": "SCRUM",
+    "6": "HATE"
+   }
+  },
+  "addedDate": "2026-10-23",
+  "clues": {
+   "across": {
+    "1": "Fine ___ (museum wing)",
+    "5": "Kitchen scuttler that bolts when the lights flick on",
+    "7": "Pose that's far less dangerous than it sounds?",
+    "8": "Dark pint with a creamy head",
+    "9": "\"___ Like It Hot\" (Marilyn Monroe film)"
+   },
+   "down": {
+    "1": "Character journeys, to a TV writer",
+    "2": "Family-tree research subject",
+    "3": "Off-limits",
+    "4": "Rugby huddle with a lot of shoving",
+    "6": "Love's opposite"
+   }
+  }
  }
 ];
