@@ -2,8 +2,13 @@
 """Validate puzzle sources (puzzles_src.json) and emit ../puzzles.js.
 Checks: square grid, 180° rotational symmetry, no entries < 3 letters, every white cell checked
 (in both an across and a down entry), connectivity, unique entries, every entry has a clue,
-no unused clues, and every answer appears in a word list (ENABLE or Crossword Nexus Collaborative Word List score>=50) unless listed in 'phrases'."""
+no unused clues, and every answer appears in a word list (ENABLE or Crossword Nexus Collaborative Word List score>=50) unless listed in 'phrases'.
+Also runs tools/quality.py: (a) duplicate answers, (b) shared roots, (c) clue echoing its own/crossing answer,
+(d) reuse vs. earlier live puzzles. For already-live puzzles these print as grandfathered notes (use --strict to fail);
+ingest.py enforces them as hard failures on new puzzles via full_check()."""
 import json,sys,os
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+import quality
 here=os.path.dirname(os.path.abspath(__file__))
 src=json.load(open(os.path.join(here,'puzzles_src.json')))
 words=set()
@@ -84,10 +89,22 @@ def check(p):
     q={k:v for k,v in p.items() if k not in('clues','phrases')};q['clues']=clues
     q.setdefault('meta',{})['wordCount']=len(allw)
     return E,q,len(allw),sum(r.count('#') for r in g)
+def full_check(p,backlog):
+    """Structural check + quality (a)(b)(c) + cross-puzzle reuse (d) against `backlog` (list of live puzzles).
+    Returns (errors, warnings, built, words, blocks, reuse_stats). Used by ingest.py for NEW puzzles (hard fail)."""
+    raw=json.loads(json.dumps(p))
+    E,q,nw,nb=check(raw)
+    QE,QW=quality.within(p)
+    RE,RW,st=quality.reuse(p,quality.backlog_index(backlog,exclude=p.get('id')))
+    return E+QE+RE,QW+RW,q,nw,nb,st
 def main():
-    errs=0;outp=[]
-    for p in src:
+    errs=0;outp=[];strict='--strict' in sys.argv
+    for i,p in enumerate(src):
+        QE,QW=quality.within(p)
+        RE,RW,st=quality.reuse(p,quality.backlog_index(src[:i]))
+        if QE or RE:print(p['id'],'quality (grandfathered; live backlog is append-only):',*QE,*RE,sep='\n   ')
         E,q,nw,nb=check(p)
+        if strict:E=E+QE+RE
         if E:
             errs+=1;print(p['id'],'FAIL');[print('  ',e) for e in E]
         else: print(p['id'],'ok',nw,'words',nb,'blocks')
