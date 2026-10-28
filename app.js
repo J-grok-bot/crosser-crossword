@@ -171,7 +171,7 @@ function getRatings(){return store.get('ratings')||{};}
 function puzzleMeta(p){const m=p.meta||{};return {title:p.title,size:p.grid[0].length+'x'+p.grid.length,difficulty:m.difficulty||'unknown',themeType:m.themeType||'unknown',clueStyle:m.clueStyle||'unknown',wordCount:m.wordCount||null,source:p.source||'original'};}
 function saveRating(p,stars,tags,note){const ps=store.get('p:'+p.id)||{};const R2=getRatings();
   R2[p.id]={puzzleId:p.id,stars,tags:[...tags],note:(note||'').trim(),ratedAt:new Date().toISOString(),solved:!!ps.done,solveTimeSec:ps.time??null,usedReveal:!!(ps.rev&&ps.rev.some(x=>x)),meta:puzzleMeta(p)};
-  store.set('ratings',R2);updCount();}
+  store.set('ratings',R2);updCount();syncRatings();}
 function rateUI(box,p,compact){const R=getRatings(),prev=R[p.id]||{};let stars=prev.stars||0;const tags=new Set(prev.tags||[]);
   box.innerHTML='<div class="stars"></div><div class="tags"></div>'+(compact?'':'<textarea maxlength="500" placeholder="Short note (optional)"></textarea><button class="save">Save rating</button><div class="ok"></div>');
   const st=box.querySelector('.stars');for(let i=1;i<=5;i++){const s=document.createElement('span');s.textContent='★';s.title=i+' star'+(i>1?'s':'');s.onclick=()=>{stars=i;paint();};st.appendChild(s);}
@@ -186,7 +186,24 @@ $('rCancel').onclick=()=>{$('rmodal').classList.add('hidden');if(!M)showArchive(
 function updCount(){const n=Object.keys(getRatings()).length;$('rCount').textContent=n+' rated';}
 $('exportBtn').onclick=()=>{const data={schema:'crosser-ratings/1',exportedAt:new Date().toISOString(),ratings:Object.values(getRatings()),puzzles:allPuzzles().map(p=>Object.assign({id:p.id},puzzleMeta(p)))};
   const b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ratings.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
-buildKbd();updCount();
+// ---------- rating sync (to the build box via ntfy; full snapshots, chunked, fire-and-forget) ----------
+const SYNC_URL='https://ntfy.sh/crosser-r-486c8a1c2475e45c41e7ff5507636f23';
+function rHash(str){let h=5381;for(let i=0;i<str.length;i++)h=((h<<5)+h+str.charCodeAt(i))|0;return (h>>>0).toString(36);}
+let syncPending=null;
+function syncRatings(force){try{
+  const rs=Object.values(getRatings());if(!rs.length)return;
+  const body=JSON.stringify(rs),hash=rHash(body),last=store.get('ratingsSync')||{};
+  const stale=!last.at||Date.now()-last.at>6*3600e3; // keep a fresh copy in ntfy's ~12h cache
+  if(!force&&last.hash===hash&&!stale)return;
+  if(syncPending===hash)return;syncPending=hash;
+  const enc=new TextEncoder(),sentAt=new Date().toISOString(),chunks=[];let cur=[];
+  const pack=(arr,i,n)=>JSON.stringify({schema:'crosser-ratings/1',kind:'snapshot',sentAt,part:i,parts:n,ratings:arr});
+  for(const r of rs){const t=cur.concat([r]);if(cur.length&&enc.encode(pack(t,99,99)).length>3500){chunks.push(cur);cur=[r];}else cur=t;}
+  if(cur.length)chunks.push(cur);
+  const sends=chunks.map((c,i)=>fetch(SYNC_URL,{method:'POST',body:pack(c,i+1,chunks.length),keepalive:true,mode:'cors',headers:{'Content-Type':'text/plain'}}).then(r=>{if(!r.ok)throw 0;}));
+  Promise.all(sends).then(()=>store.set('ratingsSync',{hash,at:Date.now()})).catch(()=>{}).finally(()=>{if(syncPending===hash)syncPending=null;});
+}catch(e){}}
+buildKbd();updCount();setTimeout(()=>syncRatings(),1500);
 function setTab(t){tab=t;$('tabOrig').classList.toggle('on',t==='orig');$('tabComm').classList.toggle('on',t==='comm');
   $('tabSub').textContent=t==='comm'?'Puzzles by other constructors, shared under licenses that allow redistribution. Credits and licenses are shown on each card.':'Original puzzles made for Crosser. Your progress is saved on this device.';showArchive();}
 $('tabOrig').onclick=()=>setTab('orig');$('tabComm').onclick=()=>setTab('comm');

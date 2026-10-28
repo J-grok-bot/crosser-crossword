@@ -66,23 +66,44 @@ Ratings are stored in `localStorage` key `xw:ratings`. The archive's **Export ra
                            "themeType": "starts-with", "clueStyle": "mixed", "wordCount": 76, "source": "original" } } ],
   "puzzles": [ { "id": "...", "title": "...", "size": "...", "difficulty": "...", "themeType": "...", "clueStyle": "...", "wordCount": 76 } ] }
 ```
-Save that file as `/workspace/crossword/ratings.json` so a generator can read it.
+Every save (end-screen **Submit & Home** or the archive **Rate** popup) also syncs automatically: the app POSTs a
+full snapshot of all ratings (same schema, `kind: "snapshot"`, split into <3.5 KB parts) to the private ntfy topic in
+`SYNC_URL` in `app.js`. It is fire-and-forget (fetch `keepalive`), never blocks navigation, and fails silently. On
+app load it re-sends if ratings changed since the last successful sync, or if the last sync is over 6 h old (ntfy
+only caches about 12 h). The Export button still works as a manual backup.
+
+## Ratings pipeline (box side)
+```
+python3 tools/pull_ratings.py      # ntfy -> /workspace/crossword/ratings.json (gitignored, local only)
+python3 tools/ratings_brief.py     # ratings.json + puzzle meta -> /workspace/crossword/ratings_brief.md (gitignored)
+```
+`pull_ratings.py` is idempotent: union by `puzzleId`, newest `ratedAt` wins, and old ratings are never dropped.
+Run it every few hours so nothing ages out of ntfy's cache. Constructors read `ratings_brief.md` before every build.
 
 ## How future generation should use ratings
-1. Load `ratings.json`; join each rating to its puzzle `meta` (and to `puzzles_src.json` for clue text).
-2. Score traits. For each trait value (difficulty, themeType, clueStyle, size, wordCount bucket, each tag),
-   compute a weighted mean of `(stars − 3)`, with weight 1 for each rating (recent ratings ×1.5). Shrink toward 0
-   with a prior: `score = sum / (n + 2)` so one rating doesn't dominate.
-3. Steer the next batch:
-   - Choose size/difficulty/themeType/clueStyle in proportion to `exp(score)` (keep ≥15% exploration of other options).
-   - Tags: `too easy` → raise difficulty one step (more misdirection/`?` clues, fewer fill-in-blanks);
-     `too hard` → lower it; `obscure fill` → shrink the word list (higher frequency cutoff) and add flagged words to the ban list;
-     `clever clues` / `boring clues` → increase/decrease the share of wordplay clues (target 25–40% when well received);
-     `great theme` / `weak theme` → favor/avoid that themeType, and require a revealer when weak.
-   - Solve time vs. difficulty: if median `solveTimeSec` on “hard” is below the “medium” median, recalibrate labels.
-   - `usedReveal: true` with low stars usually means a bad crossing: note the puzzle's rare-word crossings and avoid similar ones.
-4. Read free-text notes for specific complaints (a named word or clue) and add them to the ban list / clue notes.
-5. Record what was changed in the new puzzle's `meta.notes` so the effect can be measured in the next ratings export.
+Asymmetric: **steer away from what made bad puzzles bad more than you try to replicate good ones.**
+Negative signals (1-2★, negative tags) weigh about **2x** positive ones (3★ counts 0.5x; the last 14 days count x1.5).
+When avoidance and replication conflict, avoidance wins. **Diversity is preserved**: feedback removes flaws, not variety.
+
+1. **AVOID targets specific flaws and execution problems, never whole categories.** Examples: obscure fill and
+   crosswordese, flat or boring clues, a weak or loose theme (themers that don't follow the rule exactly, an
+   unclear payoff), difficulty that misses its label, unfair crossings (Reveal used), and glue-heavy grids.
+   Tag fixes: `too easy` → more misdirection and `?` clues, fewer fill-in-blanks; `too hard` → fair crossings for
+   rare words and names; `obscure fill` → higher frequency cutoff, rework corners, add flagged words to the stoplist;
+   `boring clues` → livelier angles, 25-40% wordplay; `weak theme` → tighten execution and consider a revealer.
+2. **A single low-rated puzzle never bans its theme type, size, difficulty or style.** Fix the flaw it showed.
+   A category is disfavored only if it is **consistently low across 3+ ratings** (mean ≤2.5★, ≥2/3 of them low),
+   and even then it is only **down-weighted** (used about half as often). It is never excluded.
+3. **Lean toward** the *qualities* behind 4-5★ ratings (tight themes, clever but fair clues, smooth fill). This is a
+   smaller signal, and **positive ratings must not narrow the mix toward copies**: don't reuse a theme mechanism,
+   clue gimmick or grid pattern just because it rated well.
+4. **Diversity (required).** `ratings_brief.md` lists the mix of the last ~10 puzzles (theme mechanisms, difficulty,
+   clue styles, sizes, grid shapes and word/block counts). Vary it: don't repeat the same theme mechanism, clue style or grid
+   shape back-to-back; a full-size theme mechanism should differ from the previous two; if ≥70% of recent puzzles
+   share a difficulty or clue style, change it soon. About 1 puzzle in 5 may be **exploratory**, using an untried
+   mechanism, style or shape, held to the same quality bar.
+5. Read free-text notes for specific complaints (a named word or clue) and add them to the stoplist or clue notes.
+6. Record in the new puzzle's `meta.notes` which brief items were addressed, so the effect shows in later ratings.
 
 ## Generator
 The fill engine lives in `/workspace/gen` (box scratch): `fill3.py` (arc-consistent backtracking filler over a
