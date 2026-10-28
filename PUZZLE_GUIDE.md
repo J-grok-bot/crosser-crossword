@@ -60,7 +60,7 @@ Ratings are stored in `localStorage` key `xw:ratings`. The archive's **Export ra
 
 ```json
 { "schema": "crosser-ratings/1", "exportedAt": "...",
-  "ratings": [ { "puzzleId": "...", "stars": 4, "tags": ["clever clues"], "note": "...",
+  "ratings": [ { "puzzleId": "...", "deviceId": "d-…", "stars": 4, "tags": ["clever clues"], "note": "...",
                  "ratedAt": "...", "solved": true, "solveTimeSec": 312, "usedReveal": false,
                  "meta": { "title": "...", "size": "15x15", "difficulty": "medium",
                            "themeType": "starts-with", "clueStyle": "mixed", "wordCount": 76, "source": "original" } } ],
@@ -72,18 +72,28 @@ full snapshot of all ratings (same schema, `kind: "snapshot"`, split into <3.5 K
 app load it re-sends if ratings changed since the last successful sync, or if the last sync is over 6 h old (ntfy
 only caches about 12 h). The Export button still works as a manual backup.
 
+**Devices.** Each browser/device generates a persistent random id on first use (`localStorage` key `xw:deviceId`,
+`d-` + 24 hex chars). It is stamped on every rating and on every snapshot (`"deviceId"` at the top level of the
+message), so ratings from a phone, a laptop and a tablet are all counted. Snapshots or `ratings.json` entries from
+older app versions with no id are treated as one legacy device (`"legacy"`).
+
 ## Ratings pipeline (box side)
 ```
 python3 tools/pull_ratings.py      # ntfy -> /workspace/crossword/ratings.json (gitignored, local only)
 python3 tools/ratings_brief.py     # ratings.json + puzzle meta -> /workspace/crossword/ratings_brief.md (gitignored)
 ```
-`pull_ratings.py` is idempotent: union by `puzzleId`, newest `ratedAt` wins, and old ratings are never dropped.
+`pull_ratings.py` is idempotent and keys ratings by **(deviceId, puzzleId)**. Within one device the newest `ratedAt`
+wins (re-rating a puzzle edits that device's rating). Across devices **every rating is kept**; two devices rating the
+same puzzle are two ratings. Old `ratings.json` files (keyed by puzzle only) are migrated in place with their entries
+assigned to the legacy device, and ratings are never dropped. The only fold is a legacy copy whose puzzleId and
+millisecond `ratedAt` exactly match a device-stamped rating: that is the same rating re-sent by an updated app.
 Run it every few hours so nothing ages out of ntfy's cache. Constructors read `ratings_brief.md` before every build.
 
 ## How future generation should use ratings
 Asymmetric: **steer away from what made bad puzzles bad more than you try to replicate good ones.**
 Negative signals (1-2★, negative tags) weigh about **2x** positive ones (3★ counts 0.5x; the last 14 days count x1.5).
-When avoidance and replication conflict, avoidance wins. **Diversity is preserved**: feedback removes flaws, not variety.
+Every device's rating counts as its own rating in all weighting and aggregation (tag weights, category means,
+per-puzzle averages and `n`). When avoidance and replication conflict, avoidance wins. **Diversity is preserved**: feedback removes flaws, not variety.
 
 1. **AVOID targets specific flaws and execution problems, never whole categories.** Examples: obscure fill and
    crosswordese, flat or boring clues, a weak or loose theme (themers that don't follow the rule exactly, an

@@ -8,6 +8,8 @@ Principles (see PUZZLE_GUIDE.md "How future generation should use ratings"):
   * AVOID targets specific flaws / execution problems, never whole categories. A category (theme type, difficulty,
     clue style, size) is only down-weighted when it is consistently low across 3+ ratings, and is never excluded.
   * Diversity: positive ratings must not narrow the mix; the brief reports the recent mix and asks for variety.
+  * Multi-device: ratings.json holds one rating per (deviceId, puzzleId). Every device's rating counts as its own
+    rating everywhere (weights, tag totals, category means, per-puzzle averages, n). Nothing is de-duplicated by puzzle.
 The brief describes traits only (no answers or grid contents are printed).
 """
 import json, os, re, sys, argparse, datetime, collections
@@ -99,13 +101,16 @@ def main():
         return {'size': m.get('size', '?'), 'difficulty': m.get('difficulty', 'unknown'), 'themeType': m.get('themeType', 'unknown'),
                 'themeFamily': family(m.get('themeType')), 'clueStyle': m.get('clueStyle', 'unknown'), 'wordCount': m.get('wordCount'),
                 'blocks': '?', 'qClues%': '?', 'blankClues%': '?', 'abbrClues%': '?', 'threeLetter%': '?', 'longEntries(8+)': '?'}
+    dev = lambda r: 'device ' + (r.get('deviceId') or 'legacy')[-4:] if (r.get('deviceId') or 'legacy') != 'legacy' else 'legacy device'
+    ndev = len({r.get('deviceId') or 'legacy' for r in ratings})
     title = lambda r: (puzzles.get(r['puzzleId'], {}).get('title') or (r.get('meta') or {}).get('title') or r['puzzleId'])
     neg = [r for r in ratings if r['stars'] <= 2]
     mid = [r for r in ratings if r['stars'] == 3]
     pos = [r for r in ratings if r['stars'] >= 4]
     L = [f"# Crosser ratings brief (for constructors only)",
-         f"Generated {now.astimezone().strftime('%Y-%m-%d %H:%M %Z')} from {len(ratings)} rating(s): {len(neg)} low (1-2★), {len(mid)} neutral (3★), {len(pos)} high (4-5★).",
+         f"Generated {now.astimezone().strftime('%Y-%m-%d %H:%M %Z')} from {len(ratings)} rating(s) across {ndev} device(s): {len(neg)} low (1-2★), {len(mid)} neutral (3★), {len(pos)} high (4-5★).",
          f"Weighting: low ratings and negative tags count {NEG_W:g}x, positive {POS_W:g}x, 3★ {NEUTRAL_W:g}x; ratings from the last 14 days x1.5.",
+         "Every device's rating counts separately (two devices rating one puzzle = two ratings).",
          "Priority: fix what made low-rated puzzles bad. Do not clone well-rated ones. Keep the mix varied (see Diversity).", ""]
 
     # ---------------- AVOID ----------------
@@ -121,14 +126,14 @@ def main():
         if tagw:
             L += ["### Flagged flaws (weighted)", ""]
             for t, w in tagw.most_common():
-                where = '; '.join(f"“{title(r)}” ({r['stars']}★, {tr(r)['size']}, {tr(r)['difficulty']}, {tr(r)['themeFamily']})" for r in tagp[t])
+                where = '; '.join(f"“{title(r)}” ({r['stars']}★ {dev(r)}, {tr(r)['size']}, {tr(r)['difficulty']}, {tr(r)['themeFamily']})" for r in tagp[t])
                 L += [f"- **{t}** (weight {w:.1f}, {len(tagp[t])}×): {NEG_TAGS[t]}", f"  - Seen on: {where}"]
             L.append("")
         if neg:
             L += ["### Low-rated puzzles: what to learn (execution, not category)", ""]
             for r in sorted(neg, key=lambda r: (r['stars'], r['ratedAt'])):
                 t = tr(r)
-                L.append(f"- **“{title(r)}”** `{r['puzzleId']}`: {r['stars']}★" + (f", tags: {', '.join(r.get('tags') or [])}" if r.get('tags') else ", no tags"))
+                L.append(f"- **“{title(r)}”** `{r['puzzleId']}`: {r['stars']}★ ({dev(r)})" + (f", tags: {', '.join(r.get('tags') or [])}" if r.get('tags') else ", no tags"))
                 if r.get('note'): L.append(f"  - Solver note: “{r['note']}”")
                 L.append(f"  - Traits: {fmt_traits(t)}")
                 hints = []
@@ -141,6 +146,18 @@ def main():
                 if not r.get('tags') and not r.get('note'): hints.append('no reason given: compare its measured traits with well-rated puzzles of the same size and fix the outliers; do NOT ban its theme type or size')
                 if hints: L.append("  - Likely causes: " + '; '.join(hints))
             L.append("")
+        # per-puzzle aggregate over ALL ratings from all devices
+        byp = collections.defaultdict(list)
+        for r in ratings: byp[r['puzzleId']].append(r)
+        L += ["### Per-puzzle averages (all ratings from all devices)", ""]
+        for pid, rs in sorted(byp.items(), key=lambda kv: (sum(r['stars'] for r in kv[1]) / len(kv[1]), kv[0])):
+            mean = sum(r['stars'] for r in rs) / len(rs)
+            wsum = sum(weight(r, now) for r in rs); wmean = sum(weight(r, now) * r['stars'] for r in rs) / wsum
+            lows = sum(1 for r in rs if r['stars'] <= 2)
+            L.append(f"- “{title(rs[0])}” `{pid}`: n={len(rs)} from {len({r.get('deviceId') or 'legacy' for r in rs})} device(s), "
+                     f"mean {mean:.1f}★ (weighted {wmean:.1f}★, lows count {NEG_W:g}x), stars {sorted(r['stars'] for r in rs)}, {lows} low"
+                     + (" (devices disagree: treat the low rating's flaws as real)" if lows and lows < len(rs) else ""))
+        L.append("")
         # category down-weighting: only consistent lows across 3+ ratings
         L += ["### Category down-weighting (only consistent lows across 3+ ratings; never exclude)", ""]
         flagged = False
@@ -164,7 +181,7 @@ def main():
         pt = collections.Counter(t for r in pos for t in (r.get('tags') or []) if t in POS_TAGS)
         if pt: L += [f"- Valued qualities: " + '; '.join(f"{POS_TAGS[t]} ({n}×)" for t, n in pt.most_common())]
         for r in sorted(pos, key=lambda r: -r['stars']):
-            L.append(f"- “{title(r)}” {r['stars']}★" + (f" ({', '.join(r.get('tags') or [])})" if r.get('tags') else '') + (f": “{r['note']}”" if r.get('note') else ''))
+            L.append(f"- “{title(r)}” {r['stars']}★ ({dev(r)})" + (f" ({', '.join(r.get('tags') or [])})" if r.get('tags') else '') + (f": “{r['note']}”" if r.get('note') else ''))
         L += ["- Carry over the *quality* (tight themes, fair misdirection, clean fill). Do NOT reuse the same theme mechanism, clue gimmick or grid pattern just because it rated well.", ""]
 
     # ---------------- DIVERSITY ----------------

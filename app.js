@@ -168,9 +168,13 @@ $('fileIn').onchange=async e=>{const f=e.target.files[0];if(!f)return;
 // ---------- ratings ----------
 const TAGS=['fun','great theme','clever clues','smooth fill','too easy','too hard','obscure fill','boring clues','weak theme'];
 function getRatings(){return store.get('ratings')||{};}
+function deviceId(){let id=store.get('deviceId');if(typeof id==='string'&&/^d-[0-9a-z]{8,}$/.test(id))return id;
+  try{const a=new Uint8Array(12);crypto.getRandomValues(a);id='d-'+[...a].map(b=>b.toString(16).padStart(2,'0')).join('');}
+  catch(e){id='d-'+(Date.now().toString(36)+Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2)).slice(0,24);}
+  store.set('deviceId',id);return id;}
 function puzzleMeta(p){const m=p.meta||{};return {title:p.title,size:p.grid[0].length+'x'+p.grid.length,difficulty:m.difficulty||'unknown',themeType:m.themeType||'unknown',clueStyle:m.clueStyle||'unknown',wordCount:m.wordCount||null,source:p.source||'original'};}
 function saveRating(p,stars,tags,note){const ps=store.get('p:'+p.id)||{};const R2=getRatings();
-  R2[p.id]={puzzleId:p.id,stars,tags:[...tags],note:(note||'').trim(),ratedAt:new Date().toISOString(),solved:!!ps.done,solveTimeSec:ps.time??null,usedReveal:!!(ps.rev&&ps.rev.some(x=>x)),meta:puzzleMeta(p)};
+  R2[p.id]={puzzleId:p.id,deviceId:deviceId(),stars,tags:[...tags],note:(note||'').trim(),ratedAt:new Date().toISOString(),solved:!!ps.done,solveTimeSec:ps.time??null,usedReveal:!!(ps.rev&&ps.rev.some(x=>x)),meta:puzzleMeta(p)};
   store.set('ratings',R2);updCount();syncRatings();}
 function rateUI(box,p,compact){const R=getRatings(),prev=R[p.id]||{};let stars=prev.stars||0;const tags=new Set(prev.tags||[]);
   box.innerHTML='<div class="stars"></div><div class="tags"></div>'+(compact?'':'<textarea maxlength="500" placeholder="Short note (optional)"></textarea><button class="save">Save rating</button><div class="ok"></div>');
@@ -191,13 +195,13 @@ const SYNC_URL='https://ntfy.sh/crosser-r-486c8a1c2475e45c41e7ff5507636f23';
 function rHash(str){let h=5381;for(let i=0;i<str.length;i++)h=((h<<5)+h+str.charCodeAt(i))|0;return (h>>>0).toString(36);}
 let syncPending=null;
 function syncRatings(force){try{
-  const rs=Object.values(getRatings());if(!rs.length)return;
+  const dev=deviceId(),rs=Object.values(getRatings()).map(r=>Object.assign({},r,{deviceId:dev}));if(!rs.length)return;
   const body=JSON.stringify(rs),hash=rHash(body),last=store.get('ratingsSync')||{};
   const stale=!last.at||Date.now()-last.at>6*3600e3; // keep a fresh copy in ntfy's ~12h cache
   if(!force&&last.hash===hash&&!stale)return;
   if(syncPending===hash)return;syncPending=hash;
   const enc=new TextEncoder(),sentAt=new Date().toISOString(),chunks=[];let cur=[];
-  const pack=(arr,i,n)=>JSON.stringify({schema:'crosser-ratings/1',kind:'snapshot',sentAt,part:i,parts:n,ratings:arr});
+  const pack=(arr,i,n)=>JSON.stringify({schema:'crosser-ratings/1',kind:'snapshot',deviceId:dev,sentAt,part:i,parts:n,ratings:arr});
   for(const r of rs){const t=cur.concat([r]);if(cur.length&&enc.encode(pack(t,99,99)).length>3500){chunks.push(cur);cur=[r];}else cur=t;}
   if(cur.length)chunks.push(cur);
   const sends=chunks.map((c,i)=>fetch(SYNC_URL,{method:'POST',body:pack(c,i+1,chunks.length),keepalive:true,mode:'cors',headers:{'Content-Type':'text/plain'}}).then(r=>{if(!r.ok)throw 0;}));
