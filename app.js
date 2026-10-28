@@ -109,8 +109,11 @@ function back(){if(S.done||paused)return;
   render();save();}
 function checkSolved(){if(!allFilled())return;
   if(M.cells.every((c,i)=>c.blk||S.fill[i]===c.ans)){S.done=true;S.pen=S.pen.map(()=>false);stopTimer();save();render();
-    $('mText').textContent=`You solved “${M.p.title}” in ${fmt(S.time)}.`+(S.rev.some(x=>x)?' (with some help)':'');rateUI($('rateBox'),M.p);$('modal').classList.remove('hidden');}
-  else if(!S.warned){S.warned=true;$('rateBox').innerHTML='';$('mTitle').textContent='Almost there';$('mText').textContent='The grid is full, but at least one square is incorrect. Keep trying!';$('mClose').textContent='Keep trying';$('modal').classList.remove('hidden');}}
+    showDone();}
+  else if(!S.warned){S.warned=true;rateGet=null;$('rateBox').innerHTML='';$('mTitle').textContent='Almost there';$('mText').textContent='The grid is full, but at least one square is incorrect.';$('mClose').classList.remove('hidden');$('mDone').classList.add('hidden');$('modal').classList.remove('hidden');}}
+let rateGet=null;
+function showDone(){$('mTitle').textContent='Solved!';$('mText').textContent=`${fmt(S.time)}`+(S.rev.some(x=>x)?' · with help':'')+' · Rate it?';
+  rateGet=rateUI($('rateBox'),M.p,true);$('mClose').classList.add('hidden');$('mDone').classList.remove('hidden');$('modal').classList.remove('hidden');}
 // ---------- check / reveal / clear ----------
 function scope(s){return s==='cell'?[cur]:s==='word'?word().cells:M.cells.map((c,i)=>c.blk?-1:i).filter(i=>i>=0);}
 function act(a){if(!M)return;const [k,s]=a.split('-');
@@ -152,8 +155,11 @@ $('homeBtn').onclick=()=>{save();showArchive();};
 document.querySelectorAll('.menu').forEach(m=>m.querySelector('button').onclick=e=>{e.stopPropagation();const o=m.classList.contains('open');document.querySelectorAll('.menu').forEach(x=>x.classList.remove('open'));if(!o)m.classList.add('open');});
 document.addEventListener('click',()=>document.querySelectorAll('.menu').forEach(x=>x.classList.remove('open')));
 document.querySelectorAll('.dd a').forEach(a=>a.onclick=()=>{act(a.dataset.act);focusIn();});
-$('mClose').onclick=()=>{$('modal').classList.add('hidden');$('mTitle').textContent='Congratulations!';$('mClose').textContent='Admire puzzle';focusIn();};
-$('mArchive').onclick=()=>{$('modal').classList.add('hidden');$('mTitle').textContent='Congratulations!';showArchive();};
+$('mClose').onclick=()=>{$('modal').classList.add('hidden');focusIn();};
+$('mDone').onclick=()=>{const p=M&&M.p;if(p&&rateGet){const r=rateGet();if(r.stars)saveRating(p,r.stars,r.tags,r.note);}rateGet=null;$('modal').classList.add('hidden');save();showArchive();};
+$('modal').addEventListener('click',e=>{if(e.target===$('modal')&&$('mDone').classList.contains('hidden')){$('modal').classList.add('hidden');focusIn();}});
+function navClue(back){if(!M||paused)return;const ws=wordsInOrder();if(!ws.length)return;const k=ws.indexOf(word());const nw=ws[(k+(back?-1:1)+ws.length)%ws.length];dir=nw.dir;cur=firstEmpty(nw);render();focusIn();}
+for(const [id,b] of [['prevClue',true],['nextClue',false]]){const el=$(id);el.addEventListener('pointerdown',e=>{e.preventDefault();navClue(b);});el.addEventListener('click',e=>{if(e.detail===0)navClue(b);});}
 window.addEventListener('beforeunload',save);
 $('fileIn').onchange=async e=>{const f=e.target.files[0];if(!f)return;
   try{const p=await importFile(f);const im=(store.get('imported')||[]).filter(x=>x.id!==p.id);im.push(p);store.set('imported',im);$('importMsg').textContent='Loaded “'+p.title+'”.';showArchive();openPuzzle(p.id);}
@@ -163,16 +169,18 @@ $('fileIn').onchange=async e=>{const f=e.target.files[0];if(!f)return;
 const TAGS=['fun','great theme','clever clues','smooth fill','too easy','too hard','obscure fill','boring clues','weak theme'];
 function getRatings(){return store.get('ratings')||{};}
 function puzzleMeta(p){const m=p.meta||{};return {title:p.title,size:p.grid[0].length+'x'+p.grid.length,difficulty:m.difficulty||'unknown',themeType:m.themeType||'unknown',clueStyle:m.clueStyle||'unknown',wordCount:m.wordCount||null,source:p.source||'original'};}
-function rateUI(box,p){const R=getRatings(),prev=R[p.id]||{};let stars=prev.stars||0;const tags=new Set(prev.tags||[]);
-  box.innerHTML='<div class="stars"></div><div class="tags"></div><textarea maxlength="500" placeholder="Short note (optional)"></textarea><button class="save">Save rating</button><div class="ok"></div>';
+function saveRating(p,stars,tags,note){const ps=store.get('p:'+p.id)||{};const R2=getRatings();
+  R2[p.id]={puzzleId:p.id,stars,tags:[...tags],note:(note||'').trim(),ratedAt:new Date().toISOString(),solved:!!ps.done,solveTimeSec:ps.time??null,usedReveal:!!(ps.rev&&ps.rev.some(x=>x)),meta:puzzleMeta(p)};
+  store.set('ratings',R2);updCount();}
+function rateUI(box,p,compact){const R=getRatings(),prev=R[p.id]||{};let stars=prev.stars||0;const tags=new Set(prev.tags||[]);
+  box.innerHTML='<div class="stars"></div><div class="tags"></div>'+(compact?'':'<textarea maxlength="500" placeholder="Short note (optional)"></textarea><button class="save">Save rating</button><div class="ok"></div>');
   const st=box.querySelector('.stars');for(let i=1;i<=5;i++){const s=document.createElement('span');s.textContent='★';s.title=i+' star'+(i>1?'s':'');s.onclick=()=>{stars=i;paint();};st.appendChild(s);}
   const paint=()=>[...st.children].forEach((s,i)=>s.classList.toggle('on',i<stars));paint();
   const tg=box.querySelector('.tags');for(const t of TAGS){const s=document.createElement('span');s.textContent=t;s.classList.toggle('on',tags.has(t));s.onclick=()=>{tags.has(t)?tags.delete(t):tags.add(t);s.classList.toggle('on');};tg.appendChild(s);}
+  if(compact)return ()=>({stars,tags,note:prev.note||''});
   const ta=box.querySelector('textarea');ta.value=prev.note||'';ta.addEventListener('keydown',e=>e.stopPropagation());
   box.querySelector('.save').onclick=()=>{if(!stars){box.querySelector('.ok').textContent='Pick 1–5 stars first.';return;}
-    const ps=store.get('p:'+p.id)||{};const R2=getRatings();
-    R2[p.id]={puzzleId:p.id,stars,tags:[...tags],note:ta.value.trim(),ratedAt:new Date().toISOString(),solved:!!ps.done,solveTimeSec:ps.time??null,usedReveal:!!(ps.rev&&ps.rev.some(x=>x)),meta:puzzleMeta(p)};
-    store.set('ratings',R2);box.querySelector('.ok').textContent='Thanks! Rating saved.';updCount();};}
+    saveRating(p,stars,tags,ta.value);box.querySelector('.ok').textContent='Thanks! Rating saved.';};}
 function openRate(p){$('rTitle').textContent='Rate “'+p.title+'”';rateUI($('rateBox2'),p);$('rmodal').classList.remove('hidden');}
 $('rCancel').onclick=()=>{$('rmodal').classList.add('hidden');if(!M)showArchive();};
 function updCount(){const n=Object.keys(getRatings()).length;$('rCount').textContent=n+' rated';}

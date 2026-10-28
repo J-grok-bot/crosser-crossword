@@ -47,6 +47,7 @@
 <main id="game" class="game hidden">
   <section class="left">
     <div id="cluebar" class="cluebar"><span id="cbNum"></span><span id="cbText"></span></div>
+    <div id="cluenav" class="cluenav"><button id="prevClue" type="button" aria-label="Previous clue">&#8249;</button><button id="nextClue" type="button" aria-label="Next clue">&#8250;</button></div>
     <div id="gridWrap" class="gridwrap"><div id="grid" class="grid"></div>
       <div id="pauseOverlay" class="pause hidden"><div>Paused<br><button id="resumeBtn">Resume</button></div></div>
     </div>
@@ -61,11 +62,10 @@
 <div id="rmodal" class="modal hidden"><div class="card"><h2 id="rTitle">Rate this puzzle</h2><div id="rateBox2" class="rate"></div>
   <div class="mbtns"><button id="rCancel">Close</button></div></div></div>
 <div id="modal" class="modal hidden"><div class="card">
-  <div class="badge">★</div>
-  <h2 id="mTitle">Congratulations!</h2>
+  <h2 id="mTitle">Solved!</h2>
   <p id="mText"></p>
   <div id="rateBox" class="rate"></div>
-  <div class="mbtns"><button id="mClose">Admire puzzle</button><button id="mArchive" class="primary">More puzzles</button></div>
+  <div class="mbtns"><button id="mClose" class="hidden">Keep trying</button><button id="mDone" class="primary">Submit &amp; Home</button></div>
 </div></div>
 <input id="hiddenInput" autocomplete="off" autocapitalize="characters" class="hiddenin">
 <script src="puzzles.js"></script>
