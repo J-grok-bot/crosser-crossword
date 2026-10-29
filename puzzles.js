@@ -1531,5 +1531,249 @@ const PUZZLES=[
     "6": "Raise one's voice"
    }
   }
+ },
+ {
+  "id": "puzzler-11-03",
+  "title": "Herd Mentality",
+  "author": "Puzzler",
+  "date": "2026-10-29",
+  "grid": [
+   "##BOA##STAT",
+   "#HOURS#KILO",
+   "BEARMINIMUM",
+   "OAT#SPAREME",
+   "BRED#SIT###",
+   "#DREW#LENS#",
+   "###LIP#DOLE",
+   "ESCAPED#HAY",
+   "GNUYEARSEVE",
+   "GATE#KOHLS#",
+   "SPED##PEP##"
+  ],
+  "meta": {
+   "difficulty": "medium",
+   "themeType": "homophone",
+   "clueStyle": "mixed",
+   "source": "original",
+   "notes": "11x11 themed midi by Puzzler. Familiar phrases with a homophone animal swapped in: BARE MINIMUM -> BEAR MINIMUM, NEW YEAR'S EVE -> GNU YEAR'S EVE. Revealer: HEARD (8-Down, sounds like HERD) crosses 11-Across. Fill from Crossword Nexus CWL 60+; no abbreviations.",
+   "size": "11x11",
+   "wordCount": 42
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Feathery wrap for a showgirl",
+    "4": "\"Right now!\" in the ER",
+    "8": "Info on a shop door sign",
+    "10": "Thousand-gram unit, casually",
+    "11": "Least amount of honey a grizzly will settle for?",
+    "13": "Grain in a granola bar",
+    "14": "\"Please, no more details!\"",
+    "15": "Raised, as show dogs",
+    "17": "Command for a good boy",
+    "18": "Sketched",
+    "20": "Camera part that zooms",
+    "23": "Smart-mouthed sass",
+    "25": "Hand (out), sparingly",
+    "27": "Got away",
+    "31": "Contents of a farm bale",
+    "32": "Countdown party for wildebeests?",
+    "34": "Airport waiting area",
+    "35": "Department store with an apostrophe in its name",
+    "36": "Went too fast on the highway",
+    "37": "Get-up-and-go"
+   },
+   "down": {
+    "1": "Straw hat for a barbershop quartet",
+    "2": "\"___ Town\" (Thornton Wilder play)",
+    "3": "Where biceps bulge",
+    "4": "Avoided, as a touchy issue",
+    "5": "It flies when you're having fun",
+    "6": "Grad back for homecoming",
+    "7": "Hefty read",
+    "8": "Took in by ear ... or, said aloud, a group of animals like the ones in 11- and 32-Across",
+    "9": "Small tastes of tea",
+    "11": "Bounce on the waves, as a buoy",
+    "12": "Hit perfectly",
+    "16": "Like a flight that got pushed back",
+    "19": "Clean with a cloth",
+    "21": "\"Thanks for ___!\" (sarcastic jab)",
+    "22": "Poles and Czechs, e.g.",
+    "24": "Summit",
+    "26": "Hurricane's calm center",
+    "27": "Omelet ingredients",
+    "28": "Piece of cake ... or a ginger cookie?",
+    "29": "Like puppies and kittens",
+    "30": "Mic ___ (triumphant gesture)",
+    "33": "\"Thar ___ blows!\""
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "BOA",
+    "4": "STAT",
+    "8": "HOURS",
+    "10": "KILO",
+    "11": "BEARMINIMUM",
+    "13": "OAT",
+    "14": "SPAREME",
+    "15": "BRED",
+    "17": "SIT",
+    "18": "DREW",
+    "20": "LENS",
+    "23": "LIP",
+    "25": "DOLE",
+    "27": "ESCAPED",
+    "31": "HAY",
+    "32": "GNUYEARSEVE",
+    "34": "GATE",
+    "35": "KOHLS",
+    "36": "SPED",
+    "37": "PEP"
+   },
+   "down": {
+    "1": "BOATER",
+    "2": "OUR",
+    "3": "ARMS",
+    "4": "SKIRTED",
+    "5": "TIME",
+    "6": "ALUM",
+    "7": "TOME",
+    "8": "HEARD",
+    "9": "SIPS",
+    "11": "BOB",
+    "12": "NAIL",
+    "16": "DELAYED",
+    "19": "WIPE",
+    "21": "NOHELP",
+    "22": "SLAVS",
+    "24": "PEAK",
+    "26": "EYE",
+    "27": "EGGS",
+    "28": "SNAP",
+    "29": "CUTE",
+    "30": "DROP",
+    "33": "SHE"
+   }
+  },
+  "addedDate": "2026-10-29",
+  "clues": {
+   "across": {
+    "1": "Feathery wrap for a showgirl",
+    "4": "\"Right now!\" in the ER",
+    "8": "Info on a shop door sign",
+    "10": "Thousand-gram unit, casually",
+    "11": "Least amount of honey a grizzly will settle for?",
+    "13": "Grain in a granola bar",
+    "14": "\"Please, no more details!\"",
+    "15": "Raised, as show dogs",
+    "17": "Command for a good boy",
+    "18": "Sketched",
+    "20": "Camera part that zooms",
+    "23": "Smart-mouthed sass",
+    "25": "Hand (out), sparingly",
+    "27": "Got away",
+    "31": "Contents of a farm bale",
+    "32": "Countdown party for wildebeests?",
+    "34": "Airport waiting area",
+    "35": "Department store with an apostrophe in its name",
+    "36": "Went too fast on the highway",
+    "37": "Get-up-and-go"
+   },
+   "down": {
+    "1": "Straw hat for a barbershop quartet",
+    "2": "\"___ Town\" (Thornton Wilder play)",
+    "3": "Where biceps bulge",
+    "4": "Avoided, as a touchy issue",
+    "5": "It flies when you're having fun",
+    "6": "Grad back for homecoming",
+    "7": "Hefty read",
+    "8": "Took in by ear ... or, said aloud, a group of animals like the ones in 11- and 32-Across",
+    "9": "Small tastes of tea",
+    "11": "Bounce on the waves, as a buoy",
+    "12": "Hit perfectly",
+    "16": "Like a flight that got pushed back",
+    "19": "Clean with a cloth",
+    "21": "\"Thanks for ___!\" (sarcastic jab)",
+    "22": "Poles and Czechs, e.g.",
+    "24": "Summit",
+    "26": "Hurricane's calm center",
+    "27": "Omelet ingredients",
+    "28": "Piece of cake ... or a ginger cookie?",
+    "29": "Like puppies and kittens",
+    "30": "Mic ___ (triumphant gesture)",
+    "33": "\"Thar ___ blows!\""
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-08",
+  "title": "Desert Crossing",
+  "author": "Puzzler",
+  "date": "2026-10-29",
+  "grid": [
+   "MARS#",
+   "ALOHA",
+   "CAMEL",
+   "SMALL",
+   "#ONLY"
+  ],
+  "meta": {
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "notes": "Themeless 5x5 mini by Puzzler; the title nods to 7-Across. Fill from Crossword Nexus CWL 60+; no answer repeats the live backlog.",
+   "size": "5x5",
+   "wordCount": 10
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Red planet where rovers roam",
+    "5": "Island greeting that works for hello and goodbye",
+    "7": "Desert ride with a built-in water bottle, supposedly?",
+    "8": "What a \"tall\" coffee actually is, confusingly",
+    "9": "___ child (kid without siblings)"
+   },
+   "down": {
+    "1": "Apple laptops, casually",
+    "2": "San Antonio mission everyone is told to remember",
+    "3": "Like the numerals on many a clock face",
+    "4": "Hermit crab's secondhand home",
+    "6": "Friend in a fight"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "MARS",
+    "5": "ALOHA",
+    "7": "CAMEL",
+    "8": "SMALL",
+    "9": "ONLY"
+   },
+   "down": {
+    "1": "MACS",
+    "2": "ALAMO",
+    "3": "ROMAN",
+    "4": "SHELL",
+    "6": "ALLY"
+   }
+  },
+  "addedDate": "2026-10-29",
+  "clues": {
+   "across": {
+    "1": "Red planet where rovers roam",
+    "5": "Island greeting that works for hello and goodbye",
+    "7": "Desert ride with a built-in water bottle, supposedly?",
+    "8": "What a \"tall\" coffee actually is, confusingly",
+    "9": "___ child (kid without siblings)"
+   },
+   "down": {
+    "1": "Apple laptops, casually",
+    "2": "San Antonio mission everyone is told to remember",
+    "3": "Like the numerals on many a clock face",
+    "4": "Hermit crab's secondhand home",
+    "6": "Friend in a fight"
+   }
+  }
  }
 ];
