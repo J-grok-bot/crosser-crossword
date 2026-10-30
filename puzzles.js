@@ -1775,5 +1775,249 @@ const PUZZLES=[
     "6": "Friend in a fight"
    }
   }
+ },
+ {
+  "id": "puzzler-11-04",
+  "title": "Heads Will Roll",
+  "author": "Puzzler",
+  "date": "2026-10-30",
+  "grid": [
+   "#SCANS#POPE",
+   "STATUE#AXEL",
+   "CARETACTICS",
+   "AVA###REDS#",
+   "MET#LEONE##",
+   "###BIGOT###",
+   "##MELON#OFF",
+   "#HAHA###LEI",
+   "PINECHILLER",
+   "ARIA#AVOIDS",
+   "LEAD#TYPES#"
+  ],
+  "meta": {
+   "difficulty": "hard",
+   "themeType": "removed-letter",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "notes": "11x11 themed midi by Puzzler for Halloween weekend. Removed-letter theme (untried mechanism per ratings_brief): spooky phrases lose their first letter - SCARE TACTICS -> CARE TACTICS, SPINE-CHILLER -> PINE CHILLER. Revealer BEHEAD (19-Down) crosses 26-Across. Hard difficulty and wordplay-heavy clues vary the recent medium/easy, mixed-style run. Fill from Crossword Nexus CWL 60+.",
+   "size": "11x11",
+   "wordCount": 42
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Reads quickly, or checks at the airport",
+    "6": "Vatican City's top resident",
+    "10": "Liberty, for one",
+    "11": "Jump with an extra half rotation",
+    "12": "Strategies for a hospice nurse?",
+    "14": "Gardner of \"The Barefoot Contessa\"",
+    "15": "Cincinnati team, or some Bordeaux",
+    "16": "Lincoln Center opera house, familiarly",
+    "17": "Sierra ___ (West African nation)",
+    "19": "Narrow-minded sort",
+    "20": "Cantaloupe or honeydew",
+    "21": "Not working, as a light switch",
+    "24": "Text reply to a decent joke",
+    "25": "Garland handed out at Honolulu's airport",
+    "26": "Icebox for a conifer?",
+    "30": "Solo that may stop the show",
+    "31": "Steers clear of",
+    "32": "Star role, or what a pencil is (not really) made of",
+    "33": "Pecks at a keyboard"
+   },
+   "down": {
+    "1": "Barrel slat, or fend (off)",
+    "2": "Unit for a diamond",
+    "3": "Had dinner",
+    "4": "Acorn or pecan",
+    "5": "Ocean's smaller cousin",
+    "6": "Inventor's protection",
+    "7": "Rust, chemically speaking",
+    "8": "Chest muscles, at the gym",
+    "9": "Old Chicago trains",
+    "10": "Phishing email, e.g.",
+    "13": "Sing like Bing Crosby",
+    "17": "Pale purple flower",
+    "18": "Self-esteem, inflated or otherwise",
+    "19": "Cut the top off, as was done to the spooky phrases at 12- and 26-Across?",
+    "20": "Beatle-induced frenzy, once",
+    "21": "Skateboard trick with no hands",
+    "22": "Social media scrolls",
+    "23": "Christmas tree choices",
+    "24": "Bring onboard",
+    "26": "Buddy",
+    "27": "Fedora or beret",
+    "28": "Climber on old college walls",
+    "29": "Trim, as tree branches"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "SCANS",
+    "6": "POPE",
+    "10": "STATUE",
+    "11": "AXEL",
+    "12": "CARETACTICS",
+    "14": "AVA",
+    "15": "REDS",
+    "16": "MET",
+    "17": "LEONE",
+    "19": "BIGOT",
+    "20": "MELON",
+    "21": "OFF",
+    "24": "HAHA",
+    "25": "LEI",
+    "26": "PINECHILLER",
+    "30": "ARIA",
+    "31": "AVOIDS",
+    "32": "LEAD",
+    "33": "TYPES"
+   },
+   "down": {
+    "1": "STAVE",
+    "2": "CARAT",
+    "3": "ATE",
+    "4": "NUT",
+    "5": "SEA",
+    "6": "PATENT",
+    "7": "OXIDE",
+    "8": "PECS",
+    "9": "ELS",
+    "10": "SCAM",
+    "13": "CROON",
+    "17": "LILAC",
+    "18": "EGO",
+    "19": "BEHEAD",
+    "20": "MANIA",
+    "21": "OLLIE",
+    "22": "FEEDS",
+    "23": "FIRS",
+    "24": "HIRE",
+    "26": "PAL",
+    "27": "HAT",
+    "28": "IVY",
+    "29": "LOP"
+   }
+  },
+  "addedDate": "2026-10-30",
+  "clues": {
+   "across": {
+    "1": "Reads quickly, or checks at the airport",
+    "6": "Vatican City's top resident",
+    "10": "Liberty, for one",
+    "11": "Jump with an extra half rotation",
+    "12": "Strategies for a hospice nurse?",
+    "14": "Gardner of \"The Barefoot Contessa\"",
+    "15": "Cincinnati team, or some Bordeaux",
+    "16": "Lincoln Center opera house, familiarly",
+    "17": "Sierra ___ (West African nation)",
+    "19": "Narrow-minded sort",
+    "20": "Cantaloupe or honeydew",
+    "21": "Not working, as a light switch",
+    "24": "Text reply to a decent joke",
+    "25": "Garland handed out at Honolulu's airport",
+    "26": "Icebox for a conifer?",
+    "30": "Solo that may stop the show",
+    "31": "Steers clear of",
+    "32": "Star role, or what a pencil is (not really) made of",
+    "33": "Pecks at a keyboard"
+   },
+   "down": {
+    "1": "Barrel slat, or fend (off)",
+    "2": "Unit for a diamond",
+    "3": "Had dinner",
+    "4": "Acorn or pecan",
+    "5": "Ocean's smaller cousin",
+    "6": "Inventor's protection",
+    "7": "Rust, chemically speaking",
+    "8": "Chest muscles, at the gym",
+    "9": "Old Chicago trains",
+    "10": "Phishing email, e.g.",
+    "13": "Sing like Bing Crosby",
+    "17": "Pale purple flower",
+    "18": "Self-esteem, inflated or otherwise",
+    "19": "Cut the top off, as was done to the spooky phrases at 12- and 26-Across?",
+    "20": "Beatle-induced frenzy, once",
+    "21": "Skateboard trick with no hands",
+    "22": "Social media scrolls",
+    "23": "Christmas tree choices",
+    "24": "Bring onboard",
+    "26": "Buddy",
+    "27": "Fedora or beret",
+    "28": "Climber on old college walls",
+    "29": "Trim, as tree branches"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-09",
+  "title": "Costume Rack",
+  "author": "Puzzler",
+  "date": "2026-10-30",
+  "grid": [
+   "#WRAP",
+   "SHIVA",
+   "CAPES",
+   "ALERT",
+   "RENT#"
+  ],
+  "meta": {
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "straight",
+   "source": "original",
+   "notes": "Themeless 5x5 mini by Puzzler; the title nods to 6-Across for Halloween weekend. Straight clue style to vary the recent all-mixed run. Fill from Crossword Nexus CWL 60+.",
+   "size": "5x5",
+   "wordCount": 10
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "\"That's a ___!\" (end-of-shoot cry)",
+    "5": "Hindu god often shown with four arms",
+    "6": "Superhero accessories that Edna Mode famously banned",
+    "7": "Wide awake and watchful",
+    "8": "Monthly check for a landlord"
+   },
+   "down": {
+    "1": "Big spender at a casino, in slang",
+    "2": "Go from green to yellow, as a banana",
+    "3": "Turn away, as one's eyes",
+    "4": "History, or the first ghost to visit Scrooge",
+    "5": "Harry Potter's lightning bolt, e.g."
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "WRAP",
+    "5": "SHIVA",
+    "6": "CAPES",
+    "7": "ALERT",
+    "8": "RENT"
+   },
+   "down": {
+    "1": "WHALE",
+    "2": "RIPEN",
+    "3": "AVERT",
+    "4": "PAST",
+    "5": "SCAR"
+   }
+  },
+  "addedDate": "2026-10-30",
+  "clues": {
+   "across": {
+    "1": "\"That's a ___!\" (end-of-shoot cry)",
+    "5": "Hindu god often shown with four arms",
+    "6": "Superhero accessories that Edna Mode famously banned",
+    "7": "Wide awake and watchful",
+    "8": "Monthly check for a landlord"
+   },
+   "down": {
+    "1": "Big spender at a casino, in slang",
+    "2": "Go from green to yellow, as a banana",
+    "3": "Turn away, as one's eyes",
+    "4": "History, or the first ghost to visit Scrooge",
+    "5": "Harry Potter's lightning bolt, e.g."
+   }
+  }
  }
 ];
