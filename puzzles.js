@@ -2019,5 +2019,255 @@ const PUZZLES=[
     "5": "Harry Potter's lightning bolt, e.g."
    }
   }
+ },
+ {
+  "id": "puzzler-11-05",
+  "title": "Evil Spells",
+  "author": "Puzzler",
+  "date": "2026-10-31",
+  "grid": [
+   "GAIN##ULNA#",
+   "ACNE##SUES#",
+   "LIFTTHEVEIL",
+   "ADO#EAR#DAY",
+   "###CAR#GENE",
+   "##JUMBLED##",
+   "ABUT#OUT###",
+   "GIN#BUS#HIS",
+   "OLIVERTWIST",
+   "#BOIL##IDLE",
+   "#ORAL##TEEM"
+  ],
+  "meta": {
+   "difficulty": "hard",
+   "themeType": "anagram",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "notes": "11x11 midi by Puzzler for Halloween (Sat Oct 31). Theme: two long answers each hide a scrambled spooky four-letter word, and a central revealer explains the trick. First anagram-type theme in the series, chosen to vary the recent phrase-pattern and homophone full-size runs. Hard difficulty with wordplay-heavy clues to move away from medium/mixed. Fill from Crossword Nexus CWL 60+, no abbreviations; addresses the brief's obscure-fill item. Full 15x15 was attempted first but no clean fill was found in the time box.",
+   "size": "11x11",
+   "wordCount": 44
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Run fast, as a cheap watch?",
+    "5": "Forearm bone near the funny bone",
+    "9": "Teen breakout?",
+    "10": "Brings a suit, though not to a tailor",
+    "11": "Reveal the truth (or a moment at many weddings)",
+    "15": "Kerfuffle",
+    "16": "Something to lend, per Mark Antony",
+    "17": "Trick-or-treat time it isn't",
+    "18": "Model in a showroom?",
+    "19": "Kelly of \"Singin' in the Rain\"",
+    "20": "Mixed up, like the wicked word hidden in 11- and 30-Across",
+    "22": "Border on",
+    "24": "Like a porch light that means \"no candy here\"",
+    "25": "Spirit in a martini, though not a spooky one",
+    "26": "Clear, as diner tables",
+    "27": "\"___ Dark Materials\" (Philip Pullman trilogy)",
+    "30": "Dickens orphan who asked for more",
+    "33": "What a watched pot supposedly never does",
+    "34": "Like an engine at a red light",
+    "35": "Kind of exam taken without a pencil",
+    "36": "Swarm (with)"
+   },
+   "down": {
+    "1": "Black-tie affair",
+    "2": "Biting, as a remark",
+    "3": "Details, for short",
+    "4": "Lepidopterist's catcher",
+    "5": "Account holder",
+    "6": "Sweetheart, in casual spelling",
+    "7": "Required",
+    "8": "Like Laos or Nepal",
+    "12": "It famously lacks an \"I\"?",
+    "13": "Port, in Portsmouth?",
+    "14": "Soapmaking chemical",
+    "18": "Snip from the final edit",
+    "19": "Understand",
+    "20": "Third-year student",
+    "21": "One of the seven deadly sins",
+    "22": "\"Long, long ___ ...\"",
+    "23": "Baggins who pocketed a certain ring",
+    "26": "It rings all night on Halloween",
+    "27": "Do what a seeker's quarry does",
+    "28": "Man, for one?",
+    "29": "Pumpkin part used as a handle",
+    "31": "By way of",
+    "32": "Brevity is its soul, per Polonius"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "GAIN",
+    "5": "ULNA",
+    "9": "ACNE",
+    "10": "SUES",
+    "11": "LIFTTHEVEIL",
+    "15": "ADO",
+    "16": "EAR",
+    "17": "DAY",
+    "18": "CAR",
+    "19": "GENE",
+    "20": "JUMBLED",
+    "22": "ABUT",
+    "24": "OUT",
+    "25": "GIN",
+    "26": "BUS",
+    "27": "HIS",
+    "30": "OLIVERTWIST",
+    "33": "BOIL",
+    "34": "IDLE",
+    "35": "ORAL",
+    "36": "TEEM"
+   },
+   "down": {
+    "1": "GALA",
+    "2": "ACID",
+    "3": "INFO",
+    "4": "NET",
+    "5": "USER",
+    "6": "LUV",
+    "7": "NEEDED",
+    "8": "ASIAN",
+    "12": "TEAM",
+    "13": "HARBOUR",
+    "14": "LYE",
+    "18": "CUT",
+    "19": "GET",
+    "20": "JUNIOR",
+    "21": "LUST",
+    "22": "AGO",
+    "23": "BILBO",
+    "26": "BELL",
+    "27": "HIDE",
+    "28": "ISLE",
+    "29": "STEM",
+    "31": "VIA",
+    "32": "WIT"
+   }
+  },
+  "addedDate": "2026-10-31",
+  "clues": {
+   "across": {
+    "1": "Run fast, as a cheap watch?",
+    "5": "Forearm bone near the funny bone",
+    "9": "Teen breakout?",
+    "10": "Brings a suit, though not to a tailor",
+    "11": "Reveal the truth (or a moment at many weddings)",
+    "15": "Kerfuffle",
+    "16": "Something to lend, per Mark Antony",
+    "17": "Trick-or-treat time it isn't",
+    "18": "Model in a showroom?",
+    "19": "Kelly of \"Singin' in the Rain\"",
+    "20": "Mixed up, like the wicked word hidden in 11- and 30-Across",
+    "22": "Border on",
+    "24": "Like a porch light that means \"no candy here\"",
+    "25": "Spirit in a martini, though not a spooky one",
+    "26": "Clear, as diner tables",
+    "27": "\"___ Dark Materials\" (Philip Pullman trilogy)",
+    "30": "Dickens orphan who asked for more",
+    "33": "What a watched pot supposedly never does",
+    "34": "Like an engine at a red light",
+    "35": "Kind of exam taken without a pencil",
+    "36": "Swarm (with)"
+   },
+   "down": {
+    "1": "Black-tie affair",
+    "2": "Biting, as a remark",
+    "3": "Details, for short",
+    "4": "Lepidopterist's catcher",
+    "5": "Account holder",
+    "6": "Sweetheart, in casual spelling",
+    "7": "Required",
+    "8": "Like Laos or Nepal",
+    "12": "It famously lacks an \"I\"?",
+    "13": "Port, in Portsmouth?",
+    "14": "Soapmaking chemical",
+    "18": "Snip from the final edit",
+    "19": "Understand",
+    "20": "Third-year student",
+    "21": "One of the seven deadly sins",
+    "22": "\"Long, long ___ ...\"",
+    "23": "Baggins who pocketed a certain ring",
+    "26": "It rings all night on Halloween",
+    "27": "Do what a seeker's quarry does",
+    "28": "Man, for one?",
+    "29": "Pumpkin part used as a handle",
+    "31": "By way of",
+    "32": "Brevity is its soul, per Polonius"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-10",
+  "title": "Bag of Tricks",
+  "author": "Puzzler",
+  "date": "2026-10-31",
+  "grid": [
+   "SWAG#",
+   "EAVES",
+   "TRICK",
+   "STAKE",
+   "#SNOW"
+  ],
+  "meta": {
+   "difficulty": "hard",
+   "themeType": "themeless",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "notes": "5x5 mini by Puzzler for Halloween (Sat Oct 31). Light Halloween flavor in the fill and clues rather than a formal theme; the title nods to the center answer. Hard difficulty and wordplay-heavy clues vary the recent easy/medium, mixed/straight mini run. Fill from Crossword Nexus CWL 60+; addresses the brief's obscure-fill item (common words only, no abbreviations).",
+   "size": "5x5",
+   "wordCount": 10
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Freebies in a conference tote, or the confidence to wear them",
+    "5": "Roof edges where bats may hang out?",
+    "7": "Alternative to a treat, per a doorstep ultimatum",
+    "8": "Pointed end for a vampire, or a share of the pot",
+    "9": "Fuzz on an old TV with no signal"
+   },
+   "down": {
+    "1": "Firms up, as gelatin",
+    "2": "Bumps on a cartoon witch's nose",
+    "3": "Like owls but not bats?",
+    "4": "Lizard that can walk up a windowpane",
+    "6": "Slant, as survey results"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "SWAG",
+    "5": "EAVES",
+    "7": "TRICK",
+    "8": "STAKE",
+    "9": "SNOW"
+   },
+   "down": {
+    "1": "SETS",
+    "2": "WARTS",
+    "3": "AVIAN",
+    "4": "GECKO",
+    "6": "SKEW"
+   }
+  },
+  "addedDate": "2026-10-31",
+  "clues": {
+   "across": {
+    "1": "Freebies in a conference tote, or the confidence to wear them",
+    "5": "Roof edges where bats may hang out?",
+    "7": "Alternative to a treat, per a doorstep ultimatum",
+    "8": "Pointed end for a vampire, or a share of the pot",
+    "9": "Fuzz on an old TV with no signal"
+   },
+   "down": {
+    "1": "Firms up, as gelatin",
+    "2": "Bumps on a cartoon witch's nose",
+    "3": "Like owls but not bats?",
+    "4": "Lizard that can walk up a windowpane",
+    "6": "Slant, as survey results"
+   }
+  }
  }
 ];
