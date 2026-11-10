@@ -103,10 +103,11 @@ def within(p):
             if any(len(t)>=4 and t==o['word'] for t in toks):Wn.append(f"(c?) clue for {e['label']} uses the answer at {o['label']}")
     return E,Wn
 # ---------- cross-puzzle reuse (d) ----------
-# Limits tuned on the Oct 25 2026 backlog (16 live + 2 queued puzzles; see PUZZLE_GUIDE.md).
-# minlen/max: answers of at least `minlen` letters that already appear in ANY live puzzle; more than `max` fails.
-# any3: cap on repeats of any length (3+). Identical answer+clue pairs already live always fail.
-LIMITS={'mini':dict(minlen=4,max=1,any3=2),'midi':dict(minlen=5,max=2,any3=6),'full':dict(minlen=5,max=3,any3=10)}
+# NYT-style caps, set 2026-11-10 (see PUZZLE_GUIDE.md). 3-letter answers do not count at all.
+# any4: cap on repeated answers of 4+ letters already in ANY live puzzle.
+# minlen/max: of those, a tighter cap on longer answers (4+ for minis, 5+ otherwise).
+# Identical answer+clue pairs already live always fail.
+LIMITS={'mini':dict(minlen=4,max=2,any4=3),'midi':dict(minlen=5,max=3,any4=8),'full':dict(minlen=5,max=5,any4=14)}
 def kind(p):
     n=len(p['grid']);return 'mini' if n<=7 else 'midi' if n<=12 else 'full'
 def load_stoplist():
@@ -128,13 +129,13 @@ def reuse(p,idx,stop=None):
     k=kind(p);L=LIMITS[k];E=[];Wn=[]
     es=entries(p['grid'])
     rep=[e for e in es if len(e['word'])>=L['minlen'] and idx.get(e['word'])]
-    allrep=[e for e in es if len(e['word'])>=3 and idx.get(e['word'])]
+    allrep=[e for e in es if len(e['word'])>=4 and idx.get(e['word'])]
     same=[e['label'] for e in es if norm(clue_for(p,e)) in idx.clues.get(e['word'],())] if hasattr(idx,'clues') else []
     if same:E.append('(d) answer AND clue identical to a live puzzle at '+', '.join(same))
-    if len(allrep)>L['any3']:E.append(f"(d) reuse: {len(allrep)} answers (any length) already used in live puzzles (limit {L['any3']} for a {k})")
+    if len(allrep)>L['any4']:E.append(f"(d) reuse: {len(allrep)} answers of 4+ letters already used in live puzzles (limit {L['any4']} for a {k})")
     if len(rep)>L['max']:
         E.append(f"(d) reuse: {len(rep)} answers of {L['minlen']}+ letters already used in live puzzles (limit {L['max']} for a {k}): "+', '.join(e['label'] for e in rep))
     elif rep:Wn.append(f"(d) reuse: {len(rep)} answer(s) of {L['minlen']}+ letters already live (limit {L['max']}): "+', '.join(e['label'] for e in rep))
     st=[e['label'] for e in es if e['word'] in stop]
     if st:Wn.append('(d) stoplist answers at '+', '.join(st))
-    return E,Wn,dict(kind=k,repeats=len(rep),limit=L['max'],minlen=L['minlen'],anyRepeats=len(allrep),any3=L['any3'],sameClue=len(same),entries=len(es),stoplist=len(st))
+    return E,Wn,dict(kind=k,repeats=len(rep),limit=L['max'],minlen=L['minlen'],anyRepeats=len(allrep),any4=L['any4'],sameClue=len(same),entries=len(es),stoplist=len(st))

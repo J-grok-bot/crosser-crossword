@@ -36,16 +36,19 @@ Within one puzzle:
 
 Across puzzles (checked against the entire live backlog in `tools/puzzles_src.json`):
 - (d1) **Never reuse an answer + clue pair.** If an answer has been used before, it needs a brand-new clue.
-- (d2) **Reuse caps** (answers already used in ANY live puzzle):
+- (d2) **Reuse caps** (answers already used in ANY live puzzle). 3-letter answers do not count
+  toward these caps at all (NYT convention: short common words may repeat freely across puzzles).
+  Count only repeated answers of 4+ letters:
 
-  | Size | Repeated answers of this length or more | Max | Max repeats of any length (3+) |
+  | Size | Repeated answers of this length or more | Max | Max repeats of 4+ letters |
   |---|---|---|---|
-  | Mini (5x5–7x7) | 4+ letters | 1 | 2 |
-  | Midi (11x11–12x12) | 5+ letters | 2 | 6 |
-  | Full (13x13–15x15) | 5+ letters | 3 | 10 |
+  | Mini (5x5–7x7) | 4+ letters | 2 | 3 |
+  | Midi (11x11–12x12) | 5+ letters | 3 | 8 |
+  | Full (13x13–15x15) | 5+ letters | 5 | 14 |
 
-  Limits were tuned on the Oct 25 2026 backlog (16 live puzzles): most live puzzles already met them, so they are
-  achievable, while the worst offenders would have been stopped.
+  Caps updated 2026-11-10 to follow NYT practice, with slightly looser limits on longer repeats.
+  For a mini, the longer-kind threshold is also 4+ letters (cap 2), so that tighter cap is the one
+  that usually binds. Nothing may repeat inside a single puzzle.
 - (d3) **Stoplist.** Do not use any answer in `tools/stoplist.txt` (answers of 4+ letters already in 2+ live puzzles,
   or any answer in 3+). Stoplist hits are reported as warnings and almost always also count against the caps.
 - Prefer fresh fill: before finalizing, run `python3 tools/ingest.py --dir <tmpdir> --dry-run` and rework any slot it lists.
@@ -114,6 +117,10 @@ per-puzzle averages and `n`). When avoidance and replication conflict, avoidance
    mechanism, style or shape, held to the same quality bar.
 5. Read free-text notes for specific complaints (a named word or clue) and add them to the stoplist or clue notes.
 6. Record in the new puzzle's `meta.notes` which brief items were addressed, so the effect shows in later ratings.
+
+## Usage budget
+Puzzle creation must stay under about 30% of Justin's weekly usage limit in any one day.
+Keep builds lean: one refill attempt max; skip and report rather than grind.
 
 ## Generator
 The fill engine lives in `/workspace/gen` (box scratch): `fill3.py` (arc-consistent backtracking filler over a
