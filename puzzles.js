@@ -6043,5 +6043,76 @@ const PUZZLES=[
     "7": "\"Are we there ___?\""
    }
   }
+ },
+ {
+  "id": "puzzler-mini-20",
+  "title": "Plot Twist",
+  "author": "Puzzler",
+  "date": "2026-11-10",
+  "grid": [
+   "#SLAW",
+   "#YOUR",
+   "IRONY",
+   "MITT#",
+   "PASS#"
+  ],
+  "meta": {
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "size": "5x5",
+   "wordCount": 10,
+   "notes": "5x5 themeless mini by Puzzler for Mon Nov 10, the next open mini day after Face Value (mini-19, Nov 9). Title nods to IRONY in the grid (a plot twist), not a formal theme. Medium, mixed clues (2 of 10 use '?'). Ratings brief: Crossword Nexus CWL 60+, clean common fill, repeats within mini caps. 10 words, 4 blocks."
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Cabbage side dish, briefly",
+    "5": "___ move",
+    "6": "Literary twist of fate",
+    "7": "Baseball glove",
+    "8": "Go by without stopping?"
+   },
+   "down": {
+    "1": "Damascus's land",
+    "2": "Plunders",
+    "3": "Parents' sisters",
+    "4": "Twisted, as a smile?",
+    "6": "Mischievous one"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "SLAW",
+    "5": "YOUR",
+    "6": "IRONY",
+    "7": "MITT",
+    "8": "PASS"
+   },
+   "down": {
+    "1": "SYRIA",
+    "2": "LOOTS",
+    "3": "AUNTS",
+    "4": "WRY",
+    "6": "IMP"
+   }
+  },
+  "addedDate": "2026-11-12",
+  "clues": {
+   "across": {
+    "1": "Cabbage side dish, briefly",
+    "5": "___ move",
+    "6": "Literary twist of fate",
+    "7": "Baseball glove",
+    "8": "Go by without stopping?"
+   },
+   "down": {
+    "1": "Damascus's land",
+    "2": "Plunders",
+    "3": "Parents' sisters",
+    "4": "Twisted, as a smile?",
+    "6": "Mischievous one"
+   }
+  }
  }
 ];
