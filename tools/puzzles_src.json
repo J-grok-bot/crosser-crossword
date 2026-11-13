@@ -6041,5 +6041,151 @@
    }
   },
   "addedDate": "2026-11-12"
+ },
+ {
+  "id": "puzzler-11-06",
+  "title": "After the Storm",
+  "author": "Puzzler",
+  "date": "2026-11-13",
+  "grid": [
+   "##SWAMI#ALP",
+   "##CANON#VIE",
+   "FRONTOFFICE",
+   "OUR###OLDER",
+   "BEET#BRO###",
+   "##DOORMAT##",
+   "###NBA#TINY",
+   "STEEL###THE",
+   "WINDOWSILLS",
+   "AND#NOONE##",
+   "GAS#GOWNS##"
+  ],
+  "phrases": [
+   "FRONT OFFICE",
+   "WINDOW SILLS",
+   "NO ONE"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "starts-with (first words follow a common word)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one familiar TV name; two familiar league abbreviations). Starred entries share a hidden connection that the title unlocks; mechanism differs from the last two full-size puzzles (before-and-after, hidden-word). Medium difficulty with a few '?' clues. Checked against shipped and queued inventory."
+  },
+  "clues": {
+   "SWAMI": "Title for a Hindu spiritual teacher",
+   "ALP": "Peak above Zermatt",
+   "CANON": "Officially accepted body of works",
+   "VIE": "Go head-to-head",
+   "FRONTOFFICE": "*Where a team's trades get made",
+   "OUR": "\"___ Father\" (prayer opener)",
+   "OLDER": "Like a big sibling, by definition",
+   "BEET": "Borscht root",
+   "BRO": "Dude",
+   "DOORMAT": "*Welcome sign you walk all over?",
+   "NBA": "League of the Knicks and Nets",
+   "TINY": "Teeny",
+   "STEEL": "Pittsburgh product, historically",
+   "THE": "Most common word in English",
+   "WINDOWSILLS": "*Sunny ledges where cats nap",
+   "AND": "What an ampersand stands for",
+   "NOONE": "Nobody",
+   "GAS": "It's pumped at a station",
+   "GOWNS": "Prom wear",
+   "FOB": "Key ___ (car remote)",
+   "SWAG": "Conference freebies",
+   "RUE": "Wish undone",
+   "TINA": "Fey of '30 Rock'",
+   "SCORED": "Put points on the board",
+   "ENDS": "Finishes",
+   "WAN": "Pale and sickly",
+   "TONED": "Gym-sculpted",
+   "ANT": "Uninvited picnic guest",
+   "OBLONG": "Shaped like most rectangles",
+   "MOO": "Barnyard greeting",
+   "BRA": "Item with cups that holds no coffee?",
+   "WOO": "Court, old-style",
+   "INFORM": "Tip off",
+   "SOW": "Plant, as seeds",
+   "FLOAT": "Parade vehicle",
+   "INN": "Roadside lodging",
+   "AVID": "Keen",
+   "TITLES": "Book jacket features",
+   "LICE": "Nitpicker's targets?",
+   "NHL": "Stanley Cup org.",
+   "PEER": "Look closely",
+   "YES": "Word said before 'and' in improv"
+  },
+  "addedDate": "2026-11-13"
+ },
+ {
+  "id": "puzzler-mini-21",
+  "title": "Taking Stock",
+  "author": "Puzzler",
+  "date": "2026-11-11",
+  "grid": [
+   "STOCK",
+   "CHURN",
+   "RENEE",
+   "EMCEE",
+   "WEEDS"
+  ],
+  "phrases": [],
+  "clues": {
+   "STOCK": "Broth's richer cousin",
+   "SCREW": "Fastener that goes in circles?",
+   "THEME": "What ties a set of starred entries together",
+   "OUNCE": "About 28.35 grams on a kitchen scale",
+   "CREED": "A believer's guiding statement",
+   "KNEES": "Joints bent in protest?",
+   "CHURN": "Work cream into butter?",
+   "RENEE": "Zellweger who played Judy Garland",
+   "EMCEE": "One with a mic and a program to follow",
+   "WEEDS": "Uninvited garden guests?"
+  },
+  "meta": {
+   "size": "5x5",
+   "difficulty": "hard",
+   "clueStyle": "wordplay-heavy",
+   "themeType": "themeless",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Wednesday mini with a fully open, fully checked grid. Four playful question-mark clues vary the recent medium/mixed profile. Ratings brief addressed with common vocabulary, one familiar performer, no abbreviations, CWL 60+ fill, and fresh clues."
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Broth's richer cousin",
+    "6": "Work cream into butter?",
+    "7": "Zellweger who played Judy Garland",
+    "8": "One with a mic and a program to follow",
+    "9": "Uninvited garden guests?"
+   },
+   "down": {
+    "1": "Fastener that goes in circles?",
+    "2": "What ties a set of starred entries together",
+    "3": "About 28.35 grams on a kitchen scale",
+    "4": "A believer's guiding statement",
+    "5": "Joints bent in protest?"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "STOCK",
+    "6": "CHURN",
+    "7": "RENEE",
+    "8": "EMCEE",
+    "9": "WEEDS"
+   },
+   "down": {
+    "1": "SCREW",
+    "2": "THEME",
+    "3": "OUNCE",
+    "4": "CREED",
+    "5": "KNEES"
+   }
+  },
+  "addedDate": "2026-11-13"
  }
 ]

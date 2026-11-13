@@ -6114,5 +6114,153 @@ const PUZZLES=[
     "6": "Mischievous one"
    }
   }
+ },
+ {
+  "id": "puzzler-11-06",
+  "title": "After the Storm",
+  "author": "Puzzler",
+  "date": "2026-11-13",
+  "grid": [
+   "##SWAMI#ALP",
+   "##CANON#VIE",
+   "FRONTOFFICE",
+   "OUR###OLDER",
+   "BEET#BRO###",
+   "##DOORMAT##",
+   "###NBA#TINY",
+   "STEEL###THE",
+   "WINDOWSILLS",
+   "AND#NOONE##",
+   "GAS#GOWNS##"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "starts-with (first words follow a common word)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one familiar TV name; two familiar league abbreviations). Starred entries share a hidden connection that the title unlocks; mechanism differs from the last two full-size puzzles (before-and-after, hidden-word). Medium difficulty with a few '?' clues. Checked against shipped and queued inventory."
+  },
+  "addedDate": "2026-11-13",
+  "clues": {
+   "across": {
+    "1": "Title for a Hindu spiritual teacher",
+    "6": "Peak above Zermatt",
+    "9": "Officially accepted body of works",
+    "10": "Go head-to-head",
+    "11": "*Where a team's trades get made",
+    "14": "\"___ Father\" (prayer opener)",
+    "15": "Like a big sibling, by definition",
+    "16": "Borscht root",
+    "18": "Dude",
+    "19": "*Welcome sign you walk all over?",
+    "22": "League of the Knicks and Nets",
+    "23": "Teeny",
+    "26": "Pittsburgh product, historically",
+    "29": "Most common word in English",
+    "30": "*Sunny ledges where cats nap",
+    "34": "What an ampersand stands for",
+    "35": "Nobody",
+    "36": "It's pumped at a station",
+    "37": "Prom wear"
+   },
+   "down": {
+    "1": "Put points on the board",
+    "2": "Pale and sickly",
+    "3": "Uninvited picnic guest",
+    "4": "Barnyard greeting",
+    "5": "Tip off",
+    "6": "Keen",
+    "7": "Nitpicker's targets?",
+    "8": "Look closely",
+    "11": "Key ___ (car remote)",
+    "12": "Wish undone",
+    "13": "Parade vehicle",
+    "17": "Gym-sculpted",
+    "18": "Item with cups that holds no coffee?",
+    "20": "Shaped like most rectangles",
+    "21": "Book jacket features",
+    "24": "Stanley Cup org.",
+    "25": "Word said before 'and' in improv",
+    "26": "Conference freebies",
+    "27": "Fey of '30 Rock'",
+    "28": "Finishes",
+    "31": "Court, old-style",
+    "32": "Plant, as seeds",
+    "33": "Roadside lodging"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-21",
+  "title": "Taking Stock",
+  "author": "Puzzler",
+  "date": "2026-11-11",
+  "grid": [
+   "STOCK",
+   "CHURN",
+   "RENEE",
+   "EMCEE",
+   "WEEDS"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "hard",
+   "clueStyle": "wordplay-heavy",
+   "themeType": "themeless",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Wednesday mini with a fully open, fully checked grid. Four playful question-mark clues vary the recent medium/mixed profile. Ratings brief addressed with common vocabulary, one familiar performer, no abbreviations, CWL 60+ fill, and fresh clues."
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "Broth's richer cousin",
+    "6": "Work cream into butter?",
+    "7": "Zellweger who played Judy Garland",
+    "8": "One with a mic and a program to follow",
+    "9": "Uninvited garden guests?"
+   },
+   "down": {
+    "1": "Fastener that goes in circles?",
+    "2": "What ties a set of starred entries together",
+    "3": "About 28.35 grams on a kitchen scale",
+    "4": "A believer's guiding statement",
+    "5": "Joints bent in protest?"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "STOCK",
+    "6": "CHURN",
+    "7": "RENEE",
+    "8": "EMCEE",
+    "9": "WEEDS"
+   },
+   "down": {
+    "1": "SCREW",
+    "2": "THEME",
+    "3": "OUNCE",
+    "4": "CREED",
+    "5": "KNEES"
+   }
+  },
+  "addedDate": "2026-11-13",
+  "clues": {
+   "across": {
+    "1": "Broth's richer cousin",
+    "6": "Work cream into butter?",
+    "7": "Zellweger who played Judy Garland",
+    "8": "One with a mic and a program to follow",
+    "9": "Uninvited garden guests?"
+   },
+   "down": {
+    "1": "Fastener that goes in circles?",
+    "2": "What ties a set of starred entries together",
+    "3": "About 28.35 grams on a kitchen scale",
+    "4": "A believer's guiding statement",
+    "5": "Joints bent in protest?"
+   }
+  }
  }
 ];
