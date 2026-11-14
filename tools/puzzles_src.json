@@ -6187,5 +6187,118 @@
    }
   },
   "addedDate": "2026-11-13"
+ },
+ {
+  "id": "puzzler-11-07",
+  "title": "People Watching",
+  "author": "Puzzler",
+  "date": "2026-11-14",
+  "grid": [
+   "###DIS#ELSA",
+   "##CONE#TEAR",
+   "CHICKENHAWK",
+   "OAR###END##",
+   "TIC#MAXI###",
+   "#LAMEDUCKS#",
+   "###ODDS#NUB",
+   "##BRA###EMU",
+   "STOOLPIGEON",
+   "OWNS#ORAL##",
+   "NODE#PEP###"
+  ],
+  "phrases": [
+   "CHICKENHAWK",
+   "LAMEDUCKS",
+   "STOOLPIGEON"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "easy",
+   "themeType": "figurative phrases (shared hidden category, pun title)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese, no obscure names). Starred entries share a hidden link that the punny title hints at; mechanism differs from the previous two full-size puzzles. Easy difficulty to vary from the previous medium. Checked against shipped and queued inventory."
+  },
+  "clues": {
+   "DIS": "Trash-talk, briefly",
+   "CONE": "Sugar ___ (scoop holder)",
+   "CHICKENHAWK": "*War cheerleader who dodged the fight",
+   "OAR": "Rowboat pair member",
+   "END": "Word on a movie's last frame",
+   "TIC": "Twitch",
+   "MAXI": "Floor-length skirt",
+   "LAMEDUCKS": "*Officials with their successors already chosen",
+   "ODDS": "Bookie's numbers",
+   "NUB": "Stubby bit",
+   "BRA": "Strapless option, maybe",
+   "EMU": "Big bird that can't take off",
+   "STOOLPIGEON": "*Informer who sings to the cops",
+   "OWNS": "Holds the deed to",
+   "ORAL": "Like some exams and histories",
+   "NODE": "Network junction",
+   "COT": "Camp bed",
+   "SON": "Junior, often",
+   "HAIL": "Ice from the sky",
+   "TWO": "Tango requirement?",
+   "CIRCA": "Roughly, before a date",
+   "BOND": "Agent with a license to kill",
+   "DOC": "Leader of the seven dwarfs",
+   "MOROSE": "Gloomy",
+   "INK": "Squid's defensive cloud",
+   "MEDAL": "Podium prize",
+   "SEE": "\"Told you so!\"",
+   "ADD": "Sum up, in a way?",
+   "POP": "Soda, in the Midwest",
+   "NEXUS": "Central link",
+   "IRE": "Wrath",
+   "ETHNIC": "Of a cultural heritage",
+   "KNEEL": "Go down on one's patellas?",
+   "SUMO": "Sport with a ring and a loincloth",
+   "BUN": "Hot dog holder",
+   "ELSA": "Ice queen of Arendelle",
+   "TEAR": "Rip",
+   "PEP": "Rally-squad energy",
+   "GAP": "Space between front teeth, maybe",
+   "LEAD": "Pencil filling that isn't really metal",
+   "SAW": "Tool with teeth that never bites?",
+   "ARK": "Vessel loaded two by two"
+  },
+  "addedDate": "2026-11-14"
+ },
+ {
+  "id": "puzzler-mini-26",
+  "title": "Fresh Start",
+  "author": "Puzzler",
+  "date": "2026-11-16",
+  "grid": [
+   "#DEBT",
+   "GENRE",
+   "ALTER",
+   "STEAM",
+   "PARK#"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; no cross-puzzle repeats). Two-block diagonal shape and wordplay-heavy double-sense clues vary from the last two held minis."
+  },
+  "clues": {
+   "DEBT": "What a loan leaves you in",
+   "GENRE": "Horror or romance, at the bookstore",
+   "ALTER": "Take in or let out, at the tailor's",
+   "STEAM": "What a kettle lets off?",
+   "PARK": "Leave the car, or a place for a picnic",
+   "GASP": "Sharp breath at a plot twist",
+   "DELTA": "River's mouth, or a Greek triangle?",
+   "ENTER": "Key that sends you on your way?",
+   "BREAK": "Snap, or a short rest",
+   "TERM": "Semester, or a glossary entry"
+  },
+  "addedDate": "2026-11-14"
  }
 ]
