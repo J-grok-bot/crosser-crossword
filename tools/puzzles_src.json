@@ -6300,5 +6300,118 @@
    "TERM": "Semester, or a glossary entry"
   },
   "addedDate": "2026-11-14"
+ },
+ {
+  "id": "puzzler-11-09",
+  "title": "One and the Same",
+  "author": "Puzzler",
+  "date": "2026-11-16",
+  "grid": [
+   "##SWAT##BAN",
+   "##CILIA#RHO",
+   "WEARANDTEAR",
+   "ACRE##DID##",
+   "THE##EEL###",
+   "TOSSANDTURN",
+   "###OLD##MOO",
+   "##KOI##SPAS",
+   "NEATANDTIDY",
+   "OWL#SURER##",
+   "WEE##TYPE##"
+  ],
+  "phrases": [
+   "WEARANDTEAR",
+   "TOSSANDTURN",
+   "NEATANDTIDY"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "hard",
+   "themeType": "synonym binomials (X-and-Y phrases whose halves mean the same thing)",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no proper names in fill, no abbreviations; one short French partial kept as the weakest entry). Starred entries share a hidden pattern that the title unlocks (no in-grid revealer); mechanism is new and differs from the previous two full-size puzzles. Wordplay-heavy clues (about a quarter with '?') and a hard label vary the recent mix after a straight, medium 11x11. 32-block grid with three symmetric 11-letter rows. Checked against shipped and queued inventory."
+  },
+  "clues": {
+   "SWAT": "Hit on a fly?",
+   "BAN": "Put on the no-no list",
+   "CILIA": "Tiny hairlike oars for a paramecium",
+   "RHO": "Greek letter that looks like a P",
+   "WEARANDTEAR": "*What a thrift-store couch tends to show",
+   "ACRE": "Roughly 43,560 square feet",
+   "DID": "Took care of, as chores",
+   "THE": "Common start to a band name",
+   "EEL": "Swimmer with a shocking reputation?",
+   "TOSSANDTURN": "*Spend a restless night in bed",
+   "OLD": "Long in the tooth",
+   "MOO": "Low comment?",
+   "KOI": "Colorful carp in a garden pond",
+   "SPAS": "Places to get into hot water?",
+   "NEATANDTIDY": "*Shipshape",
+   "OWL": "Bird that always wants to know who?",
+   "SURER": "Less iffy",
+   "WEE": "Tiny, to a Scot",
+   "TYPE": "Hit the keys",
+   "WATT": "One joule per second",
+   "NOW": "Present time?",
+   "ECHO": "Canyon comeback?",
+   "EWE": "Woolly mom",
+   "SCARES": "Haunted houses deliver them",
+   "KALE": "Leafy green in many smoothies",
+   "WIRE": "Barbed ___",
+   "SOOT": "Chimney sweep's grime",
+   "ALA": "___ carte",
+   "ALIAS": "Name on a fake ID",
+   "TIN": "Traditional tenth-anniversary gift",
+   "END": "Football's ___ zone",
+   "NUT": "Hard case to crack?",
+   "ADDED": "Tacked on",
+   "DRY": "Like a good martini, often",
+   "TILT": "Cock to one side",
+   "STEP": "Dance move",
+   "BRED": "Raised on a farm, say",
+   "UMPIRE": "Strike caller?",
+   "AHA": "Light-bulb moment?",
+   "ROAD": "Something to hit when it's time to leave",
+   "NOR": "Neither's partner",
+   "NOSY": "Like a snoop"
+  },
+  "addedDate": "2026-11-15"
+ },
+ {
+  "id": "puzzler-mini-27",
+  "title": "Fill Me In",
+  "author": "Puzzler",
+  "date": "2026-11-16",
+  "grid": [
+   "#BEAM",
+   "#RAGE",
+   "BATON",
+   "EVEN#",
+   "DENY#"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "fill-in-the-blank",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; no cross-puzzle repeats). New side-notch shape and an all fill-in-the-blank clue set vary from minis 24-26."
+  },
+  "clues": {
+   "BEAM": "Balance ___ (gymnastics apparatus)",
+   "RAGE": "Road ___ (highway fury)",
+   "BATON": "Pass the ___ (hand off a job)",
+   "EVEN": "Break ___ (stop losing money)",
+   "DENY": "Confirm or ___",
+   "BED": "Breakfast in ___",
+   "BRAVE": "\"... and the home of the ___\"",
+   "EATEN": "\"Have you ___ yet?\"",
+   "AGONY": "\"The thrill of victory and the ___ of defeat\"",
+   "MEN": "\"Three ___ and a Baby\""
+  },
+  "addedDate": "2026-11-15"
  }
 ]
