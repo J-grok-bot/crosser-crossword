@@ -6494,5 +6494,121 @@ const PUZZLES=[
     "6": "Breakfast in ___"
    }
   }
+ },
+ {
+  "id": "puzzler-11-10",
+  "title": "Triple Doubles",
+  "author": "Puzzler",
+  "date": "2026-11-17",
+  "grid": [
+   "###CHEF#UMP",
+   "#ARRIVE#SEA",
+   "BLOOPERREEL",
+   "ROMP##RISKS",
+   "ONE#THIN###",
+   "#GOOSEEGGS#",
+   "###PUSS#ROW",
+   "CLEAN##SILO",
+   "HULLABALLOO",
+   "ITS#METALS#",
+   "TEE#ITEM###"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "easy",
+   "themeType": "letter pattern (three sets of double letters per theme answer)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one fill-in-the-blank contraction is the main stretch). Starred entries share a spelling pattern the punny title hints at; mechanism differs from the previous two full-size puzzles. Easy with a few '?' clues. Checked against shipped and queued inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-16",
+  "clues": {
+   "across": {
+    "1": "Kitchen boss",
+    "5": "Plate judge, for short",
+    "8": "Show up",
+    "10": "Mediterranean, for one",
+    "11": "*Montage of flubbed takes",
+    "13": "Lopsided win",
+    "14": "Chances taken",
+    "15": "Loneliest number, in a song",
+    "16": "Like a rail",
+    "18": "*Zeros on a scoreboard",
+    "22": "Kisser, slangily",
+    "23": "Line of theater seats",
+    "25": "Spotless",
+    "28": "Farm structure that's full of corn?",
+    "29": "*Big commotion",
+    "32": "\"___ a deal!\"",
+    "33": "Gold and silver",
+    "34": "Driver's perch?",
+    "35": "Couple in the gossip pages"
+   },
+   "down": {
+    "1": "Trim, as a photo",
+    "2": "Trendy",
+    "3": "Dec. 24 or Dec. 31, e.g.",
+    "4": "Commuter boats",
+    "5": "Puts to work",
+    "6": "Timid",
+    "7": "Buddies",
+    "8": "By the side of",
+    "9": "Juliet's beloved",
+    "11": "Frat guy, informally",
+    "12": "Boxing venue",
+    "16": "Giant sea wave",
+    "17": "\"For ___ a jolly good fellow\"",
+    "19": "October birthstone",
+    "20": "Cookout appliance",
+    "21": "Spotlight songs",
+    "24": "Court",
+    "25": "Small IOU slip",
+    "26": "Minstrel's instrument",
+    "27": "Otherwise",
+    "28": "Shut loudly",
+    "30": "\"You ___!\" (\"Absolutely!\")",
+    "31": "Dined"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-28",
+  "title": "Square Deal",
+  "author": "Puzzler",
+  "date": "2026-11-17",
+  "grid": [
+   "#PAY#",
+   "MERIT",
+   "EAGER",
+   "TRULY",
+   "#LED#"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "straight",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; no cross-puzzle repeats of 4+ letters). Four-corner shape and straight, quick clues vary from minis 24, 26 and 27."
+  },
+  "addedDate": "2026-11-16",
+  "clues": {
+   "across": {
+    "1": "Settle, as a bill",
+    "4": "Deserve",
+    "6": "Keen to get started",
+    "7": "Sincerely, at a letter's end",
+    "8": "Was in front"
+   },
+   "down": {
+    "1": "Oyster's treasure",
+    "2": "Bicker",
+    "3": "Give way, at a road sign",
+    "4": "Ran into",
+    "5": "Rugby score"
+   }
+  }
  }
 ];

@@ -6413,5 +6413,118 @@
    "MEN": "\"Three ___ and a Baby\""
   },
   "addedDate": "2026-11-15"
+ },
+ {
+  "id": "puzzler-11-10",
+  "title": "Triple Doubles",
+  "author": "Puzzler",
+  "date": "2026-11-17",
+  "grid": [
+   "###CHEF#UMP",
+   "#ARRIVE#SEA",
+   "BLOOPERREEL",
+   "ROMP##RISKS",
+   "ONE#THIN###",
+   "#GOOSEEGGS#",
+   "###PUSS#ROW",
+   "CLEAN##SILO",
+   "HULLABALLOO",
+   "ITS#METALS#",
+   "TEE#ITEM###"
+  ],
+  "phrases": [
+   "BLOOPERREEL",
+   "GOOSEEGGS",
+   "HULLABALLOO"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "easy",
+   "themeType": "letter pattern (three sets of double letters per theme answer)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one fill-in-the-blank contraction is the main stretch). Starred entries share a spelling pattern the punny title hints at; mechanism differs from the previous two full-size puzzles. Easy with a few '?' clues. Checked against shipped and queued inventory and the current stoplist."
+  },
+  "clues": {
+   "CHEF": "Kitchen boss",
+   "UMP": "Plate judge, for short",
+   "ARRIVE": "Show up",
+   "SEA": "Mediterranean, for one",
+   "BLOOPERREEL": "*Montage of flubbed takes",
+   "ROMP": "Lopsided win",
+   "RISKS": "Chances taken",
+   "ONE": "Loneliest number, in a song",
+   "THIN": "Like a rail",
+   "GOOSEEGGS": "*Zeros on a scoreboard",
+   "PUSS": "Kisser, slangily",
+   "ROW": "Line of theater seats",
+   "CLEAN": "Spotless",
+   "SILO": "Farm structure that's full of corn?",
+   "HULLABALLOO": "*Big commotion",
+   "ITS": "\"___ a deal!\"",
+   "METALS": "Gold and silver",
+   "TEE": "Driver's perch?",
+   "ITEM": "Couple in the gossip pages",
+   "BRO": "Frat guy, informally",
+   "CHIT": "Small IOU slip",
+   "ALONG": "By the side of",
+   "LUTE": "Minstrel's instrument",
+   "ROMEO": "Juliet's beloved",
+   "ELSE": "Otherwise",
+   "CROP": "Trim, as a photo",
+   "OPAL": "October birthstone",
+   "HIP": "Trendy",
+   "TSUNAMI": "Giant sea wave",
+   "EVE": "Dec. 24 or Dec. 31, e.g.",
+   "HES": "\"For ___ a jolly good fellow\"",
+   "BET": "\"You ___!\" (\"Absolutely!\")",
+   "FERRIES": "Commuter boats",
+   "ATE": "Dined",
+   "RING": "Boxing venue",
+   "SLAM": "Shut loudly",
+   "USES": "Puts to work",
+   "GRILL": "Cookout appliance",
+   "MEEK": "Timid",
+   "SOLOS": "Spotlight songs",
+   "PALS": "Buddies",
+   "WOO": "Court"
+  },
+  "addedDate": "2026-11-16"
+ },
+ {
+  "id": "puzzler-mini-28",
+  "title": "Square Deal",
+  "author": "Puzzler",
+  "date": "2026-11-17",
+  "grid": [
+   "#PAY#",
+   "MERIT",
+   "EAGER",
+   "TRULY",
+   "#LED#"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "straight",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; no cross-puzzle repeats of 4+ letters). Four-corner shape and straight, quick clues vary from minis 24, 26 and 27."
+  },
+  "clues": {
+   "PAY": "Settle, as a bill",
+   "MERIT": "Deserve",
+   "EAGER": "Keen to get started",
+   "TRULY": "Sincerely, at a letter's end",
+   "LED": "Was in front",
+   "MET": "Ran into",
+   "PEARL": "Oyster's treasure",
+   "ARGUE": "Bicker",
+   "YIELD": "Give way, at a road sign",
+   "TRY": "Rugby score"
+  },
+  "addedDate": "2026-11-16"
  }
 ]
