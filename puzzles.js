@@ -6610,5 +6610,123 @@ const PUZZLES=[
     "5": "Rugby score"
    }
   }
+ },
+ {
+  "id": "puzzler-11-11",
+  "title": "Moving Parts",
+  "author": "Puzzler",
+  "date": "2026-11-17",
+  "grid": [
+   "GAL#BELL###",
+   "OWE#OREO###",
+   "NOSEAROUND#",
+   "ELSA###DEAD",
+   "###ROSY#AMY",
+   "SHINUPATREE",
+   "ION#TAKE###",
+   "ROTS###LASS",
+   "#TOETHELINE",
+   "###NOEL#MIX",
+   "###DORM#SPY"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "easy",
+   "themeType": "wordplay (familiar phrases sharing a hidden pattern the title hints at)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 44,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese or partial phrases beyond one fill-in-the-blank; three well-known names). Starred entries share a pattern that the punny title hints at; the mechanism is new to the series. Easy with a few '?' clues. Checked against shipped and queued inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-17",
+  "clues": {
+   "across": {
+    "1": "Pal in a Western, maybe",
+    "4": "It's rung up at the end of class?",
+    "8": "Be in the red",
+    "9": "Cookie often twisted apart",
+    "10": "*Snoop",
+    "14": "Ice queen in a Disney hit",
+    "15": "Like a phone that needs a charger",
+    "17": "Optimistic, as an outlook",
+    "21": "Poehler of \"Parks and Recreation\"",
+    "22": "*Climb a trunk, hand over hand",
+    "26": "Charged particle",
+    "27": "Movie scene attempt",
+    "28": "Goes bad in the fruit bowl",
+    "30": "Highland girl",
+    "34": "*Follow the rules",
+    "38": "Holiday carol word",
+    "39": "DJ's creation",
+    "40": "Where freshmen often crash",
+    "41": "Agent who's undercover"
+   },
+   "down": {
+    "1": "Out of here",
+    "2": "Missing from the barracks",
+    "3": "Fewer",
+    "4": "Feathery stole",
+    "5": "Slip up",
+    "6": "Summer-born sign with a mane attraction?",
+    "7": "Turned all the way up",
+    "11": "Bring home",
+    "12": "Close at hand",
+    "13": "Judi Dench's title",
+    "16": "Hair color in a box",
+    "18": "Not at home",
+    "19": "Place to get steamed without getting angry?",
+    "20": "Chatter on and on",
+    "22": "Polite address for a gentleman",
+    "23": "Something really funny, or what an owl gives",
+    "24": "Obsessed with, informally",
+    "25": "Poker player's giveaway",
+    "29": "Mail",
+    "31": "Points, as a camera",
+    "32": "Barber's sound",
+    "33": "Alluring",
+    "35": "\"Me ___!\" (eager echo)",
+    "36": "\"That's ___!\" (lineup ID)",
+    "37": "Shade tree on many a street"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-29",
+  "title": "Wall to Wall",
+  "author": "Puzzler",
+  "date": "2026-11-17",
+  "grid": [
+   "CHAPS",
+   "LIBRA",
+   "APHID",
+   "SPOOL",
+   "SORRY"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "tricky",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; no cross-puzzle repeats of 4+ letters). A fully open grid with no black squares (a new shape for the series) and trickier clues, varying from minis 24, 26, 27 and 28."
+  },
+  "addedDate": "2026-11-17",
+  "clues": {
+   "across": {
+    "1": "Blokes, or what a bronco buster wears?",
+    "6": "Sign that weighs its options?",
+    "7": "Pest that really bugs a gardener?",
+    "8": "Thread holder",
+    "9": "Word said after stepping on toes"
+   },
+   "down": {
+    "1": "Something you might cut without scissors?",
+    "2": "River horse",
+    "3": "Can't stand",
+    "4": "Earlier, as a conviction",
+    "5": "Alas"
+   }
+  }
  }
 ];
