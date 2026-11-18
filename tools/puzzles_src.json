@@ -6641,5 +6641,151 @@
    "SADLY": "Alas"
   },
   "addedDate": "2026-11-17"
+ },
+ {
+  "id": "puzzler-11-12",
+  "title": "Vowel Play",
+  "author": "Puzzler",
+  "date": "2026-11-19",
+  "grid": [
+   "ITS#CAST###",
+   "AHA#ALLOT##",
+   "NIGHTLIGHT#",
+   "#SEEN#MAYOR",
+   "###AID##MOO",
+   "EVERPRESENT",
+   "MAP##YAK###",
+   "UNITY#GENT#",
+   "#SCHOOLWORK",
+   "##SEGUE#DIE",
+   "###EATS#SOY"
+  ],
+  "phrases": [
+   "NIGHTLIGHT",
+   "EVERPRESENT",
+   "SCHOOLWORK"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "letter pattern (a vowel restriction the title hints at)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one well-known name). Starred entries share a spelling restriction that the punny title hints at; the mechanism is new to the series. Medium, with several '?' clues. Checked against shipped and queued inventory and the current stoplist."
+  },
+  "clues": {
+   "ITS": "\"___ a date!\"",
+   "CAST": "Throw a line, as an angler",
+   "AHA": "Lightbulb moment cry",
+   "ALLOT": "Parcel out",
+   "NIGHTLIGHT": "*Glow in a kid's bedroom",
+   "SEEN": "Spotted",
+   "MAYOR": "City hall boss",
+   "AID": "First ___ kit",
+   "MOO": "Bovine bulletin?",
+   "EVERPRESENT": "*Always around",
+   "MAP": "Atlas page",
+   "YAK": "Talk someone's ear off",
+   "UNITY": "Togetherness",
+   "GENT": "Well-mannered fellow",
+   "SCHOOLWORK": "*What a pupil hands in",
+   "SEGUE": "Smooth transition",
+   "DIE": "One of a pair of cubes on a game night",
+   "EATS": "Grub",
+   "SOY": "Sauce in a sushi dish",
+   "IAN": "McKellen who played Gandalf",
+   "EMU": "Big bird from down under",
+   "THIS": "\"Check ___ out!\"",
+   "VANS": "Movers' rentals",
+   "SAGE": "Wise one, or a stuffing herb",
+   "EPICS": "Long tales of heroes",
+   "HEAR": "Get wind of",
+   "THEE": "Thou, as an object",
+   "CATNIP": "Feline's favorite plant",
+   "YOGA": "Class with lots of poses",
+   "ALL": "Word before \"ears\" or \"thumbs\"",
+   "DRY": "Like a good martini, or a bad comedy?",
+   "OUT": "Not safe, at the plate",
+   "SLIM": "Like the odds of a long shot",
+   "EAGLES": "Philadelphia's NFL team",
+   "TOGA": "Frat party wrap",
+   "SKEW": "Slant, as data",
+   "THYME": "Herb that sounds like a clock's concern?",
+   "NODS": "Silent yeses",
+   "TOON": "Saturday-morning star, for short",
+   "TRIO": "Small combo",
+   "ROT": "Go bad",
+   "KEY": "Piano part, or a password's partner?"
+  },
+  "addedDate": "2026-11-18"
+ },
+ {
+  "id": "puzzler-mini-24",
+  "title": "Cut Corners",
+  "author": "Puzzler",
+  "date": "2026-11-14",
+  "grid": [
+   "ALL##",
+   "FEAST",
+   "RADAR",
+   "OPERA",
+   "##NAP"
+  ],
+  "phrases": [],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Easy mini with mostly straight clues and two light question-mark clues. Contrasting double-corner blocks (top-right and bottom-left) vs. Core Sample side indents and the queued open/stair minis."
+  },
+  "clues": {
+   "ALL": "The whole amount",
+   "FEAST": "Big celebratory meal",
+   "RADAR": "Speeder-spotting system?",
+   "OPERA": "Work sung on stage",
+   "NAP": "Catch a few Z's?",
+   "AFRO": "Rounded natural hairstyle",
+   "LEAP": "Jump with both feet",
+   "LADEN": "Heavily burdened",
+   "SARA": "___ Lee desserts",
+   "TRAP": "Baited snare"
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "The whole amount",
+    "4": "Big celebratory meal",
+    "7": "Speeder-spotting system?",
+    "8": "Work sung on stage",
+    "9": "Catch a few Z's?"
+   },
+   "down": {
+    "1": "Rounded natural hairstyle",
+    "2": "Jump with both feet",
+    "3": "Heavily burdened",
+    "5": "___ Lee desserts",
+    "6": "Baited snare"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "ALL",
+    "4": "FEAST",
+    "7": "RADAR",
+    "8": "OPERA",
+    "9": "NAP"
+   },
+   "down": {
+    "1": "AFRO",
+    "2": "LEAP",
+    "3": "LADEN",
+    "5": "SARA",
+    "6": "TRAP"
+   }
+  },
+  "addedDate": "2026-11-18"
  }
 ]

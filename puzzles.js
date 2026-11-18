@@ -6728,5 +6728,153 @@ const PUZZLES=[
     "5": "Alas"
    }
   }
+ },
+ {
+  "id": "puzzler-11-12",
+  "title": "Vowel Play",
+  "author": "Puzzler",
+  "date": "2026-11-19",
+  "grid": [
+   "ITS#CAST###",
+   "AHA#ALLOT##",
+   "NIGHTLIGHT#",
+   "#SEEN#MAYOR",
+   "###AID##MOO",
+   "EVERPRESENT",
+   "MAP##YAK###",
+   "UNITY#GENT#",
+   "#SCHOOLWORK",
+   "##SEGUE#DIE",
+   "###EATS#SOY"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "letter pattern (a vowel restriction the title hints at)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one well-known name). Starred entries share a spelling restriction that the punny title hints at; the mechanism is new to the series. Medium, with several '?' clues. Checked against shipped and queued inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-18",
+  "clues": {
+   "across": {
+    "1": "\"___ a date!\"",
+    "4": "Throw a line, as an angler",
+    "8": "Lightbulb moment cry",
+    "9": "Parcel out",
+    "11": "*Glow in a kid's bedroom",
+    "14": "Spotted",
+    "15": "City hall boss",
+    "17": "First ___ kit",
+    "19": "Bovine bulletin?",
+    "20": "*Always around",
+    "25": "Atlas page",
+    "26": "Talk someone's ear off",
+    "27": "Togetherness",
+    "30": "Well-mannered fellow",
+    "33": "*What a pupil hands in",
+    "36": "Smooth transition",
+    "37": "One of a pair of cubes on a game night",
+    "38": "Grub",
+    "39": "Sauce in a sushi dish"
+   },
+   "down": {
+    "1": "McKellen who played Gandalf",
+    "2": "\"Check ___ out!\"",
+    "3": "Wise one, or a stuffing herb",
+    "4": "Feline's favorite plant",
+    "5": "Word before \"ears\" or \"thumbs\"",
+    "6": "Like the odds of a long shot",
+    "7": "Frat party wrap",
+    "10": "Herb that sounds like a clock's concern?",
+    "12": "Get wind of",
+    "13": "Saturday-morning star, for short",
+    "16": "Go bad",
+    "18": "Like a good martini, or a bad comedy?",
+    "20": "Big bird from down under",
+    "21": "Movers' rentals",
+    "22": "Long tales of heroes",
+    "23": "Philadelphia's NFL team",
+    "24": "Slant, as data",
+    "28": "Thou, as an object",
+    "29": "Class with lots of poses",
+    "31": "Silent yeses",
+    "32": "Small combo",
+    "34": "Not safe, at the plate",
+    "35": "Piano part, or a password's partner?"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-24",
+  "title": "Cut Corners",
+  "author": "Puzzler",
+  "date": "2026-11-14",
+  "grid": [
+   "ALL##",
+   "FEAST",
+   "RADAR",
+   "OPERA",
+   "##NAP"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Easy mini with mostly straight clues and two light question-mark clues. Contrasting double-corner blocks (top-right and bottom-left) vs. Core Sample side indents and the queued open/stair minis."
+  },
+  "cluesByNumber": {
+   "across": {
+    "1": "The whole amount",
+    "4": "Big celebratory meal",
+    "7": "Speeder-spotting system?",
+    "8": "Work sung on stage",
+    "9": "Catch a few Z's?"
+   },
+   "down": {
+    "1": "Rounded natural hairstyle",
+    "2": "Jump with both feet",
+    "3": "Heavily burdened",
+    "5": "___ Lee desserts",
+    "6": "Baited snare"
+   }
+  },
+  "answersByNumber": {
+   "across": {
+    "1": "ALL",
+    "4": "FEAST",
+    "7": "RADAR",
+    "8": "OPERA",
+    "9": "NAP"
+   },
+   "down": {
+    "1": "AFRO",
+    "2": "LEAP",
+    "3": "LADEN",
+    "5": "SARA",
+    "6": "TRAP"
+   }
+  },
+  "addedDate": "2026-11-18",
+  "clues": {
+   "across": {
+    "1": "The whole amount",
+    "4": "Big celebratory meal",
+    "7": "Speeder-spotting system?",
+    "8": "Work sung on stage",
+    "9": "Catch a few Z's?"
+   },
+   "down": {
+    "1": "Rounded natural hairstyle",
+    "2": "Jump with both feet",
+    "3": "Heavily burdened",
+    "5": "___ Lee desserts",
+    "6": "Baited snare"
+   }
+  }
  }
 ];
