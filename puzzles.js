@@ -6876,5 +6876,117 @@ const PUZZLES=[
     "6": "Baited snare"
    }
   }
+ },
+ {
+  "id": "puzzler-11-13",
+  "title": "First Things First",
+  "author": "Puzzler",
+  "date": "2026-11-20",
+  "grid": [
+   "#OSLO##SPA#",
+   "#BLOW#STAR#",
+   "#TABLETALK#",
+   "GUT##CAME##",
+   "USED#LIP###",
+   "MEDICINEMAN",
+   "###SAP#DATA",
+   "##GETS##DOG",
+   "#PEACEPLAN#",
+   "#HASH#ROME#",
+   "#IRE##OWED#"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "hard",
+   "themeType": "letter pattern (a sound pattern the title hints at)",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "wordCount": 38,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; place names are major capitals only). Starred entries share a pattern the title hints at; the mechanism is new to the series. Harder, with many '?' and misdirection clues to vary from recent easy and medium puzzles. Checked against shipped and queued inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-19",
+  "clues": {
+   "across": {
+    "1": "Capital where the Nobel Peace Prize is handed out",
+    "5": "Place to get a wrap that isn't lunch?",
+    "8": "Waste, as a lead",
+    "9": "Walk of Fame shape",
+    "10": "*Dinner conversation",
+    "12": "Hunch's source",
+    "13": "Showed up",
+    "14": "Like a car with a previous owner",
+    "16": "Sass from a teen, say",
+    "17": "*Tribal healer",
+    "22": "Sucker, or a maple's flow",
+    "23": "Numbers to crunch",
+    "24": "Understands, as a joke",
+    "25": "Tail-wagging friend",
+    "26": "*Proposal at a summit",
+    "29": "Diner dish, or the # key",
+    "30": "City that famously wasn't built in a day",
+    "31": "Steam coming out of one's ears?",
+    "32": "Was in the red to"
+   },
+   "down": {
+    "1": "Wider than 90 degrees, or slow on the uptake",
+    "2": "Scheduled",
+    "3": "High, soft toss",
+    "4": "Night watchman of the woods?",
+    "5": "Like an envelope ready to go",
+    "6": "Ashen",
+    "7": "Two-by-two vessel",
+    "9": "Laundry woe",
+    "11": "Overshadow",
+    "12": "Something you might pop without a pin?",
+    "15": "Bug, so to speak",
+    "18": "Hidden snag",
+    "19": "Curie title",
+    "20": "Made amends",
+    "21": "Henpeck",
+    "24": "Something you might shift without leaving your seat?",
+    "26": "Letter after upsilon",
+    "27": "Paid player",
+    "28": "Bummed"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-31",
+  "title": "Step Up",
+  "author": "Puzzler",
+  "date": "2026-11-20",
+  "grid": [
+   "##DAY",
+   "#WAGE",
+   "BERET",
+   "REED#",
+   "ADD##"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; no cross-puzzle repeats of 4+ letters). Staircase shape running top-left to bottom-right and quick clues with a couple of puns, varying from minis 27 to 30."
+  },
+  "addedDate": "2026-11-19",
+  "clues": {
+   "across": {
+    "1": "Twenty-four hours",
+    "4": "Hourly pay",
+    "5": "Beanie's French cousin?",
+    "6": "Clarinet part that's often licked?",
+    "7": "Tally up"
+   },
+   "down": {
+    "1": "Had the nerve",
+    "2": "Like fine cheddar",
+    "3": "Nevertheless",
+    "4": "Gardener's nemesis",
+    "5": "Undergarment with cups"
+   }
+  }
  }
 ];
