@@ -6896,5 +6896,116 @@
    "YET": "Nevertheless"
   },
   "addedDate": "2026-11-19"
+ },
+ {
+  "id": "puzzler-11-14",
+  "title": "Flip Side",
+  "author": "Puzzler",
+  "date": "2026-11-21",
+  "grid": [
+   "RUNS##ADS##",
+   "OFFER#COP##",
+   "COLLECTCALL",
+   "###LARS#TOO",
+   "##NODE#RIFT",
+   "#HOUSEBOAT#",
+   "LEST#POOL##",
+   "ART#LEAF###",
+   "BORDERSTATE",
+   "##INN#TOWEL",
+   "##LAD##PEEK"
+  ],
+  "phrases": [
+   "COLLECTCALL",
+   "HOUSEBOAT",
+   "BORDERSTATE"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "wordplay (two-way phrases the title hints at)",
+   "clueStyle": "two-way",
+   "source": "original",
+   "wordCount": 40,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one well-known name). Each starred clue also describes a second phrase the title hints at. The mechanism is new to the series. Medium, with a semantic twist after two letter-pattern puzzles. Checked against shipped and queued inventory and the current stoplist."
+  },
+  "clues": {
+   "RUNS": "Stocking snags",
+   "ADS": "Commercial breaks?",
+   "OFFER": "Bid",
+   "COP": "Officer on the beat",
+   "COLLECTCALL": "*Phone request with the charges reversed (flip it, and you're asking for one)",
+   "LARS": "Metallica drummer Ulrich",
+   "TOO": "Excessively",
+   "NODE": "Point where branches meet",
+   "RIFT": "Falling-out",
+   "HOUSEBOAT": "*Floating home (flip it, and it's where a rowboat is stored)",
+   "LEST": "\"___ we forget\"",
+   "POOL": "Shark's hangout, or a hustler's game?",
+   "ART": "Gallery offering",
+   "LEAF": "Page in a book, or something to turn over",
+   "BORDERSTATE": "*Kentucky or Maryland, in Civil War history (flip it for a line on a map)",
+   "INN": "Roadside rest stop",
+   "TOWEL": "Something thrown in when quitting",
+   "LAD": "Highland youngster",
+   "PEEK": "Sneak a look",
+   "ROC": "Giant bird of Sinbad's tales",
+   "LAB": "Place for test tubes",
+   "UFO": "Roswell sighting",
+   "HERO": "Sub with a cape?",
+   "NFL": "Super Bowl org.",
+   "NOSTRIL": "One of two openings on your face",
+   "SELLOUT": "Packed-house event, or one who caves for cash",
+   "DNA": "Genetic code",
+   "READS": "Pores over",
+   "LEND": "Front, as money",
+   "CREEPER": "Ivy, for one",
+   "ACTS": "Plays parts",
+   "BOAST": "Brag",
+   "DOC": "One making rounds",
+   "ROOFTOP": "Santa's landing pad",
+   "SPATIAL": "Relating to three dimensions",
+   "AWE": "Jaw-dropping wonder",
+   "LOFT": "Converted warehouse apartment",
+   "TEE": "Golf peg",
+   "LOT": "Fate, or a parking area",
+   "ELK": "Antlered grazer"
+  },
+  "addedDate": "2026-11-20"
+ },
+ {
+  "id": "puzzler-mini-32",
+  "title": "Horse Sense",
+  "author": "Puzzler",
+  "date": "2026-11-21",
+  "grid": [
+   "GAS##",
+   "OUTDO",
+   "STOOP",
+   "HORSE",
+   "##MEN"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "hard",
+   "themeType": "themeless",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; one cross-puzzle 4+ letter repeat). New shape with two-square blocks in opposite corners, and harder, misdirecting clues, varying from minis 27 to 31."
+  },
+  "clues": {
+   "GAS": "Pedal you might step on it with?",
+   "OUTDO": "Top",
+   "STOOP": "Front-step hangout, or sink low",
+   "HORSE": "Stable resident, or a hoarse-sounding one?",
+   "MEN": "Chess pieces, collectively",
+   "GOSH": "\"Golly!\"",
+   "AUTO": "Setting that does the work for you",
+   "STORM": "Barge (in)",
+   "DOSE": "Spoonful of medicine, say",
+   "OPEN": "Like a 24-hour diner"
+  },
+  "addedDate": "2026-11-20"
  }
 ]
