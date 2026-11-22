@@ -7258,5 +7258,121 @@ const PUZZLES=[
     "5": "Biggest brass in a marching band"
    }
   }
+ },
+ {
+  "id": "puzzler-11-23",
+  "title": "Blend In",
+  "author": "Puzzler",
+  "date": "2026-11-23",
+  "grid": [
+   "INS##HAS###",
+   "FAT#RAGED##",
+   "SHOPAHOLIC#",
+   "##POD##FOOL",
+   "###RICE#DIE",
+   "EDUTAINMENT",
+   "VAN#LATE###",
+   "EDIT##RED##",
+   "#STAYCATION",
+   "##SNOOP#VIA",
+   "###GUN##ALP"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "portmanteau (each theme answer blends two words into one)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese or proper names; one common agency abbreviation); one section was refilled to replace a weaker entry. Each theme answer is a modern blend of two words, as the title hints; the mechanism is new to the series. Medium, with about a quarter of the clues playful or with '?'. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-22",
+  "clues": {
+   "across": {
+    "1": "Connections that get a foot in the door",
+    "4": "Contains",
+    "7": "\"___ chance!\"",
+    "8": "Stormed",
+    "10": "Mall regular with a credit-card problem",
+    "13": "Pea's home?",
+    "14": "One taken in on April 1?",
+    "16": "Sushi base",
+    "19": "Something rolled at game night",
+    "20": "Genre of a show that teaches kids to count with puppets",
+    "24": "Moving vehicle?",
+    "25": "Overdue",
+    "26": "Revise",
+    "28": "In the ___ (losing money)",
+    "30": "Time off spent close to home",
+    "35": "Nose around?",
+    "36": "Stopping at along the way",
+    "37": "Rev, as an engine",
+    "38": "Matterhorn, for one"
+   },
+   "down": {
+    "1": "Hypotheticals",
+    "2": "\"Thanks, but I'll pass\"",
+    "3": "Bus ___",
+    "4": "Sarcastic laugh syllable",
+    "5": "Back in the day",
+    "6": "One's identity",
+    "8": "Kind of tire",
+    "9": "LED component",
+    "11": "Left, at sea?",
+    "12": "Something to flip?",
+    "15": "Rented out",
+    "17": "Langley org.",
+    "18": "Catch in a sting",
+    "20": "Christmas ___",
+    "21": "Pops",
+    "22": "Apartment building's parts?",
+    "23": "Swim ___",
+    "27": "Sharp flavor",
+    "29": "Opera star with attitude",
+    "31": "\"___ had me at hello\"",
+    "32": "Swindle",
+    "33": "Painter's medium?",
+    "34": "Forty winks"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-42",
+  "title": "Making Waves",
+  "author": "Puzzler",
+  "date": "2026-11-23",
+  "grid": [
+   "ORCA#",
+   "MEANS",
+   "INDIE",
+   "TERSE",
+   "#WEEK"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: no names or abbreviations. Single blocks top-right and bottom-left. Medium, with a couple of '?' clues. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-22",
+  "clues": {
+   "across": {
+    "1": "Whale of a predator?",
+    "5": "Signifies",
+    "7": "Like a film made outside the big studios",
+    "8": "Short and not so sweet?",
+    "9": "Seven-day stretch"
+   },
+   "down": {
+    "1": "Skip over",
+    "2": "Extend, as a library book",
+    "3": "Core group of trained people",
+    "4": "Seed with a licorice flavor",
+    "6": "Go looking for"
+   }
+  }
  }
 ];

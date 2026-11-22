@@ -7160,5 +7160,118 @@
    "TENS": "Perfect scores from Olympic judges"
   },
   "addedDate": "2026-11-21"
+ },
+ {
+  "id": "puzzler-11-23",
+  "title": "Blend In",
+  "author": "Puzzler",
+  "date": "2026-11-23",
+  "grid": [
+   "INS##HAS###",
+   "FAT#RAGED##",
+   "SHOPAHOLIC#",
+   "##POD##FOOL",
+   "###RICE#DIE",
+   "EDUTAINMENT",
+   "VAN#LATE###",
+   "EDIT##RED##",
+   "#STAYCATION",
+   "##SNOOP#VIA",
+   "###GUN##ALP"
+  ],
+  "phrases": [
+   "SHOPAHOLIC",
+   "EDUTAINMENT",
+   "STAYCATION"
+  ],
+  "clues": {
+   "INS": "Connections that get a foot in the door",
+   "HAS": "Contains",
+   "FAT": "\"___ chance!\"",
+   "RAGED": "Stormed",
+   "SHOPAHOLIC": "Mall regular with a credit-card problem",
+   "POD": "Pea's home?",
+   "FOOL": "One taken in on April 1?",
+   "RICE": "Sushi base",
+   "DIE": "Something rolled at game night",
+   "EDUTAINMENT": "Genre of a show that teaches kids to count with puppets",
+   "VAN": "Moving vehicle?",
+   "LATE": "Overdue",
+   "EDIT": "Revise",
+   "RED": "In the ___ (losing money)",
+   "STAYCATION": "Time off spent close to home",
+   "SNOOP": "Nose around?",
+   "VIA": "Stopping at along the way",
+   "GUN": "Rev, as an engine",
+   "ALP": "Matterhorn, for one",
+   "IFS": "Hypotheticals",
+   "EVE": "Christmas ___",
+   "NAH": "\"Thanks, but I'll pass\"",
+   "DADS": "Pops",
+   "STOP": "Bus ___",
+   "UNITS": "Apartment building's parts?",
+   "PORT": "Left, at sea?",
+   "TANG": "Sharp flavor",
+   "RADIAL": "Kind of tire",
+   "YOU": "\"___ had me at hello\"",
+   "HAH": "Sarcastic laugh syllable",
+   "CIA": "Langley org.",
+   "CON": "Swindle",
+   "AGO": "Back in the day",
+   "ENTRAP": "Catch in a sting",
+   "SELF": "One's identity",
+   "MEET": "Swim ___",
+   "DIODE": "LED component",
+   "DIVA": "Opera star with attitude",
+   "COIN": "Something to flip?",
+   "OIL": "Painter's medium?",
+   "LET": "Rented out",
+   "NAP": "Forty winks"
+  },
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "portmanteau (each theme answer blends two words into one)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese or proper names; one common agency abbreviation); one section was refilled to replace a weaker entry. Each theme answer is a modern blend of two words, as the title hints; the mechanism is new to the series. Medium, with about a quarter of the clues playful or with '?'. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-22"
+ },
+ {
+  "id": "puzzler-mini-42",
+  "title": "Making Waves",
+  "author": "Puzzler",
+  "date": "2026-11-23",
+  "grid": [
+   "ORCA#",
+   "MEANS",
+   "INDIE",
+   "TERSE",
+   "#WEEK"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: no names or abbreviations. Single blocks top-right and bottom-left. Medium, with a couple of '?' clues. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "clues": {
+   "ORCA": "Whale of a predator?",
+   "MEANS": "Signifies",
+   "INDIE": "Like a film made outside the big studios",
+   "TERSE": "Short and not so sweet?",
+   "WEEK": "Seven-day stretch",
+   "OMIT": "Skip over",
+   "RENEW": "Extend, as a library book",
+   "CADRE": "Core group of trained people",
+   "ANISE": "Seed with a licorice flavor",
+   "SEEK": "Go looking for"
+  },
+  "addedDate": "2026-11-22"
  }
 ]
