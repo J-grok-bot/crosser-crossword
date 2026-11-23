@@ -7374,5 +7374,123 @@ const PUZZLES=[
     "6": "Go looking for"
    }
   }
+ },
+ {
+  "id": "puzzler-11-08",
+  "title": "Having a Ball",
+  "author": "Puzzler",
+  "date": "2026-11-15",
+  "grid": [
+   "#SLAP#PRISM",
+   "TWICE#LANCE",
+   "WATERCANNON",
+   "ONE#SON#AND",
+   "###DON#ATE#",
+   "##GUNFIRE##",
+   "#TOO#INK###",
+   "LIB#ART#WET",
+   "ALLTIMEHIGH",
+   "IDIOM#NUDGE",
+   "RENTS#TEES#"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "ends-with (last words precede a common word)",
+   "clueStyle": "straight",
+   "source": "original",
+   "wordCount": 44,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese, no proper names in fill). Starred entries share a hidden link that the title unlocks; mechanism differs from the previous two full-size puzzles. Straighter clue style and a lighter 24-block grid vary the recent mix. Checked against shipped and queued inventory."
+  },
+  "addedDate": "2026-11-23",
+  "clues": {
+   "across": {
+    "1": "Open-handed hit",
+    "5": "Rainbow-making glass",
+    "10": "On a pair of occasions",
+    "11": "Jousting weapon",
+    "12": "*Crowd-dispersing hose",
+    "14": "Lowest number on a die",
+    "15": "Prodigal ___",
+    "16": "Ampersand, spelled out",
+    "17": "Put on, as a coat",
+    "18": "Polished off, as a plate",
+    "19": "*Racket from a shooting range",
+    "21": "Also",
+    "22": "Sign, as a contract",
+    "23": "Ad-___ (improvise)",
+    "24": "What a museum curator curates",
+    "25": "Like fresh paint",
+    "28": "*Record peak for a stock",
+    "31": "'Break a leg,' for one",
+    "32": "Gentle elbow poke",
+    "33": "Doesn't buy, say",
+    "34": "Golf pegs"
+   },
+   "down": {
+    "1": "Graceful lake glider",
+    "2": "Low-cal, on a beer label",
+    "3": "Serve nobody returns",
+    "4": "Individual",
+    "5": "Blueprint",
+    "6": "Was a candidate",
+    "7": "Inborn",
+    "8": "Teatime pastry",
+    "9": "Patch up",
+    "10": "Number of sides in a coin flip",
+    "13": "Verify",
+    "17": "Pair of performers",
+    "18": "Lost ___ (Indiana Jones quarry)",
+    "19": "Mischievous fantasy creature",
+    "20": "Purpose",
+    "21": "Squiggle in 'se\u00f1or'",
+    "23": "Villain's hideout",
+    "24": "Goals",
+    "25": "Broad",
+    "26": "Carton contents",
+    "27": "Word before 'end' in many films",
+    "29": "Toddler",
+    "30": "Shade"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-43",
+  "title": "Pen Pals",
+  "author": "Puzzler",
+  "date": "2026-12-04",
+  "grid": [
+   "#SNUB",
+   "SWINE",
+   "TACIT",
+   "ETHOS",
+   "WHEN#"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "straight",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Easy, mostly straight clues with one '?' pun that the title nods to. Single blocks top-left and bottom-right. No names or abbreviations. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-23",
+  "clues": {
+   "across": {
+    "1": "Give the cold shoulder",
+    "5": "Pen pals?",
+    "6": "Understood without being said",
+    "7": "Guiding spirit of a group or era",
+    "8": "At what time?"
+   },
+   "down": {
+    "1": "Broad strip, as of mowed grass",
+    "2": "Recess in a wall for a statue",
+    "3": "Labor group that may call a strike",
+    "4": "Wagers at the track",
+    "5": "Hearty one-pot meal"
+   }
+  }
  }
 ];
