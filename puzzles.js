@@ -7492,5 +7492,121 @@ const PUZZLES=[
     "5": "Hearty one-pot meal"
    }
   }
+ },
+ {
+  "id": "puzzler-11-15",
+  "title": "Spell It Out",
+  "author": "Puzzler",
+  "date": "2026-11-23",
+  "grid": [
+   "SIT##ABS###",
+   "WOO#BRIAR##",
+   "ATTHEMOMENT",
+   "BASAL###CEO",
+   "###LIT#LORE",
+   "#NEVERMIND#",
+   "CONE#YIN###",
+   "HUE###NESTS",
+   "INMYOPINION",
+   "##YEARS#PRO",
+   "###WRY##SOW"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "easy",
+   "themeType": "expansion (theme answers expand texting shorthand)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one name). Starred clues give short texting forms, and the answers spell them out, as the title says. The mechanism is new to the series. Easy, with a modern, casual tone. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-24",
+  "clues": {
+   "across": {
+    "1": "Command to a pup",
+    "4": "Six-pack, at the gym",
+    "7": "Try to win over with flowers and flattery",
+    "8": "Thorny patch",
+    "10": "*ATM, in a text",
+    "14": "___ metabolic rate",
+    "15": "Exec at the top",
+    "16": "Turned on, or really fun",
+    "18": "Body of folk tales",
+    "19": "*NVM, in a text",
+    "22": "Ice cream holder",
+    "23": "Dark half of a Taoist symbol",
+    "24": "Color wheel choice",
+    "25": "Fits snugly inside one another, like mixing bowls",
+    "29": "*IMO, in a text",
+    "33": "Decades are made of them",
+    "34": "Point in favor",
+    "35": "Dryly funny",
+    "36": "Mother pig"
+   },
+   "down": {
+    "1": "Cotton-tipped stick",
+    "2": "Smidgen",
+    "3": "Tater ___",
+    "4": "Sleeve filler",
+    "5": "Profile blurb, for short",
+    "6": "Uncle ___",
+    "8": "Give a false impression of",
+    "9": "Scouting mission, for short",
+    "11": "Cut in two",
+    "12": "Self-proclaimed fan of a niche topic",
+    "13": "Piggy that went to market",
+    "17": "Give it a go",
+    "18": "Bed sheet fabric",
+    "19": "Person, place or thing",
+    "20": "Foe",
+    "21": "Five-by-five puzzles, often",
+    "22": "Tai ___",
+    "26": "Small drinks",
+    "27": "Bull in a bullring",
+    "28": "White Christmas need",
+    "30": "Evergreen with red berries",
+    "31": "Something rowed",
+    "32": "Snoop"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-44",
+  "title": "Bear With Me",
+  "author": "Puzzler",
+  "date": "2026-12-05",
+  "grid": [
+   "ARCS#",
+   "POOH#",
+   "TORAH",
+   "#MAMA",
+   "#SLED"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "hard",
+   "themeType": "themeless",
+   "clueStyle": "misdirection",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Hard themeless with misdirection clues (two '?'). Vertical two-square blocks top-right and bottom-left. One title-friendly storybook name; no abbreviations or crosswordese. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-24",
+  "clues": {
+   "across": {
+    "1": "Paths of thrown footballs",
+    "5": "Bear who's a little stuffed?",
+    "6": "Scroll read aloud on Shabbat",
+    "8": "\"___ Mia!\" (ABBA hit and stage musical)",
+    "9": "Rosebud, famously"
+   },
+   "down": {
+    "1": "On the nose",
+    "2": "Bunks (with)",
+    "3": "Living part of a reef",
+    "4": "\"What a pity!\"",
+    "7": "Took for a ride?"
+   }
+  }
  }
 ];

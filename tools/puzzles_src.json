@@ -7388,5 +7388,118 @@
    "STEW": "Hearty one-pot meal"
   },
   "addedDate": "2026-11-23"
+ },
+ {
+  "id": "puzzler-11-15",
+  "title": "Spell It Out",
+  "author": "Puzzler",
+  "date": "2026-11-23",
+  "grid": [
+   "SIT##ABS###",
+   "WOO#BRIAR##",
+   "ATTHEMOMENT",
+   "BASAL###CEO",
+   "###LIT#LORE",
+   "#NEVERMIND#",
+   "CONE#YIN###",
+   "HUE###NESTS",
+   "INMYOPINION",
+   "##YEARS#PRO",
+   "###WRY##SOW"
+  ],
+  "phrases": [
+   "ATTHEMOMENT",
+   "NEVERMIND",
+   "INMYOPINION"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "easy",
+   "themeType": "expansion (theme answers expand texting shorthand)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: obscure fill avoided (no crosswordese; one name). Starred clues give short texting forms, and the answers spell them out, as the title says. The mechanism is new to the series. Easy, with a modern, casual tone. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "clues": {
+   "SIT": "Command to a pup",
+   "ABS": "Six-pack, at the gym",
+   "BRIAR": "Thorny patch",
+   "ATTHEMOMENT": "*ATM, in a text",
+   "BASAL": "___ metabolic rate",
+   "CEO": "Exec at the top",
+   "LIT": "Turned on, or really fun",
+   "LORE": "Body of folk tales",
+   "NEVERMIND": "*NVM, in a text",
+   "CONE": "Ice cream holder",
+   "YIN": "Dark half of a Taoist symbol",
+   "HUE": "Color wheel choice",
+   "NESTS": "Fits snugly inside one another, like mixing bowls",
+   "INMYOPINION": "*IMO, in a text",
+   "YEARS": "Decades are made of them",
+   "PRO": "Point in favor",
+   "WRY": "Dryly funny",
+   "SOW": "Mother pig",
+   "CHI": "Tai ___",
+   "IOTA": "Smidgen",
+   "NOUN": "Person, place or thing",
+   "TOTS": "Tater ___",
+   "ENEMY": "Foe",
+   "HALVE": "Cut in two",
+   "YEW": "Evergreen with red berries",
+   "BELIE": "Give a false impression of",
+   "OAR": "Something rowed",
+   "ARM": "Sleeve filler",
+   "TRY": "Give it a go",
+   "PRY": "Snoop",
+   "BIO": "Profile blurb, for short",
+   "MINIS": "Five-by-five puzzles, often",
+   "SAM": "Uncle ___",
+   "LINEN": "Bed sheet fabric",
+   "RECON": "Scouting mission, for short",
+   "SIPS": "Small drinks",
+   "NERD": "Self-proclaimed fan of a niche topic",
+   "TORO": "Bull in a bullring",
+   "TOE": "Piggy that went to market",
+   "SNOW": "White Christmas need",
+   "SWAB": "Cotton-tipped stick",
+   "WOO": "Try to win over with flowers and flattery"
+  },
+  "addedDate": "2026-11-24"
+ },
+ {
+  "id": "puzzler-mini-44",
+  "title": "Bear With Me",
+  "author": "Puzzler",
+  "date": "2026-12-05",
+  "grid": [
+   "ARCS#",
+   "POOH#",
+   "TORAH",
+   "#MAMA",
+   "#SLED"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "hard",
+   "themeType": "themeless",
+   "clueStyle": "misdirection",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Hard themeless with misdirection clues (two '?'). Vertical two-square blocks top-right and bottom-left. One title-friendly storybook name; no abbreviations or crosswordese. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "clues": {
+   "ARCS": "Paths of thrown footballs",
+   "POOH": "Bear who's a little stuffed?",
+   "TORAH": "Scroll read aloud on Shabbat",
+   "MAMA": "\"___ Mia!\" (ABBA hit and stage musical)",
+   "SLED": "Rosebud, famously",
+   "APT": "On the nose",
+   "ROOMS": "Bunks (with)",
+   "CORAL": "Living part of a reef",
+   "SHAME": "\"What a pity!\"",
+   "HAD": "Took for a ride?"
+  },
+  "addedDate": "2026-11-24"
  }
 ]
