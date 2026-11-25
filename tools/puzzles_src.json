@@ -7501,5 +7501,116 @@
    "HAD": "Took for a ride?"
   },
   "addedDate": "2026-11-24"
+ },
+ {
+  "id": "puzzler-11-24",
+  "title": "Lunch Counter",
+  "author": "Puzzler",
+  "date": "2026-12-04",
+  "grid": [
+   "##STAB##SPY",
+   "##TIDY#SHEA",
+   "CHEESESTEAK",
+   "HELD##HID##",
+   "ILL##GAL###",
+   "#PATTYMELT#",
+   "###AIM##AWE",
+   "##ARM##SWIG",
+   "MONTECRISTO",
+   "OWNS#AUTO##",
+   "BEE##BEEN##"
+  ],
+  "phrases": [
+   "CHEESESTEAK"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "hard",
+   "themeType": "category",
+   "clueStyle": "trivia",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Category/list theme (an untried mechanism): the three symmetric long answers are all items from one menu category, clued with trivia; no revealer, the title points the way. Hard, trivia-leaning clues with four '?' clues. 11/9/11 layout, 34 blocks. A few well-known names only. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "clues": {
+   "CHEESESTEAK": "Philadelphia icon often ordered \"wit\" or \"witout\"",
+   "PATTYMELT": "Diner classic of a burger and Swiss on griddled rye",
+   "MONTECRISTO": "Battered, fried ham-and-cheese named for a fictional count",
+   "STAB": "Attempt, informally",
+   "STELLA": "Name bellowed by Stanley Kowalski",
+   "TIED": "All square",
+   "ADS": "Things skipped after five seconds?",
+   "BYE": "Free pass in a tournament bracket",
+   "SPY": "Mata Hari, notably",
+   "SHED": "Lose, as winter fur",
+   "PEA": "Sweet ___ (climbing flower)",
+   "YAK": "Tibetan pack animal",
+   "TIDY": "Like a well-made bed",
+   "SHEA": "___ butter (moisturizer from an African nut)",
+   "STILE": "Steps over a fence",
+   "CHI": "Vital energy, in qigong",
+   "HELP": "Beatles film with an exclamation point in its title",
+   "SHAM": "Fake pillow cover?",
+   "HELD": "Put on pause, as calls",
+   "HID": "Took cover",
+   "ILL": "Laid up",
+   "GAL": "Guy's counterpart",
+   "GYM": "Where you might work out your issues?",
+   "TARTS": "Treacle and Bakewell, for two",
+   "TIME": "Magazine with a red border",
+   "LAWSON": "Nigella of TV cooking",
+   "TWIT": "Silly so-and-so",
+   "AIM": "Draw a bead",
+   "AWE": "Shock's partner",
+   "EGO": "Freud's referee between impulse and conscience",
+   "ARM": "Reach, as of the law",
+   "ANNE": "Green Gables girl",
+   "SWIG": "Big gulp",
+   "SITE": "Web address destination",
+   "MOB": "Flash ___ (sudden crowd)",
+   "OWE": "Have outstanding",
+   "CAB": "Ride you might hail",
+   "RUE": "Paris street",
+   "OWNS": "Absolutely dominates, in gamer slang",
+   "AUTO": "___-correct (texting gremlin)",
+   "BEE": "Spelling contest",
+   "BEEN": "Gone and come back"
+  },
+  "addedDate": "2026-11-25"
+ },
+ {
+  "id": "puzzler-mini-45",
+  "title": "Over Par",
+  "author": "Puzzler",
+  "date": "2026-12-06",
+  "grid": [
+   "#FAR#",
+   "BOGEY",
+   "ARISE",
+   "TULIP",
+   "#MEN#"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Medium themeless with wordplay-leaning clues (two '?'). Single blocks in all four corners. Zero answers repeated from other puzzles at 4+ letters; no names, abbreviations or crosswordese. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "clues": {
+   "FAR": "So ___, so good",
+   "BOGEY": "One over the course of a hole?",
+   "ARISE": "Come up, as a question",
+   "TULIP": "Bulb that's big in Amsterdam?",
+   "MEN": "Merry ones in Sherwood Forest",
+   "BAT": "Take a turn at the plate",
+   "FORUM": "Roman meeting place that's now often online",
+   "AGILE": "Nimble, like a good gymnast",
+   "RESIN": "Sticky stuff from a pine",
+   "YEP": "\"You got it\""
+  },
+  "addedDate": "2026-11-25"
  }
 ]

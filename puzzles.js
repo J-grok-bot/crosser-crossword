@@ -7608,5 +7608,121 @@ const PUZZLES=[
     "7": "Took for a ride?"
    }
   }
+ },
+ {
+  "id": "puzzler-11-24",
+  "title": "Lunch Counter",
+  "author": "Puzzler",
+  "date": "2026-12-04",
+  "grid": [
+   "##STAB##SPY",
+   "##TIDY#SHEA",
+   "CHEESESTEAK",
+   "HELD##HID##",
+   "ILL##GAL###",
+   "#PATTYMELT#",
+   "###AIM##AWE",
+   "##ARM##SWIG",
+   "MONTECRISTO",
+   "OWNS#AUTO##",
+   "BEE##BEEN##"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "hard",
+   "themeType": "category",
+   "clueStyle": "trivia",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Category/list theme (an untried mechanism): the three symmetric long answers are all items from one menu category, clued with trivia; no revealer, the title points the way. Hard, trivia-leaning clues with four '?' clues. 11/9/11 layout, 34 blocks. A few well-known names only. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-25",
+  "clues": {
+   "across": {
+    "1": "Attempt, informally",
+    "5": "Mata Hari, notably",
+    "8": "Like a well-made bed",
+    "9": "___ butter (moisturizer from an African nut)",
+    "10": "Philadelphia icon often ordered \"wit\" or \"witout\"",
+    "13": "Put on pause, as calls",
+    "14": "Took cover",
+    "15": "Laid up",
+    "16": "Guy's counterpart",
+    "17": "Diner classic of a burger and Swiss on griddled rye",
+    "22": "Draw a bead",
+    "23": "Shock's partner",
+    "25": "Reach, as of the law",
+    "26": "Big gulp",
+    "27": "Battered, fried ham-and-cheese named for a fictional count",
+    "31": "Absolutely dominates, in gamer slang",
+    "32": "___-correct (texting gremlin)",
+    "33": "Spelling contest",
+    "34": "Gone and come back"
+   },
+   "down": {
+    "1": "Name bellowed by Stanley Kowalski",
+    "2": "All square",
+    "3": "Things skipped after five seconds?",
+    "4": "Free pass in a tournament bracket",
+    "5": "Lose, as winter fur",
+    "6": "Sweet ___ (climbing flower)",
+    "7": "Tibetan pack animal",
+    "9": "Steps over a fence",
+    "10": "Vital energy, in qigong",
+    "11": "Beatles film with an exclamation point in its title",
+    "12": "Fake pillow cover?",
+    "16": "Where you might work out your issues?",
+    "18": "Treacle and Bakewell, for two",
+    "19": "Magazine with a red border",
+    "20": "Nigella of TV cooking",
+    "21": "Silly so-and-so",
+    "24": "Freud's referee between impulse and conscience",
+    "25": "Green Gables girl",
+    "26": "Web address destination",
+    "27": "Flash ___ (sudden crowd)",
+    "28": "Have outstanding",
+    "29": "Ride you might hail",
+    "30": "Paris street"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-45",
+  "title": "Over Par",
+  "author": "Puzzler",
+  "date": "2026-12-06",
+  "grid": [
+   "#FAR#",
+   "BOGEY",
+   "ARISE",
+   "TULIP",
+   "#MEN#"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Medium themeless with wordplay-leaning clues (two '?'). Single blocks in all four corners. Zero answers repeated from other puzzles at 4+ letters; no names, abbreviations or crosswordese. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-25",
+  "clues": {
+   "across": {
+    "1": "So ___, so good",
+    "4": "One over the course of a hole?",
+    "6": "Come up, as a question",
+    "7": "Bulb that's big in Amsterdam?",
+    "8": "Merry ones in Sherwood Forest"
+   },
+   "down": {
+    "1": "Roman meeting place that's now often online",
+    "2": "Nimble, like a good gymnast",
+    "3": "Sticky stuff from a pine",
+    "4": "Take a turn at the plate",
+    "5": "\"You got it\""
+   }
+  }
  }
 ];
