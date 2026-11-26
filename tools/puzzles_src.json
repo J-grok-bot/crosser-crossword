@@ -7612,5 +7612,118 @@
    "YEP": "\"You got it\""
   },
   "addedDate": "2026-11-25"
+ },
+ {
+  "id": "puzzler-11-16",
+  "title": "Either Way",
+  "author": "Puzzler",
+  "date": "2026-11-24",
+  "grid": [
+   "ADS##FINE##",
+   "INK#CANAL##",
+   "RAINORSHINE",
+   "##SAM###TAG",
+   "###NBA#MEMO",
+   "#WINORLOSE#",
+   "BODY#MUG###",
+   "EVE###NUT##",
+   "DEADORALIVE",
+   "##LOWER#CIA",
+   "##SEND##SAT"
+  ],
+  "phrases": [
+   "RAINORSHINE",
+   "WINORLOSE",
+   "DEADORALIVE"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "medium",
+   "themeType": "binary choice (each theme answer is an either/or phrase)",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ratings brief: crosswordese avoided; one name and a few common abbreviations. Each theme answer is a familiar either/or phrase, as the title suggests. Medium, with plain and lightly playful clues. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "clues": {
+   "ADS": "They pay for free TV",
+   "FINE": "Penalty that might arrive by mail",
+   "INK": "What a squid squirts when spooked",
+   "CANAL": "Panama's shortcut",
+   "RAINORSHINE": "Whatever the weather brings",
+   "SAM": "Recruiting-poster uncle",
+   "TAG": "Playground chase game",
+   "NBA": "League with a three-point line",
+   "MEMO": "Note that might start \"To all staff\"",
+   "WINORLOSE": "No matter the final score",
+   "BODY": "Part of an essay between intro and conclusion",
+   "EVE": "Time for hanging stockings or counting down",
+   "NUT": "Fanatic",
+   "DEADORALIVE": "Old wanted-poster terms",
+   "LOWER": "Turn down, as the volume",
+   "CIA": "Langley agency, for short",
+   "SEND": "Click after composing",
+   "SAT": "Took a seat",
+   "AIR": "Bike pump output",
+   "BED": "Garden plot",
+   "DNA": "Genetic blueprint",
+   "WOVE": "Made a basket, in a way",
+   "SKIS": "Slope gear",
+   "IDEALS": "Lofty principles",
+   "NANNY": "Mary Poppins, for one",
+   "DOE": "Fawn's mother",
+   "COMBO": "Burger, fries and a drink, say",
+   "OWN": "Possess",
+   "FAR": "Way off",
+   "RED": "Stop-sign color",
+   "INS": "Connections, informally",
+   "LUNAR": "Like some eclipses",
+   "NAH": "\"I'll pass, thanks\"",
+   "MOGUL": "Media bigwig",
+   "ELITES": "Top tier",
+   "TICS": "Nervous habits",
+   "NAME": "It's on a badge",
+   "VIA": "Routed through",
+   "EGO": "Self-image",
+   "EAT": "Have dinner",
+   "ARM": "Branch of a company",
+   "MUG": "Cocoa holder"
+  },
+  "addedDate": "2026-11-26"
+ },
+ {
+  "id": "puzzler-mini-46",
+  "title": "Elbow Room",
+  "author": "Puzzler",
+  "date": "2026-12-07",
+  "grid": [
+   "##EMU",
+   "ISLES",
+   "NOBLE",
+   "CLOTS",
+   "HOW##"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "mixed",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Easy themeless with mixed clues (two '?'). Two-square blocks top-left and bottom-right. One film-character name; no abbreviations or crosswordese. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "clues": {
+   "EMU": "Outback runner with feathers",
+   "ISLES": "British ___ (Britain, Ireland and company)",
+   "NOBLE": "Like a duke, or like neon",
+   "CLOTS": "Thickens, as cream",
+   "HOW": "\"___ are you?\"",
+   "INCH": "Move very slowly (along)",
+   "SOLO": "Han ___ of \"Star Wars\"",
+   "ELBOW": "Grease source for hard scrubbing?",
+   "MELT": "What snowmen do in spring?",
+   "USES": "Employs"
+  },
+  "addedDate": "2026-11-26"
  }
 ]
