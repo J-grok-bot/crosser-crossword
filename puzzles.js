@@ -7840,5 +7840,119 @@ const PUZZLES=[
     "5": "Han ___ of \"Star Wars\""
    }
   }
+ },
+ {
+  "id": "puzzler-11-18",
+  "title": "Cool It",
+  "author": "Puzzler",
+  "date": "2026-11-28",
+  "grid": [
+   "#CAT##SKI##",
+   "#AGES#WIN##",
+   "#DONTPANIC#",
+   "####ARM#TUB",
+   "ATTIRE#LIRA",
+   "BREATHEEASY",
+   "BARN#EXILES",
+   "AIR#TAP####",
+   "#LIGHTENUP#",
+   "##FOE#LIFE#",
+   "##YON##BOW#"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "easy",
+   "themeType": "shared clue (all theme answers have the same clue)",
+   "clueStyle": "straight",
+   "source": "original",
+   "wordCount": 40,
+   "notes": "Ratings brief: two names and no abbreviations beyond one everyday one; light on obscure fill. The theme answers share one identical clue, and each is a different way of saying it; the mechanism is new to the series. Easy, with straight clues. Checked against shipped, queued and held inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-27",
+  "clues": {
+   "across": {
+    "1": "Pet that purrs",
+    "4": "Hit the slopes",
+    "7": "A really long time",
+    "9": "Come in first",
+    "10": "\"Relax!\"",
+    "13": "Limb with an elbow",
+    "14": "Bath spot",
+    "16": "Clothing",
+    "20": "Italy's currency before the euro",
+    "21": "\"Relax!\"",
+    "23": "Farm building",
+    "24": "Banishes",
+    "25": "Put on TV",
+    "26": "Dance with metal-soled shoes",
+    "27": "\"Relax!\"",
+    "32": "Enemy",
+    "33": "Board game with a spinner",
+    "34": "Hither and ___",
+    "35": "Gift-wrap topper"
+   },
+   "down": {
+    "1": "Scoundrel",
+    "2": "In the past",
+    "3": "Number of toes",
+    "4": "Did laps in the pool",
+    "5": "Relatives",
+    "6": "First letter",
+    "8": "Begin",
+    "11": "Oven step before baking",
+    "12": "Hex",
+    "15": "Coastal inlets",
+    "16": "\"Mamma Mia!\" band",
+    "17": "Hiking path",
+    "18": "Scare silly",
+    "19": "Actor McKellen",
+    "20": "Hawaiian garland",
+    "22": "Kick out",
+    "26": "Next",
+    "28": "Sticky stuff",
+    "29": "Pen tip",
+    "30": "Flying saucer, briefly",
+    "31": "Church bench"
+   }
+  }
+ },
+ {
+  "id": "puzzler-mini-30",
+  "title": "Low Bar",
+  "author": "Puzzler",
+  "date": "2026-11-19",
+  "grid": [
+   "GAME#",
+   "EXAMS",
+   "LIMBO",
+   "SOBER",
+   "#MADE"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "medium",
+   "themeType": "themeless",
+   "clueStyle": "trivia",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; no cross-puzzle repeats of 4+ letters). Two-corner shape opposite to mini-26's and fact-based clues, varying from minis 26 to 29."
+  },
+  "addedDate": "2026-11-27",
+  "clues": {
+   "across": {
+    "1": "Chess or checkers",
+    "5": "Finals, for example",
+    "7": "Party dance that keeps getting lower",
+    "8": "Designated driver's state",
+    "9": "Like a bed after housekeeping visits"
+   },
+   "down": {
+    "1": "Comes together, as a team",
+    "2": "Self-evident truth",
+    "3": "Speedy African snake, black or green",
+    "4": "Put inside, as a video on a webpage",
+    "6": "Achy after leg day"
+   }
+  }
  }
 ];
