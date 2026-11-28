@@ -7836,5 +7836,40 @@
    "SORE": "Achy after leg day"
   },
   "addedDate": "2026-11-27"
+ },
+ {
+  "id": "puzzler-mini-34",
+  "title": "Proof Positive",
+  "author": "Puzzler",
+  "date": "2026-11-23",
+  "grid": [
+   "PEST#",
+   "EACH#",
+   "PROOF",
+   "#LOSE",
+   "#SPEW"
+  ],
+  "meta": {
+   "size": "5x5",
+   "difficulty": "easy",
+   "themeType": "themeless",
+   "clueStyle": "straight",
+   "source": "original",
+   "wordCount": 10,
+   "notes": "Ratings brief: clean, familiar fill (no names, abbreviations or crosswordese; one cross-puzzle 4-letter repeat). Vertical two-square blocks top-right and bottom-left, with quick straight clues, varying from minis 29 to 33."
+  },
+  "clues": {
+   "PEST": "Annoying little brother, maybe",
+   "EACH": "Apiece",
+   "PROOF": "Evidence",
+   "LOSE": "Misplace",
+   "SPEW": "Gush forth",
+   "PEP": "Zip, zest or zing",
+   "EARLS": "British nobles",
+   "SCOOP": "Ice cream serving",
+   "THOSE": "\"___ were the days\"",
+   "FEW": "Not many"
+  },
+  "addedDate": "2026-11-28"
  }
 ]
