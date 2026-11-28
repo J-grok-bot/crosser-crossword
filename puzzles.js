@@ -7993,5 +7993,82 @@ const PUZZLES=[
     "7": "Not many"
    }
   }
+ },
+ {
+  "id": "puzzler-11-27",
+  "title": "Fish Tales",
+  "author": "Puzzler",
+  "date": "2026-12-07",
+  "grid": [
+   "OHO##HAH###",
+   "RENT#ICES##",
+   "CATHODERAY#",
+   "SLOOP###LAW",
+   "###REM##SKA",
+   "STANDUPBASS",
+   "AIM##GEL###",
+   "CEO###AIDED",
+   "#RUBBERSOLE",
+   "##REAL#SELF",
+   "###GYM##SAT"
+  ],
+  "meta": {
+   "size": "11x11",
+   "difficulty": "hard",
+   "themeType": "ends-with",
+   "clueStyle": "wordplay-heavy",
+   "source": "original",
+   "wordCount": 42,
+   "notes": "Ends-with theme, title as revealer: each of the three symmetric long answers (10/11/10 on rows 3, 6 and 9) ends in the name of a fish used in a non-fish sense, so the 'tails' are fishy. Hard, wordplay-leaning clues with three '?' clues. 32 blocks, 42 words. Checked against shipped, queued, held and parked inventory and the current stoplist."
+  },
+  "addedDate": "2026-11-28",
+  "clues": {
+   "across": {
+    "1": "\"Caught you red-handed!\"",
+    "4": "Scoffing syllable",
+    "7": "Lease payment",
+    "9": "Seals, as a victory",
+    "11": "Tube in an old-school TV set",
+    "14": "Single-masted sailboat",
+    "15": "Bill that made it all the way",
+    "17": "Dream stage, briefly",
+    "19": "Upbeat Jamaican genre that predated reggae",
+    "20": "Big instrument in a rockabilly trio",
+    "25": "Sight, as a target",
+    "26": "Come together, as a team",
+    "27": "Corner-office VIP",
+    "28": "Lent a hand",
+    "32": "Sneaker's bottom layer",
+    "36": "Not counterfeit",
+    "37": "Subject of a memoir",
+    "38": "Where reps are counted",
+    "39": "Didn't stand"
+   },
+   "down": {
+    "1": "Mordor army members",
+    "2": "Knit, as a bone",
+    "3": "Aware of, as a scheme",
+    "4": "Ducked out of sight",
+    "5": "Unreturnable serve",
+    "6": "Pronoun for a ship, traditionally",
+    "8": "Rose's defense",
+    "10": "Dip or dance",
+    "12": "Opinion piece opposite the editorials",
+    "13": "Chatters on and on, or shaggy Tibetan beasts?",
+    "16": "Existed",
+    "18": "Make faces for the camera",
+    "20": "Fluid-filled pouch in a body",
+    "21": "Wedding-cake layer",
+    "22": "Parisian love affair",
+    "23": "Bartlett or Bosc",
+    "24": "Pure happiness",
+    "29": "A deer, a female deer, times two?",
+    "30": "Fitzgerald known as the First Lady of Song",
+    "31": "Nimble-fingered",
+    "33": "Plead",
+    "34": "Howl at the moon",
+    "35": "Shade tree on many a Main Street"
+   }
+  }
  }
 ];
